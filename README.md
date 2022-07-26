@@ -1,8 +1,7 @@
 <h1 align="center">
-  Eric Phifer LLC Portfolio
+  Eric Phifer LLC Services
 </h1>
 
 <p>
-  My professional portfolio for websites built.
+  My list and display of available services and products.
 </p>
-

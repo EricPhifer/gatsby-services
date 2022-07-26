@@ -1,5 +1,5 @@
-// import { defaultComponents, PortableText } from '@portabletext/react';
-// import { graphql } from 'gatsby';
+import { defaultComponents, PortableText } from '@portabletext/react';
+import { graphql } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import Seo from '../components/Seo';
@@ -45,15 +45,15 @@ const PolicyStyles = styled.div`
   }
 `;
 
-export default function PrivacyPolicy() {
-  // const policies = data.policies.nodes;
+export default function PrivacyPolicy({ data }) {
+  const policies = data.policies.nodes;
   return (
     <>
       <Seo title="Privacy Policy" />
       <PolicyStyles>
         <div className='overlord'>
           <p className="updateDate">Last updated: May 17, 2022</p>
-          {/* {policies.map((policy) => (
+          {policies.map((policy) => (
             <section key={policy.id}>
               <h1>{policy.title}</h1>
               <section className="policyContainer">
@@ -64,21 +64,21 @@ export default function PrivacyPolicy() {
                   />
               </section>
             </section>
-          ))} */}
+          ))}
         </div>
       </PolicyStyles>
     </>
   );
 }
 
-// export const query = graphql`
-//   query {
-//     policies: allSanityPrivacyPolicy {
-//       nodes {
-//         id
-//         title
-//         _rawContent
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  query {
+    policies: allSanityPrivacyPolicy {
+      nodes {
+        id
+        title
+        _rawContent
+      }
+    }
+  }
+`;
