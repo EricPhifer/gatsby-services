@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
   html, body {
     min-height: 100%;
     max-width: 100vw;
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
   body {
     position: relative;

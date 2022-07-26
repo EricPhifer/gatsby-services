@@ -586,10 +586,13 @@ export default function Nav() {
 
 const nodes = navigation.nodes;
 const [checked, setChecked] = React.useState(true || '');
+const fixedNav = {
+  position: "fixed",
+}
   return (
     <>
       {nodes.map((node) => (
-        <div className="nodeParser" key={node.id}>
+        <div className="nodeParser" style={ fixedNav } key={node.id}>
           <NavStyles>
             <div className="navContainer">
               <div className="logo">
