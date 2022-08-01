@@ -6,7 +6,7 @@ import Seo from '../components/Seo';
 import curves from '../assets/images/curves-bg.png'
 
 const HomeStyles = styled.div`
-  width: 100vw;
+  width: calc(100vw - 100px);
   margin-left: 100px;
   .inline {
     display: inline-flex;
@@ -14,31 +14,28 @@ const HomeStyles = styled.div`
   .center {
     justify-content: center;
   }
-  .landing {
-    width: 100vw;
-  }
   .welcomeContainer {
     width: 100%;
   }
   h1 {
-    margin: 5rem 5rem 0;
+    margin: 5rem 0 0;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: none;
     font-size: 8rem;
-    color: var(--white);
+    color: var(--bg);
+    text-shadow: 1px 0 2px var(--white), 0 50px 2px var(--green), -1px 0 2px var(--white), 0 -50px 2px var(--mint);
     font-weight: 100;
     letter-spacing: 5vw;
     cursor: default;
     transition-property: text-shadow, color;
     transition-duration: 0.5s, 2s;
     &:hover {
-      color: var(--bg);
-      text-shadow: 0px 0 2px var(--white), 0 50px 2px var(--white), -0px 0 2px var(--white), 0 -50px 2px var(--white);
+      text-shadow: none;
+      color: var(--white);
     }
   }
   h2 {
-    margin: 5rem 0 0;
+    margin: 5rem 0 3rem;
     font-size: 2.5rem;
     text-shadow: none;
     color: var(--white);
@@ -49,7 +46,7 @@ const HomeStyles = styled.div`
     transition-duration: 0.5s, 2s;
     &:hover {
       color: var(--bg);
-      text-shadow: 0px 0 2px var(--white), 0 50px 2px var(--white), -0px 0 2px var(--white), 0 -50px 2px var(--white);
+      text-shadow: 1px 0 2px var(--white), 0 25px 2px var(--green), -1px 0 2px var(--white), 0 -25px 2px var(--mint);
     }
   }
   .pagination {
@@ -60,6 +57,7 @@ const HomeStyles = styled.div`
     a {
       margin: 2rem;
       font-size: 1.5rem;
+      text-transform: uppercase;
       color: var(--white);
       cursor: pointer;
       font-weight: bold;
@@ -70,14 +68,14 @@ const HomeStyles = styled.div`
   }
   hr {
     width: 100vw;
-    color: var(--white);
+    border: 10px solid var(--mint);    
   }
   .gridContainer {
     max-width: 1080px;
+    margin: 3rem auto;
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 1fr));
     gap: 2rem;
-    margin: 0 auto;
     .card {
       width: 300px;
       height: 400px;
@@ -553,6 +551,8 @@ const MobileHomeStyles = styled.div`
 `;
 
 export default function HomePage({ data }) {
+  const sites = data.sites.nodes;
+  const tags = data.tags.nodes;
   const services = data.services.nodes;
   return (
     <>
@@ -574,15 +574,17 @@ export default function HomePage({ data }) {
         <h2>What kind of website do you need?</h2>
         <hr />
         <div className='pagination'>
-          <Link to="/">Blog</Link>
-          <Link to="/">eCommerce</Link>
-          <Link to="/">Informational</Link>
-          <Link to="/">Portfolio</Link>
-          <Link to="/">Business</Link>
+          {tags.map((tag) => (
+            <Link to={tag.sitelink} key={tag.id}>
+              {tag.tagtitle}
+            </Link>
+          ))}
         </div>
         <hr />
         <div className='gridContainer'>
-          <div className='card'></div>
+          {sites.map((site) => (
+            <div className='card' key={site.id}></div>
+          ))}
         </div>
       </HomeStyles>
       <TabletHomeStyles>
@@ -636,6 +638,31 @@ export const query = graphql`
           images
           active
         }
+      }
+    }
+    tags: allSanityServicetags {
+      nodes {
+        id
+        tagtitle
+      }
+    }
+    sites: allSanityServicesites {
+      nodes {
+        id
+        image {
+          asset {
+            id
+          }
+        }
+        description
+        sitelink
+        tags {
+          tagtitle
+        }
+        slug {
+          current
+        }
+        title
       }
     }
   }
