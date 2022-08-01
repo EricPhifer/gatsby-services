@@ -1,11 +1,12 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 // import SanityImage from 'gatsby-plugin-sanity-image';
 import styled from 'styled-components';
 import Seo from '../components/Seo';
 import curves from '../assets/images/curves-bg.png'
 
 const HomeStyles = styled.div`
+  width: 100vw;
   margin-left: 100px;
   .inline {
     display: inline-flex;
@@ -16,125 +17,74 @@ const HomeStyles = styled.div`
   .landing {
     width: 100vw;
   }
-  p {
-    margin: 0;
-    color: var(--white);
+  .welcomeContainer {
+    width: 100%;
+  }
+  h1 {
+    margin: 5rem 5rem 0;
     text-transform: uppercase;
-    font-size: 7rem;
-    font-weight: bold;
+    text-align: center;
+    text-shadow: none;
+    font-size: 8rem;
+    color: var(--white);
+    font-weight: 100;
+    letter-spacing: 5vw;
     cursor: default;
-  }
-  .hint {
-    font-size: 1.25rem;
-    text-transform: lowercase;
-  }
-  .words {
-    position: absolute;
-    left: 125px;
-    bottom: 100px;
-    .elevate:hover {
-      color: var(--green);
-      text-shadow: 1px 2px var(--white);
+    transition-property: text-shadow, color;
+    transition-duration: 0.5s, 2s;
+    &:hover {
+      color: var(--bg);
+      text-shadow: 0px 0 2px var(--white), 0 50px 2px var(--white), -0px 0 2px var(--white), 0 -50px 2px var(--white);
     }
   }
-  .image {
-    width: 80vmin;
-    position: absolute;
-    bottom: -17rem;
-    right: 0;
-    opacity: 0.5;
-    img {
-      width: 80vmin;
+  h2 {
+    margin: 5rem 0 0;
+    font-size: 2.5rem;
+    text-shadow: none;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 1vw;
+    cursor: default;
+    transition-property: text-shadow, color;
+    transition-duration: 0.5s, 2s;
+    &:hover {
+      color: var(--bg);
+      text-shadow: 0px 0 2px var(--white), 0 50px 2px var(--white), -0px 0 2px var(--white), 0 -50px 2px var(--white);
     }
   }
-  .scrollIndicator {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    display: flex:
-    flex-flow: column nowrap;
-    transform: rotate(90deg);
-    .scrollWords {
-      font-size: 1.25rem;
-      padding: 0.25rem;
-    }
-    .triangle {
-      width: 75px;
-      height: 25px;
-      background-image: linear-gradient(
-          to bottom right,
-          transparent 50%,
-          var(--green) 0
-        ),
-        linear-gradient(to top right, var(--green) 50%, transparent 0);
-      background-size: 50% 100%;
-      background-repeat: no-repeat;
-      background-position: left, right;
-    }
-  }
-  .projectContainer {
-    height: 100vh;
-    width: 165%;
-    transform: translateX(100vw);
-    position: relative;
-    .buttonesque {
-      width: 100%;
-      height: 60px;
-      position: fixed;
-      bottom: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--green);
-      a {
-        width: 95vw;
-        height: 100%;
-        margin-top: 4rem;
-        position: sticky;
-        left: -57%;
-        font-size: 2rem;
-        font-weight: bold;
-        color: var(--white);
-        text-align: center;
-      }
-      &:hover {
-        background-color: var(--mint);
-        a {
-          color: var(--green);
-        }
-      }
-    }
-  }
-  .inlineContainer {
-    height: 85%;
-  }
-  .project {
-    min-width: 400px;
-    margin: 5rem 7% 3rem;
+  .pagination {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    .desktopView {
-     max-width: 45vmin;
-    }
-    .tabletView {
-      width: 24vmin;
-      margin: 7rem 0 0 7rem;
-    }
-    .mobileView {
-      width: 12vmin;
-      margin-top: 2rem;
-    }
+    flex-flow: row nowrap;
+    overflow-y: scroll;
+    scrollbar-width: none;
     a {
-      margin-top: 2rem;
-      font-size: 3rem;
+      margin: 2rem;
+      font-size: 1.5rem;
       color: var(--white);
+      cursor: pointer;
+      font-weight: bold;
       &:hover {
         color: var(--red);
-        text-shadow: 1px 0 0 var(--white);
       }
     }
   }
+  hr {
+    width: 100vw;
+    color: var(--white);
+  }
+  .gridContainer {
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    .card {
+      width: 300px;
+      height: 400px;
+      border: 1px solid var(--white);
+    }
+  }
+
   @media only screen and (max-height: 815px) {
     .inlineContainer {
       height: 92%;
@@ -606,7 +556,7 @@ export default function HomePage({ data }) {
   const services = data.services.nodes;
   return (
     <>
-      <Seo title="Home Page" />
+      <Seo title="Services - Home Page" />
       <HomeStyles>
         <div className='hidden'>
           <div className='curvelayer' />
@@ -616,12 +566,24 @@ export default function HomePage({ data }) {
             <br />You are granted the title: <span>Message Finder</span>.
           </p>
         </div>
-        {services.map((service) => (
-          <div key={service.id}>
-            <p>{service.product.name}</p>
-          </div>
-
-        ))}
+        <div className='welcomeContainer'>
+          <h1 className='hoverReverse'>
+            Welcome
+          </h1>
+        </div>
+        <h2>What kind of website do you need?</h2>
+        <hr />
+        <div className='pagination'>
+          <Link to="/">Blog</Link>
+          <Link to="/">eCommerce</Link>
+          <Link to="/">Informational</Link>
+          <Link to="/">Portfolio</Link>
+          <Link to="/">Business</Link>
+        </div>
+        <hr />
+        <div className='gridContainer'>
+          <div className='card'></div>
+        </div>
       </HomeStyles>
       <TabletHomeStyles>
       <div className='hidden'>
@@ -642,6 +604,11 @@ export default function HomePage({ data }) {
             <br />You are granted the title: <span>Message Finder</span>.
           </p>
         </div>
+        {services.map((service) => (
+          <div key={service.id}>
+            <p>{service.name}</p>
+          </div>
+        ))}
        
       </MobileHomeStyles>
     </>
