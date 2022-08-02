@@ -893,9 +893,9 @@ const fixedNav = {
                   <Link to="/">
                     <li>Services</li>
                   </Link>
-                  <a href="https://blog.ericphifer.com" rel="noreferrer">
+                  {/* <a href="https://blog.ericphifer.com" rel="noreferrer">
                     <li>Blog</li>
-                  </a>
+                  </a> */}
                 </ul>
               </nav>
                 <div className='inline bottom' id="menuToggle">
@@ -970,9 +970,9 @@ const fixedNav = {
                       <Link to="/">
                         <li>Services</li>
                       </Link>
-                      <a href="https://blog.ericphifer.com" rel="noreferrer">
+                      {/* <a href="https://blog.ericphifer.com" rel="noreferrer">
                         <li>Blog</li>
-                      </a>
+                      </a> */}
                     </ul>
                   </nav> 
                 </div>
@@ -1040,9 +1040,9 @@ const fixedNav = {
                   <Link to="/">
                     <li>Services</li>
                   </Link>
-                  <a href="https://blog.ericphifer.com" rel="noreferrer">
+                  {/* <a href="https://blog.ericphifer.com" rel="noreferrer">
                     <li>Blog</li>
-                  </a>
+                  </a> */}
                 </ul>
               </nav>
                 <div className='inline bottom' id="menuToggle">
@@ -1107,9 +1107,9 @@ const fixedNav = {
                   <Link to="/">
                     <li>Services</li>
                   </Link>
-                  <a href="https://blog.ericphifer.com" rel="noreferrer">
+                  {/* <a href="https://blog.ericphifer.com" rel="noreferrer">
                     <li>Blog</li>
-                  </a>
+                  </a> */}
                 </ul>
               </nav>
                 <div className='inline bottom' id="menuToggle">
