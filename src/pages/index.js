@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-// import SanityImage from 'gatsby-plugin-sanity-image';
 import styled from 'styled-components';
 import Seo from '../components/Seo';
 import curves from '../assets/images/curves-bg.png'
+import SanityImage from 'gatsby-plugin-sanity-image';
 
 const HomeStyles = styled.div`
   width: calc(100vw - 100px);
@@ -49,7 +49,7 @@ const HomeStyles = styled.div`
       text-shadow: 1px 0 2px var(--white), 0 25px 2px var(--green), -1px 0 2px var(--white), 0 -25px 2px var(--mint);
     }
   }
-  .pagination {
+  .filter {
     display: flex;
     flex-flow: row nowrap;
     overflow-y: scroll;
@@ -70,6 +70,13 @@ const HomeStyles = styled.div`
     width: 100vw;
     border: 10px solid var(--mint);    
   }
+  .explanation {
+    width: 100%;
+    p {
+      text-align: center;
+      color: var(--white);
+    }
+  }
   .gridContainer {
     max-width: 1080px;
     margin: 3rem auto;
@@ -79,7 +86,50 @@ const HomeStyles = styled.div`
     .card {
       width: 300px;
       height: 400px;
-      border: 1px solid var(--white);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .overlay {
+      background-color: rgba(0,0,0,0.5);
+      width: 300px;
+      height: 400px;
+      position: absolute;
+      outline: 2px dotted var(--white);
+      opacity: 0;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    h3 {
+      margin-top: 7rem;
+      color: var(--white);
+      text-align: center;
+      text-decoration: underline;
+      font-size: 2.5rem;
+    }
+    p {
+      padding: 2rem;
+      color: var(--white);
+      font-size: 1.5rem;
+    }
+    .buttonesque {
+      display: block;
+      max-width: calc(100% - 10rem);
+      margin: 0 auto;
+      padding: 2rem 3rem;
+      background-color: var(--green);
+      color: var(--white);
+      text-align: center;
+      font-weight: bold;
+      border-radius: 2rem;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        background-color: var(--white);
+        color: var(--green);
+      }
     }
   }
 
@@ -552,7 +602,7 @@ const MobileHomeStyles = styled.div`
 
 export default function HomePage({ data }) {
   const sites = data.sites.nodes;
-  const tags = data.tags.nodes;
+  // const tags = data.tags.nodes;
   const services = data.services.nodes;
   return (
     <>
@@ -573,17 +623,37 @@ export default function HomePage({ data }) {
         </div>
         <h2>What kind of website do you need?</h2>
         <hr />
-        <div className='pagination'>
+        {/* A filter to find what you're looking for faster */}
+        {/* <div className='filter'>
           {tags.map((tag) => (
             <Link to={tag.sitelink} key={tag.id}>
               {tag.tagtitle}
             </Link>
           ))}
         </div>
-        <hr />
+        <hr /> */}
+        <div className='explanation'>
+          <p>Hover over each template to see more details.</p>
+        </div>
         <div className='gridContainer'>
           {sites.map((site) => (
-            <div className='card' key={site.id}></div>
+            <div className='card' key={site.id}>
+                  <div className='overlay'>
+                    <h3>{site.title}</h3>
+                    <p>{site.description}</p>
+                    <Link to={site.sitelink} className="buttonesque">
+                      Explore this Template
+                    </Link>
+                  </div>
+                <SanityImage 
+                  {...site.image}
+                  alt={site.title}
+                  style={{
+                    objectFit: 'cover',
+                    auto: 'format',
+                  }}
+                  />
+            </div>
           ))}
         </div>
       </HomeStyles>
@@ -653,6 +723,7 @@ export const query = graphql`
           asset {
             id
           }
+          ...ImageWithPreview
         }
         description
         sitelink

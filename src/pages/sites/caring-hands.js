@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const BlogStyles = styled.div`
+const CaringHandsStyles = styled.div`
     width: calc(100vw - 100px);
     margin-left: 100px;
     color: var(--white);
@@ -13,7 +13,7 @@ const BlogStyles = styled.div`
     }
 `;
 
-const TabletBlogStyles = styled.div`
+const TabletCaringHandsStyles = styled.div`
     width: calc(100vw - 100px);
     margin-left: 100px;
     color: var(--white);
@@ -25,7 +25,7 @@ const TabletBlogStyles = styled.div`
     }
 `;
 
-const MobileBlogStyles = styled.div`
+const MobileCaringHandsStyles = styled.div`
     width: calc(100vw - 100px);
     margin-left: 100px;
     color: var(--white);
@@ -37,18 +37,18 @@ const MobileBlogStyles = styled.div`
     }
 `;
 
-export default function Sites() {
+export default function CaringHands() {
     return (
         <>
-            <BlogStyles>
+            <CaringHandsStyles>
                 <p>Coming soon...</p>
-            </BlogStyles>
-            <TabletBlogStyles>
+            </CaringHandsStyles>
+            <TabletCaringHandsStyles>
                 <p>Coming soon...</p>
-            </TabletBlogStyles>
-            <MobileBlogStyles>
+            </TabletCaringHandsStyles>
+            <MobileCaringHandsStyles>
                 <o>Coming soon...</o>
-            </MobileBlogStyles>
+            </MobileCaringHandsStyles>
         </>
     )
 }

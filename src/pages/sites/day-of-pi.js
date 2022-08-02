@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const BlogStyles = styled.div`
+const DayOfPiStyles = styled.div`
     width: calc(100vw - 100px);
     margin-left: 100px;
     color: var(--white);
@@ -17,7 +17,7 @@ const BlogStyles = styled.div`
     }
 `;
 
-const TabletBlogStyles = styled.div`
+const TabletDayOfPiStyles = styled.div`
 /* Show compressed menu on small screens */
 @media only screen and (min-width: 1081px) {
   display: none;
@@ -36,7 +36,7 @@ const TabletBlogStyles = styled.div`
     }
 `;
 
-const MobileBlogStyles = styled.div`
+const MobileDayOfPiStyles = styled.div`
 /* Show compressed menu on small screens */
 @media only screen and (min-width: 501px) {
   display: none;
@@ -52,18 +52,18 @@ const MobileBlogStyles = styled.div`
     }
 `;
 
-export default function Sites() {
+export default function DayOfPi() {
     return (
         <>
-            <BlogStyles>
-                <p>Coming soon...</p>
-            </BlogStyles>
-            <TabletBlogStyles>
-                <p>Coming soon...</p>
-            </TabletBlogStyles>
-            <MobileBlogStyles>
-                <o>Coming soon...</o>
-            </MobileBlogStyles>
+          <DayOfPiStyles>
+              <p>Coming soon...</p>
+          </DayOfPiStyles>
+          <TabletDayOfPiStyles>
+              <p>Coming soon...</p>
+          </TabletDayOfPiStyles>
+          <MobileDayOfPiStyles>
+              <p>Coming soon...</p>
+          </MobileDayOfPiStyles>
         </>
     )
 }
