@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import Seo from '../components/Seo';
-import curves from '../assets/images/curves-bg.png'
 import SanityImage from 'gatsby-plugin-sanity-image';
 
 const HomeStyles = styled.div`
@@ -540,9 +539,9 @@ const MobileHomeStyles = styled.div`
 export default function HomePage({ data }) {
   const sites = data.sites.nodes;
   // const tags = data.tags.nodes;
-  const [welcome, setWelcome] = React.useState(false);
-  const [website, setWebsite] = React.useState(false);
-  const [cards, setCards] = React.useState(false);
+  const [welcome, setWelcome] = useState(false);
+  const [website, setWebsite] = useState(false);
+  const [cards, setCards] = useState(false);
   return (
     <>
       <Seo title="Services - Home Page" />
