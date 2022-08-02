@@ -134,44 +134,10 @@ const HomeStyles = styled.div`
       }
     }
   }
-
   .hidden {
     display: none;
   }
-  @media only screen and (orientation: portrait) {
-    .hidden {
-      display: none;
-    }
-  }
-  @media only screen and (max-height: 650px) {
-    .hidden {
-      width: 100vw;
-      height: 100vh;
-      display: block;
-      position: fixed;
-      z-index: 100;
-      background: var(--green);
-      .curvelayer {
-        width: 100%;
-        height: 100vh;
-        background-image: url(${curves});
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-      }
-      p {
-        color: var(--white);
-        margin: 30vmin;
-        position: absolute;
-        top: 0;
-        font-size: 5rem;
-        span {
-          color: var(--bg);
-        }
-      }
-    }
-  }
+
   /* Hide menu on small screens */
   @media only screen and (max-width: 1080px) {
     display: none;
@@ -379,40 +345,6 @@ const TabletHomeStyles = styled.div`
   .hidden {
     display: none;
   }
-  @media only screen and (orientation: portrait) {
-    .hidden {
-      display: none;
-    }
-  }
-  @media only screen and (max-height: 650px) {
-    .hidden {
-      width: 100vw;
-      height: 100vh;
-      display: block;
-      position: fixed;
-      z-index: 100;
-      background: var(--green);
-      .curvelayer {
-        width: 100%;
-        height: 100vh;
-        background-image: url(${curves});
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-      }
-      p {
-        color: var(--white);
-        margin: 30vmin;
-        position: absolute;
-        top: 0;
-        font-size: 5rem;
-        span {
-          color: var(--bg);
-        }
-      }
-    }
-  }
 `;
 
 const MobileHomeStyles = styled.div`
@@ -602,40 +534,7 @@ const MobileHomeStyles = styled.div`
   .hidden {
     display: none;
   }
-  @media only screen and (orientation: portrait) {
-    .hidden {
-      display: none;
-    }
-  }
-  @media only screen and (max-height: 650px) {
-    .hidden {
-      width: 100vw;
-      height: 100vh;
-      display: block;
-      position: fixed;
-      z-index: 100;
-      background: var(--green);
-      .curvelayer {
-        width: 100%;
-        height: 100vh;
-        background-image: url(${curves});
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-      }
-      p {
-        color: var(--white);
-        margin: 30vmin;
-        position: absolute;
-        top: 0;
-        font-size: 5rem;
-        span {
-          color: var(--bg);
-        }
-      }
-    }
-  }
+
 `;
 
 export default function HomePage({ data }) {
@@ -648,14 +547,14 @@ export default function HomePage({ data }) {
     <>
       <Seo title="Services - Home Page" />
       <HomeStyles>
-        <div className='hidden'>
+        {/* <div className='hidden'>
           <div className='curvelayer' />
           <p>
             Congratulations! 
             <br /> You found a hidden message. 
             <br />You are granted the title: <span>Message Finder</span>.
           </p>
-        </div>
+        </div> */}
         <div className='welcomeContainer'>
           <h1 className='hoverReverse'>
             Welcome
@@ -698,14 +597,14 @@ export default function HomePage({ data }) {
         </div>
       </HomeStyles>
       <TabletHomeStyles>
-      <div className='hidden'>
+      {/* <div className='hidden'>
           <div className='curvelayer' />
           <p>
             Congratulations! 
             <br /> You found a hidden message. 
             <br />You are granted the title: <span>Message Finder</span>.
           </p>
-        </div>
+        </div> */}
         <button 
           type="button" 
           onClick={() => setWelcome(old => !old)} 
@@ -761,14 +660,14 @@ export default function HomePage({ data }) {
         </div>
       </TabletHomeStyles>
       <MobileHomeStyles>
-        <div className='hidden'>
+        {/* <div className='hidden'>
           <div className='curvelayer' />
           <p>
             Congratulations! 
             <br /> You found a hidden message. 
             <br />You are granted the title: <span>Message Finder</span>.
           </p>
-        </div>
+        </div> */}
         <button 
           type="button" 
           onClick={() => setWelcome(old => !old)} 
