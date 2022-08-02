@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import Seo from '../components/Seo';
@@ -83,6 +83,7 @@ const HomeStyles = styled.div`
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 1fr));
     gap: 2rem;
+    justify-items: center;
     .card {
       width: 300px;
       height: 400px;
@@ -107,13 +108,14 @@ const HomeStyles = styled.div`
       margin-top: 7rem;
       color: var(--white);
       text-align: center;
-      text-decoration: underline;
+      text-transform: uppercase;
       font-size: 2.5rem;
     }
     p {
       padding: 2rem;
       color: var(--white);
       font-size: 1.5rem;
+      text-align: center;
     }
     .buttonesque {
       display: block;
@@ -133,23 +135,6 @@ const HomeStyles = styled.div`
     }
   }
 
-  @media only screen and (max-height: 815px) {
-    .inlineContainer {
-      height: 92%;
-    }
-    .projectContainer {
-      width: 100%;
-    }
-    .project {
-      margin: 2vmin 10vmin;
-      .mobileView {
-        width: 12vmin;
-      }
-      .tabletView {
-        width: 23vmin;
-      }
-    }
-  }
   .hidden {
     display: none;
   }
@@ -201,178 +186,194 @@ const TabletHomeStyles = styled.div`
   @media only screen and (max-width: 500px) {
     display: none;
   }
+  width: calc(100vw - 100px);
+  margin-left: 100px;
   .inline {
     display: inline-flex;
   }
   .center {
     justify-content: center;
   }
-  .landing {
-    width: 100vw;
-  }
-  .landingContainer {
-    display: inline-flex;
-  }
-  p {
-    margin: 0;
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: 7vmin;
-    font-weight: bold;
-    cursor: default;
-    @media only screen and (max-width: 975px) {
-      font-size: 6vmin;
-    }
-  }
-  .hint {
-    font-size: 1.25rem;
-    text-transform: lowercase;
-  }
-  .words {
-    position: absolute;
-    left: 125px;
-    bottom: 30px;
-    .elevate:hover {
-      color: var(--green);
-      text-shadow: 1px 2px var(--white);
-    }
-    @media only screen and (max-width: 900px) {
-      left: 70px;
-    }
-  }
-  .image {
-    width: 75vmin;
-    position: absolute;
-    bottom: -14rem;
-    right: 0;
-    opacity: 0.5;
-    img {
-      width: 75vmin;
-    }
-    @media only screen and (max-width: 700px) {
-      width: 103vmin;
-      img {
-        width: 103vmin;
-      }
-    }
-  }
-  .scrollIndicator {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    display: flex:
-    flex-flow: column nowrap;
-    transform: rotate(90deg);
-    .scrollWords {
-      font-size: 1.25rem;
-      padding: 0.25rem;
-      @media only screen and (max-width: 900px) {
-        padding-bottom: 0;
-        transform: rotate(180deg);
-      }
-    }
-    .triangle {
-      width: 75px;
-      height: 25px;
-      background-image: linear-gradient(
-          to bottom right,
-          transparent 50%,
-          var(--green) 0
-        ),
-        linear-gradient(to top right, var(--green) 50%, transparent 0);
-      background-size: 50% 100%;
-      background-repeat: no-repeat;
-      background-position: left, right;
-    }
-  }
-  .projectContainer {
-    height: 100vh;
+  button.welcomeContainer {
     width: 100%;
-    transform: translateX(100vw);
-    position: relative;
-    .buttonesque {
-      width: 100%;
-      height: 60px;
-      display: flex;
-      position: fixed;
-      bottom: 0;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--green);
-      a {
-        width: 95vw;
-        height: 100%;
-        margin-top: 4rem;
-        position: sticky;
-        left: -60%;
-        font-size: 2rem;
-        font-weight: bold;
-        color: var(--white);
-        text-align: center;
-        @media only screen and (max-width: 900px) {
-          left: -65%;
-        }
-        @media only screen and (max-width: 600px) {
-          left: -70%;
-        }
-      }
-      &:hover {
-        background-color: var(--mint);
-        a {
-          color: var(--green);
-        }
-      }
-    }
+    border: none;
+    background-color: var(--bg);
+    box-shadow: none;
+    margin: 5rem 0 0;
+    padding-left: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 8rem;
+    color: var(--bg);
+    text-shadow: 1px 0 2px var(--white), 0 50px 2px var(--green), -1px 0 2px var(--white), 0 -50px 2px var(--mint);
+    font-weight: 100;
+    letter-spacing: 5vw;
+    cursor: default;
+    transition: all 0.5s, 2s;
   }
-  .inlineContainer {
-    height: 85%;
-    margin-right: 5rem;
+  button.welcome {
+    width: 100%;
+    border: none;
+    background-color: var(--bg);
+    box-shadow: none;
+    margin: 5rem 0 0;
+    padding-left: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 100;
+    letter-spacing: 5vw;
+    cursor: default;
+    transition: all 0.5s, 2s;
+    text-shadow: none;
+    color: var(--white);
   }
-  .project {
-    min-width: 400px;
-    margin: 2vmin 15vmin;
+  button.origin {
+    width: 100%;
+    border: none;
+    background-color: var(--bg);
+    box-shadow: none;
+    margin: 5rem 0 3rem;
+    font-size: 2.25rem;
+    text-shadow: none;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 0.5vw;
+    cursor: default;
+    transition: all 0.5s, 2s;
+  }
+  button.website {
+    width: 100%;
+    border: none;
+    background-color: var(--bg);
+    box-shadow: none;
+    margin: 5rem 0 3rem;
+    font-size: 2.25rem;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    cursor: default;
+    transition: all 0.5s, 2s;
+    color: var(--bg);
+    text-shadow: 1px 0 2px var(--white), 0 25px 2px var(--green), -1px 0 2px var(--white), 0 -25px 2px var(--mint);
+  }
+  .filter {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    .inline {
-      max-width: 400px;
-    }
-    .desktopView {
-      max-width: 45vmin;
-    }
-    .tabletView {
-      width: 30vmin;
-      margin: 7rem 0 0 7rem;
-    }
-    .mobileView {
-      width: 15vmin;
-      margin-top: 2rem;
-    }
+    flex-flow: row nowrap;
+    overflow-y: scroll;
+    scrollbar-width: none;
     a {
-      margin-top: 2rem;
-      font-size: 3rem;
+      margin: 2rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
       color: var(--white);
+      cursor: pointer;
+      font-weight: bold;
       &:hover {
-        color: var(--blue);
-        text-shadow: 1px 0 0 var(--white);
+        color: var(--red);
       }
     }
   }
-  @media only screen and (max-height: 815px) {
-    .inlineContainer {
-      height: 92%;
+  hr {
+    width: 100vw;
+    border: 10px solid var(--mint);    
+  }
+  .explanation {
+    width: 100%;
+    p {
+      text-align: center;
+      color: var(--white);
     }
-    .projectContainer {
+  }
+  .gridContainer {
+    max-width: 1080px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    .card {
+      border: none;
+      box-shadow: none;
+      display: block;
+      padding: 0;
+      width: 300px;
+      height: 400px;
+      opacity: 1;
+    }
+    img {
       width: 100%;
+      height: 100%;
     }
-    .project {
-      margin: 2vmin 10vmin;
-      .mobileView {
-        width: 12vmin;
+    .overlay-spheres, .overlay-the-dapper-diaper, .overlay-day-of-pi, .overlay-delightful-cakes, .overlay-caring-hands, .overlay-city-church, .overlay-hearthstone, .overlay-decision-institute, .overlay-holtz-landscaping  {
+      background-color: rgba(0,0,0,0.5);
+      width: 300px;
+      height: 400px;
+      position: absolute;
+      outline: 2px dotted var(--white);
+      transition: all 0.25s ease-in-out;
+      opacity: 1;
+    }
+    h3 {
+      margin-top: 7rem;
+      color: var(--white);
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+    }
+    p {
+      min-height: 10rem;
+      padding: 2rem;
+      color: var(--white);
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .buttonesque {
+      display: block;
+      max-width: calc(100% - 10rem);
+      margin: 0 auto;
+      padding: 2rem 3rem;
+      background-color: var(--green);
+      color: var(--white);
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 2rem;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        background-color: var(--white);
+        color: var(--green);
       }
-      .tabletView {
-        width: 23vmin;
-      }
+    }
+  }
+
+  @media only screen and (max-width: 1045px) {
+    .gridContainer {
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    width: calc(100vw - 50px);
+    margin-left: 50px;
+  }
+  @media only screen and (max-width: 820px) {
+    button.welcomeContainer, button.welcome {
+      font-size: 5rem;
+    }
+    button.origin, button.website {
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 585px) {
+    button.welcomeContainer, button.welcome {
+      font-size: 5rem;
+    }
+    button.origin, button.website {
+      font-size: 1.24rem;
+    }
+  }
+  @media only screen and (max-width: 675px) {
+    .gridContainer {
+      grid-template-columns: repeat(1, minmax(auto, 1fr));
     }
   }
   .hidden {
@@ -383,7 +384,7 @@ const TabletHomeStyles = styled.div`
       display: none;
     }
   }
-  @media only screen and (max-height: 650px) and (orientation: landscape) {
+  @media only screen and (max-height: 650px) {
     .hidden {
       width: 100vw;
       height: 100vh;
@@ -405,6 +406,7 @@ const TabletHomeStyles = styled.div`
         margin: 30vmin;
         position: absolute;
         top: 0;
+        font-size: 5rem;
         span {
           color: var(--bg);
         }
@@ -418,148 +420,183 @@ const MobileHomeStyles = styled.div`
   @media only screen and (min-width: 501px) {
     display: none;
   }
+  width: calc(100vw - 50px);
+  margin-left: 50px;
   .inline {
     display: inline-flex;
   }
   .center {
     justify-content: center;
   }
-  .landing {
-    width: 100vw;
-  }
-  p {
-    margin: 0;
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: 6vmin;
-    font-weight: bold;
-    cursor: default;
-  }
-  .hint {
-    font-size: 1.25rem;
-    text-transform: lowercase;
-  }
-  .words {
-    position: absolute;
-    left: 70px;
-    bottom: 30px;
-    .elevate:hover {
-      color: var(--green);
-      text-shadow: 1px 2px var(--white);
-    }
-  }
-  .image {
-    width: 103vmin;
-    position: absolute;
-    bottom: -2rem;
-    right: 0;
-    opacity: 0.5;
-    img {
-      width: 103vmin;
-    }
-  }
-  .scrollIndicator {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    display: flex:
-    flex-flow: column nowrap;
-    transform: rotate(90deg);
-    .scrollWords {
-      font-size: 1rem;
-      padding: 0.5rem 0.25rem 0;
-      transform: rotate(180deg);
-    }
-    .triangle {
-      width: 60px;
-      height: 15px;
-      background-image: linear-gradient(
-          to bottom right,
-          transparent 50%,
-          var(--green) 0
-        ),
-        linear-gradient(to top right, var(--green) 50%, transparent 0);
-      background-size: 50% 100%;
-      background-repeat: no-repeat;
-      background-position: left, right;
-    }
-  }
-  .projectContainer {
-    height: 100vh;
+  button.welcomeContainer {
     width: 100%;
-    transform: translateX(100vw);
-    position: relative;
-    .buttonesque {
-      width: 100%;
-      height: 60px;
-      position: fixed;
-      bottom: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--green);
-      a {
-        width: 95vw;
-        height: 100%;
-        margin-top: 4rem;
-        position: sticky;
-        left: -100%;
-        font-size: 2rem;
-        font-weight: bold;
-        color: var(--white);
-        text-align: center;
-      }
-      &:hover {
-        background-color: var(--mint);
-        a {
-          color: var(--green);
-        }
-      }
-    }
+    border: none;
+    background-color: var(--bg);
+    box-shadow: none;
+    margin: 5rem 0 0;
+    padding-left: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--bg);
+    text-shadow: 1px 0 2px var(--white), 0 25px 2px var(--green), -1px 0 2px var(--white), 0 -25px 2px var(--mint);
+    font-weight: 100;
+    letter-spacing: 5vw;
+    cursor: default;
+    transition: all 0.5s, 2s;
   }
-  .inlineContainer {
-    height: 85%;
-    margin-right: 5rem;
+  button.welcome {
+    width: 100%;
+    border: none;
+    background-color: var(--bg);
+    box-shadow: none;
+    margin: 5rem 0 0;
+    padding-left: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 5vw;
+    cursor: default;
+    transition: all 0.5s, 2s;
+    text-shadow: none;
+    color: var(--white);
   }
-  .project {
-    width: 320px;
-    margin: 5vmin 15vmin;
+  button.origin {
+    width: 100%;
+    border: none;
+    background-color: var(--bg);
+    box-shadow: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    text-shadow: none;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 0.5vw;
+    cursor: default;
+    transition: all 0.5s, 2s;
+  }
+  button.website {
+    width: 100%;
+    border: none;
+    background-color: var(--bg);
+    box-shadow: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    cursor: default;
+    transition: all 0.5s, 2s;
+    color: var(--bg);
+    text-shadow: 1px 0 2px var(--white), 0 25px 2px var(--green), -1px 0 2px var(--white), 0 -25px 2px var(--mint);
+  }
+  .filter {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    .inline {
-      max-width: 320px;
-    }
-    @media only screen and (max-height: 700px) {
-      margin: 10vmin;
-    }
-    .desktopView {
-      @media only screen and (max-height: 785px) {
-        width: 80vmin;
-      }
-    }
-    .tabletView {
-      width: 50vmin;
-      margin: 7rem 0 0 3rem;
-      @media only screen and (max-height: 785px) {
-        width: 40vmin;
-      }
-    }
-    .mobileView {
-      width: 30vmin;
-      margin-top: 2rem;
-      @media only screen and (max-height: 785px) {
-        width: 22vmin;
-      }
-    }
+    flex-flow: row nowrap;
+    overflow-y: scroll;
+    scrollbar-width: none;
     a {
-      margin-top: 2rem;
-      font-size: 2rem;
+      margin: 2rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
       color: var(--white);
+      cursor: pointer;
+      font-weight: bold;
       &:hover {
         color: var(--red);
-        text-shadow: 1px 0 0 var(--white);
       }
+    }
+  }
+  hr {
+    width: 100vw;
+    border: 10px solid var(--mint);    
+  }
+  .explanation {
+    width: 100%;
+    p {
+      text-align: center;
+      color: var(--white);
+    }
+  }
+  .gridContainer {
+    max-width: 1080px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    .card {
+      border: none;
+      box-shadow: none;
+      display: block;
+      padding: 0;
+      width: 300px;
+      height: 400px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .overlay-spheres, .overlay-the-dapper-diaper, .overlay-day-of-pi, .overlay-delightful-cakes, .overlay-caring-hands, .overlay-city-church, .overlay-hearthstone, .overlay-decision-institute, .overlay-holtz-landscaping {
+      background-color: rgba(0,0,0,0.5);
+      width: 300px;
+      height: 400px;
+      position: absolute;
+      outline: 2px dotted var(--white);
+      opacity: 1;
+      transition: all 0.25s ease-in-out;
+    }
+    h3 {
+      margin-top: 7rem;
+      color: var(--white);
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+    }
+    p {
+      min-height: 10rem;
+      padding: 2rem;
+      color: var(--white);
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .buttonesque {
+      display: block;
+      max-width: calc(100% - 10rem);
+      margin: 0 auto;
+      padding: 2rem 3rem;
+      background-color: var(--green);
+      color: var(--white);
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 2rem;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        background-color: var(--white);
+        color: var(--green);
+      }
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .gridContainer {
+      .card {
+        width: 250px;
+      }
+      .overlay-spheres, .overlay-the-dapper-diaper, .overlay-day-of-pi, .overlay-delightful-cakes, .overlay-caring-hands, .overlay-city-church, .overlay-hearthstone, .overlay-decision-institute, .overlay-holtz-landscaping {
+        width: 250px;
+      }
+      .buttonesque {
+        padding: 1rem 3rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .explanation p {
+      font-size: 1.2rem;
+    }
+    button.origin, button.website {
+      font-size: 0.6rem;
     }
   }
   .hidden {
@@ -570,7 +607,7 @@ const MobileHomeStyles = styled.div`
       display: none;
     }
   }
-  @media only screen and (max-height: 650px) and (orientation: landscape) {
+  @media only screen and (max-height: 650px) {
     .hidden {
       width: 100vw;
       height: 100vh;
@@ -592,6 +629,7 @@ const MobileHomeStyles = styled.div`
         margin: 30vmin;
         position: absolute;
         top: 0;
+        font-size: 5rem;
         span {
           color: var(--bg);
         }
@@ -603,7 +641,9 @@ const MobileHomeStyles = styled.div`
 export default function HomePage({ data }) {
   const sites = data.sites.nodes;
   // const tags = data.tags.nodes;
-  const services = data.services.nodes;
+  const [welcome, setWelcome] = React.useState(false);
+  const [website, setWebsite] = React.useState(false);
+  const [cards, setCards] = React.useState(false);
   return (
     <>
       <Seo title="Services - Home Page" />
@@ -666,6 +706,59 @@ export default function HomePage({ data }) {
             <br />You are granted the title: <span>Message Finder</span>.
           </p>
         </div>
+        <button 
+          type="button" 
+          onClick={() => setWelcome(old => !old)} 
+          className={welcome ? `welcome` : `welcomeContainer`}
+        >
+            Welcome
+        </button>
+        <button 
+          type="button" 
+          onClick={() => setWebsite(old => !old)} 
+          className={website ? `website` : `origin`}
+        >
+          <h2>What kind of website do you need?</h2>
+        </button>
+        <hr />
+        {/* A filter to find what you're looking for faster */}
+        {/* <div className='filter'>
+          {tags.map((tag) => (
+            <Link to={tag.sitelink} key={tag.id}>
+              {tag.tagtitle}
+            </Link>
+          ))}
+        </div>
+        <hr /> */}
+        <div className='explanation'>
+          <p>Tap on a template to see more details.</p>
+        </div>
+        <div className='gridContainer'>
+          {sites.map((site) => (
+            <button 
+              type="button" 
+              onClick={() => setCards(old => !old)}
+              className="card"
+              key={site.id}
+            >
+              <div className={cards ? `overlay-${site.slug.current}` : `hidden`} >
+                <h3>{site.title}</h3>
+                <p>{site.description}</p>
+                <Link to={site.sitelink} className="buttonesque">
+                  Explore this Template
+                </Link>
+              </div>
+              <SanityImage 
+                {...site.image}
+                alt={site.title}
+                style={{
+                  objectFit: 'cover',
+                  auto: 'format',
+                }}
+              />
+          </button>
+        ))}
+        </div>
       </TabletHomeStyles>
       <MobileHomeStyles>
         <div className='hidden'>
@@ -676,12 +769,59 @@ export default function HomePage({ data }) {
             <br />You are granted the title: <span>Message Finder</span>.
           </p>
         </div>
-        {services.map((service) => (
-          <div key={service.id}>
-            <p>{service.name}</p>
-          </div>
-        ))}
-       
+        <button 
+          type="button" 
+          onClick={() => setWelcome(old => !old)} 
+          className={welcome ? `welcome` : `welcomeContainer`}
+        >
+            Welcome
+        </button>
+        <button 
+          type="button" 
+          onClick={() => setWebsite(old => !old)} 
+          className={website ? `website` : `origin`}
+        >
+          <h2>What kind of website do you need?</h2>
+        </button>
+        <hr />
+        {/* A filter to find what you're looking for faster */}
+        {/* <div className='filter'>
+          {tags.map((tag) => (
+            <Link to={tag.sitelink} key={tag.id}>
+              {tag.tagtitle}
+            </Link>
+          ))}
+        </div>
+        <hr /> */}
+        <div className='explanation'>
+          <p>Tap on a template to see more details.</p>
+        </div>
+        <div className='gridContainer'>
+          {sites.map((site) => (
+            <button 
+              type="button" 
+              onClick={() => setCards(old => !old)}
+              className="card"
+              key={site.id}
+            >
+              <div className={cards ? `overlay-${site.slug.current}` : `hidden`} >
+                <h3>{site.title}</h3>
+                <p>{site.description}</p>
+                <Link to={site.sitelink} className="buttonesque">
+                  Explore this Template
+                </Link>
+              </div>
+              <SanityImage 
+                {...site.image}
+                alt={site.title}
+                style={{
+                  objectFit: 'cover',
+                  auto: 'format',
+                }}
+              />
+            </button>
+          ))}
+        </div>
       </MobileHomeStyles>
     </>
   );

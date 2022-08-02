@@ -356,6 +356,9 @@ const TabletNavStyles = styled.div`
     .logo {
       width: 50px;
     }
+    #menuToggle {
+      margin-left: 1rem;
+    }
     .footer {
       width: 25px;
     }
