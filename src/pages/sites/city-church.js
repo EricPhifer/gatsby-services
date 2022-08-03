@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Cta from '../../components/Cta';
 
 const CityChurchStyles = styled.div`
     width: calc(100vw - 100px);
@@ -55,15 +56,18 @@ const MobileCityChurchStyles = styled.div`
 export default function CityChurch() {
     return (
         <>
-            <CityChurchStyles>
-                <p>Coming soon...</p>
-            </CityChurchStyles>
-            <TabletCityChurchStyles>
-                <p>Coming soon...</p>
-            </TabletCityChurchStyles>
-            <MobileCityChurchStyles>
-                <p>Coming soon...</p>
-            </MobileCityChurchStyles>
+          <CityChurchStyles>
+            <p>Coming soon...</p>
+            <Cta />
+          </CityChurchStyles>
+          <TabletCityChurchStyles>
+            <p>Coming soon...</p>
+            <Cta />
+          </TabletCityChurchStyles>
+          <MobileCityChurchStyles>
+            <p>Coming soon...</p>
+            <Cta />
+          </MobileCityChurchStyles>
         </>
     )
 }

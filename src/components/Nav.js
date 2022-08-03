@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import SanityImage from 'gatsby-plugin-sanity-image';
@@ -176,7 +176,7 @@ const NavStyles = styled.div`
 
 const LandscapeNavStyles = styled.div`
 /* Show compressed menu on short screens and landscape mode */
-@media only screen and (min-height: 485px) {
+@media only screen and (min-height: 486px) {
   display: none;
 }
 @media only screen and (orientation: portrait) {
@@ -860,9 +860,9 @@ export default function Nav() {
   `)
 
 const nodes = navigation.nodes;
-const [checked, setChecked] = React.useState(true || '');
-const [menuchecked, setMenuChecked] = React.useState(true || '');
-const [footerchecked, setFooterChecked] = React.useState(true || '');
+const [checked, setChecked] = useState(true || '');
+const [menuchecked, setMenuChecked] = useState(true || '');
+const [footerchecked, setFooterChecked] = useState(true || '');
 const fixedNav = {
   position: "fixed",
 }
@@ -884,7 +884,7 @@ const fixedNav = {
               </div>
               <nav>
                 <ul className='navigation'>
-                  <a href="https://ericphifer.com" rel="noreferrer">
+                  <a href="https://ericphifer.com">
                     <li>Portfolio</li>
                   </a>
                   <a href="https://ericphifer.com/contact" rel="noreferrer">
@@ -916,7 +916,7 @@ const fixedNav = {
                   </div>
                   <div className='triangle trigger' />
                   <div id="menu" className="menuContainer">
-                  <div className="footerContainer" key={node.id}>
+                    <div className="footerContainer" key={node.id}>
                     <ul className="footerCredits column">
                         <li>
                           &copy; Eric Phifer LLC {new Date().getFullYear()}

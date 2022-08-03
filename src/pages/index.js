@@ -546,14 +546,6 @@ export default function HomePage({ data }) {
     <>
       <Seo title="Services - Home Page" />
       <HomeStyles>
-        {/* <div className='hidden'>
-          <div className='curvelayer' />
-          <p>
-            Congratulations! 
-            <br /> You found a hidden message. 
-            <br />You are granted the title: <span>Message Finder</span>.
-          </p>
-        </div> */}
         <div className='welcomeContainer'>
           <h1 className='hoverReverse'>
             Welcome
@@ -596,14 +588,6 @@ export default function HomePage({ data }) {
         </div>
       </HomeStyles>
       <TabletHomeStyles>
-      {/* <div className='hidden'>
-          <div className='curvelayer' />
-          <p>
-            Congratulations! 
-            <br /> You found a hidden message. 
-            <br />You are granted the title: <span>Message Finder</span>.
-          </p>
-        </div> */}
         <button 
           type="button" 
           onClick={() => setWelcome(old => !old)} 
@@ -659,14 +643,6 @@ export default function HomePage({ data }) {
         </div>
       </TabletHomeStyles>
       <MobileHomeStyles>
-        {/* <div className='hidden'>
-          <div className='curvelayer' />
-          <p>
-            Congratulations! 
-            <br /> You found a hidden message. 
-            <br />You are granted the title: <span>Message Finder</span>.
-          </p>
-        </div> */}
         <button 
           type="button" 
           onClick={() => setWelcome(old => !old)} 
