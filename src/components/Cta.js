@@ -32,7 +32,7 @@ const CtaStyles = styled.div`
         display: flex;
         width: 25px;
         height: 82px;
-        position: absolute;
+        position: fixed;
         bottom: 25px;
         right: 0;
         cursor: pointer;
@@ -156,7 +156,7 @@ const LandscapeCtaStyles = styled.div`
         display: flex;
         width: 22px;
         height: 12rem;
-        position: absolute;
+        position: fixed;
         bottom: 25px;
         right: 0;
         cursor: pointer;
@@ -262,7 +262,7 @@ const TabletCtaStyles = styled.div`
         display: flex;
         width: 25px;
         height: 82px;
-        position: absolute;
+        position: fixed;
         bottom: 25px;
         right: 0;
         cursor: pointer;
@@ -324,10 +324,10 @@ const TabletCtaStyles = styled.div`
             }
         }
         .first {
-            @media only screen and (min-width: 901px) and (min-height: 774px) {
+            @media only screen and (min-width: 901px) and (max-height: 774px) {
                 margin-right: 1rem;
             }
-            @media only screen and (max-width: 900px) and (max-height: 775px){
+            @media only screen and (max-width: 900px) and (min-height: 775px){
                 margin-bottom: 1rem;
             }
         }
@@ -403,7 +403,7 @@ const MobileCtaStyles = styled.div`
         display: flex;
         width: 22px;
         height: 131px;
-        position: absolute;
+        position: fixed;
         bottom: 25px;
         right: 0;
         cursor: pointer;
@@ -501,7 +501,7 @@ const MobileCtaStyles = styled.div`
 
 
 export default function Cta() {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
   return (
     <>
         <CtaStyles>

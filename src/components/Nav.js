@@ -11,7 +11,7 @@ const NavStyles = styled.div`
   left: 0;
   background-color: var(--green);
   color: var(--white);
-  z-index: 10;
+  z-index: 110;
   .inline {
     display: inline-flex;
   }
@@ -72,7 +72,7 @@ const NavStyles = styled.div`
 
   // Footer Toggling
   #menuToggle {
-    z-index: 1;
+    z-index: 101;
     -webkit-user-select: none;
     user-select: none;
   }
@@ -83,7 +83,10 @@ const NavStyles = styled.div`
     position: absolute;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
+    z-index: 102;
+  }
+  .trigger {
+    z-index: 101;
   }
   #menuToggle .trigger {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -104,7 +107,7 @@ const NavStyles = styled.div`
     transform: translate(100%, 0%);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     overflow-y: auto;
-    z-index: -1;
+    z-index: 99;
   }
   #menu li {
     position: relative;
@@ -189,7 +192,7 @@ display: fixed;
 left: 0;
 background-color: var(--green);
 color: var(--white);
-z-index: 10;
+z-index: 110;
 .inline {
   display: inline-flex;
 }
@@ -211,7 +214,7 @@ z-index: 10;
 .logo {
   width: 50px;
   position: absolute;
-  z-index: 7;
+  z-index: 107;
   top: 1rem;
 }
 nav {
@@ -261,7 +264,7 @@ a {
   position: fixed;
   top: 75px;
   left: 8px;
-  z-index: 1;
+  z-index: 101;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -272,9 +275,12 @@ a {
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 102;
   top: -19px;
   left: -1px;
+}
+.trigger {
+  z-index: 101;
 }
 #menuToggle span {
   display: flex;
@@ -283,7 +289,7 @@ a {
   height: 3px;
   margin-bottom: 4px;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 101;
   transform-origin: 5px 0;
   background: #fff;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -339,7 +345,7 @@ a {
 
 // Footer Toggling
 #footerToggle {
-  z-index: 1;
+  z-index: 101;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -350,7 +356,7 @@ a {
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 102;
 }
 #footerToggle .trigger {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -371,7 +377,7 @@ a {
   transform: translate(100%, 0%);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   overflow-y: auto;
-  z-index: -1;
+  z-index: 99;
 }
 #footer li {
   position: relative;
@@ -455,7 +461,7 @@ const TabletNavStyles = styled.div`
   left: 0;
   background-color: var(--green);
   color: var(--white);
-  z-index: 10;
+  z-index: 110;
   .inline {
     display: inline-flex;
   }
@@ -518,7 +524,7 @@ const TabletNavStyles = styled.div`
 
   // Menu Toggling
   #menuToggle {
-    z-index: 1;
+    z-index: 101;
     -webkit-user-select: none;
     user-select: none;
   }
@@ -529,7 +535,10 @@ const TabletNavStyles = styled.div`
     position: absolute;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
+    z-index: 102;
+  }
+  .trigger {
+    z-index: 101;
   }
   #menuToggle .trigger {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -550,7 +559,7 @@ const TabletNavStyles = styled.div`
     transform: translate(100%, 0%);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     overflow-y: auto;
-    z-index: -1;
+    z-index: 99;
   }
   #menu li {
     position: relative;
@@ -657,7 +666,7 @@ const MobileNavStyles = styled.div`
   left: 0;
   background-color: var(--green);
   color: var(--white);
-  z-index: 10;
+  z-index: 110;
   .inline {
     display: inline-flex;
   }
@@ -725,7 +734,7 @@ const MobileNavStyles = styled.div`
 
   // Menu Toggling
   #menuToggle {
-    z-index: 1;
+    z-index: 101;
     -webkit-user-select: none;
     user-select: none;
   }
@@ -736,7 +745,10 @@ const MobileNavStyles = styled.div`
     position: absolute;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
+    z-index: 102;
+  }
+  .trigger {
+    z-index: 101;
   }
   #menuToggle .trigger {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
@@ -757,7 +769,7 @@ const MobileNavStyles = styled.div`
     transform: translate(100%, 0%);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     overflow-y: auto;
-    z-index: -1;
+    z-index: 99;
   }
   #menu li {
     position: relative;
@@ -865,6 +877,9 @@ const [menuchecked, setMenuChecked] = useState(true || '');
 const [footerchecked, setFooterChecked] = useState(true || '');
 const fixedNav = {
   position: "fixed",
+  left: 0,
+  top: 0,
+  zIndex: 115,
 }
   return (
     <>
