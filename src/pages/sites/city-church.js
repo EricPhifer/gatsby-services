@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Cta from '../../components/Cta';
+import CtaChurch from '../../components/CtaChurch';
 import useForm from '../../utils/useForm';
 import useContact from '../../utils/useContact';
 
@@ -585,6 +585,9 @@ const TabletCityChurchStyles = styled.div`
       @media only screen and (max-width: 900px) {
         height: auto;
       }
+      @media only screen and (min-height: 486px) and (max-height: 773px)  {
+        height: 160vh;
+      }
     }
     h3 {
       padding: 2rem 0 0 2rem;
@@ -606,6 +609,9 @@ const TabletCityChurchStyles = styled.div`
       @media only screen and (max-width: 900px) {
         height: 500px;
       }
+      @media only screen and (min-height: 486px) and (max-height: 773px)  {
+        height: 160vh;
+      }
     }
     .section2Img {
       width: 100%;
@@ -616,6 +622,9 @@ const TabletCityChurchStyles = styled.div`
       background-position: center center;
       @media only screen and (max-width: 900px) {
         height: 500px;
+      }
+      @media only screen and (min-height: 486px) and (max-height: 773px) {
+        height: 160vh;
       }
     }
     .section3Img {
@@ -628,6 +637,9 @@ const TabletCityChurchStyles = styled.div`
       @media only screen and (max-width: 900px) {
         height: 500px;
       }
+      @media only screen and (min-height: 486px) and (max-height: 773px) {
+        height: 160vh;
+      }
     }
     .section4Img {
       width: 100%;
@@ -638,6 +650,9 @@ const TabletCityChurchStyles = styled.div`
       background-position: center center;
       @media only screen and (max-width: 900px) {
         height: 500px;
+      }
+      @media only screen and (min-height: 486px) and (max-height: 773px) {
+        height: 160vh;
       }
     }
   }
@@ -1191,7 +1206,7 @@ export default function CityChurch() {
     return (
       <>
         <CityChurchStyles>
-          <Cta />
+          <CtaChurch />
           <Navigation>
             <div className="full navBG">
               <div className="center">
@@ -1370,7 +1385,7 @@ export default function CityChurch() {
             </div>
         </CityChurchStyles>
         <LandscapeCityChurchStyles>
-          <Cta />
+          <CtaChurch />
           <Navigation>
             <div className="full navBG">
               <div className="center">
@@ -1590,7 +1605,7 @@ export default function CityChurch() {
           </div>
         </LandscapeCityChurchStyles>
         <TabletCityChurchStyles>
-          <Cta />
+          <CtaChurch />
           <Navigation>
             <div className="full navBG">
               <div className="center">
@@ -1810,7 +1825,7 @@ export default function CityChurch() {
           </div>
         </TabletCityChurchStyles>
         <MobileCityChurchStyles>
-            <Cta />
+            <CtaChurch />
             <MobileNavigation>
               <div id="menuToggle">
                   <input 

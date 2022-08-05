@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const CtaStyles = styled.div`
+    .info {
+        padding: 0 5rem;
+        p {
+            color: var(--white);
+            margin: 1rem 0;
+            font-size: 1.6rem;
+        }
+    }
     // Arrow to indicate the element as open or closed
     .triangle {
         width: 25px;
@@ -31,7 +39,7 @@ const CtaStyles = styled.div`
     #menuToggle input {
         display: flex;
         width: 25px;
-        height: 82px;
+        height: 22rem;
         position: fixed;
         bottom: 25px;
         right: 0;
@@ -40,15 +48,15 @@ const CtaStyles = styled.div`
         z-index: 101;
     }
     #menuToggle input:checked {
-        right: 63vmin;
+        right: 50rem;
     }
     #menuToggle .trigger {
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
         background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     }
     #menu {
-        width: 66vmin;
-        height: 8rem;
+        width: 52rem;
+        height: 22rem;
         display: flex;
         justify-content: center;
         position: fixed;
@@ -83,7 +91,7 @@ const CtaStyles = styled.div`
     // Styling the links as buttons
     .buttonContainer {
         display: flex;
-        padding: 2rem;
+        padding: 1rem 2rem 1rem 4rem;
         a {
             background-color: var(--red);
             color: var(--white);
@@ -113,7 +121,14 @@ const CtaStyles = styled.div`
             }
         }
         #menu {
-            height: 12rem;
+            height: 27rem;
+            width: 51rem;
+        }
+        #menuToggle input {
+            height: 27rem;
+            &:checked {
+                right: 48rem;
+            }
         }
     }
     /* Hide menu on small screens */
@@ -126,6 +141,14 @@ const CtaStyles = styled.div`
 `;
 
 const LandscapeCtaStyles = styled.div`
+    .info {
+        padding: 0 4rem;
+        p {
+            color: var(--white);
+            margin: 1rem 0;
+            font-size: 1.6rem;
+        }
+    }
     // Arrow to indicate the element as open or closed
     .triangle {
         width: 25px;
@@ -155,7 +178,7 @@ const LandscapeCtaStyles = styled.div`
     #menuToggle input {
         display: flex;
         width: 22px;
-        height: 12rem;
+        height: 26rem;
         position: fixed;
         bottom: 25px;
         right: 0;
@@ -164,15 +187,15 @@ const LandscapeCtaStyles = styled.div`
         z-index: 101;
     }
     #menuToggle input:checked {
-        right: 74vmin;
+        right: 49rem;
     }
     #menuToggle .trigger {
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
         background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     }
     #menu {
-        width: 80vmin;
-        height: 12rem;
+        width: 52rem;
+        height: 26rem;
         display: flex;
         justify-content: center;
         position: fixed;
@@ -206,7 +229,7 @@ const LandscapeCtaStyles = styled.div`
     .buttonContainer {
         display: flex;
         flex-flow: column wrap;
-        padding: 2rem;
+        padding: 1rem 2rem 1rem 4rem;
         a {
             background-color: var(--red);
             color: var(--white);
@@ -232,6 +255,14 @@ const LandscapeCtaStyles = styled.div`
 `;
 
 const TabletCtaStyles = styled.div`
+    .info {
+        padding: 0 5rem;
+        p {
+            color: var(--white);
+            margin: 1rem 0;
+            font-size: 1.6rem;
+        }
+    }
     // Arrow to indicate the element as open or closed
     .triangle {
         width: 25px;
@@ -261,7 +292,7 @@ const TabletCtaStyles = styled.div`
     #menuToggle input {
         display: flex;
         width: 25px;
-        height: 82px;
+        height: 22rem;
         position: fixed;
         bottom: 25px;
         right: 0;
@@ -270,15 +301,15 @@ const TabletCtaStyles = styled.div`
         z-index: 101;
     }
     #menuToggle input:checked {
-        right: 63vmin;
+        right: 49rem;
     }
     #menuToggle .trigger {
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
         background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     }
     #menu {
-        width: 66vmin;
-        height: 8rem;
+        width: 52rem;
+        height: 22rem;
         display: flex;
         justify-content: center;
         position: fixed;
@@ -311,7 +342,7 @@ const TabletCtaStyles = styled.div`
     }
     .buttonContainer {
         display: flex;
-        padding: 2rem;
+        padding: 1rem 2rem 1rem 4rem;
         a {
             background-color: var(--red);
             color: var(--white);
@@ -324,26 +355,29 @@ const TabletCtaStyles = styled.div`
             }
         }
         .first {
-            @media only screen and (min-width: 901px) and (max-height: 774px) {
+            @media only screen and (min-width: 901px) and (min-height: 774px) {
                 margin-right: 1rem;
             }
-            @media only screen and (max-width: 900px) and (min-height: 775px){
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 1rem;
+            }
+            @media only screen  and (max-height: 775px) {
                 margin-bottom: 1rem;
             }
         }
     }
     @media only screen and (max-width: 900px) {
         #menu {
-            width: 30rem;
-            height: 13rem;
+            width: 32rem;
+            height: 37rem;
             transform: translate(calc(100% - 22px), 0%);
         }
         #menuToggle input {
             width: 22px;
-            height: 131px;
+            height: 37rem;
         }
         #menuToggle input:checked {
-            right: 28rem;
+            right: 30rem;
         }
         .buttonContainer {
             flex-flow: column wrap;
@@ -363,16 +397,26 @@ const TabletCtaStyles = styled.div`
         .buttonContainer {
             flex-flow: column;
             .first {
+                margin-right: 0;
                 margin-bottom: 1rem;
             }
         }
         #menu {
-            height: 12rem;
+            height: 27rem;
+            width: 51rem;
         }
     }
 `;
 
 const MobileCtaStyles = styled.div`
+    .info {
+        padding: 0 4rem;
+        p {
+            color: var(--white);
+            margin: 1rem 0;
+            font-size: 1.6rem;
+        }
+    }
     // Arrow to indicate the element as open or closed
     .triangle {
         width: 25px;
@@ -402,7 +446,7 @@ const MobileCtaStyles = styled.div`
     #menuToggle input {
         display: flex;
         width: 22px;
-        height: 131px;
+        height: 37rem;
         position: fixed;
         bottom: 25px;
         right: 0;
@@ -411,15 +455,15 @@ const MobileCtaStyles = styled.div`
         z-index: 101;
     }
     #menuToggle input:checked {
-        right: 28rem;
+        right: 30rem;
     }
     #menuToggle .trigger {
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
         background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     }
     #menu {
-        width: 30rem;
-        height: 13rem;
+        width: 32rem;
+        height: 37rem;
         display: flex;
         justify-content: center;
         position: fixed;
@@ -453,7 +497,7 @@ const MobileCtaStyles = styled.div`
     .buttonContainer {
         display: flex;
         flex-flow: column wrap;
-        padding: 2rem;
+        padding: 1rem 2rem 1rem 4rem;
         a {
             background-color: var(--red);
             color: var(--white);
@@ -476,15 +520,15 @@ const MobileCtaStyles = styled.div`
     }
     @media only screen and (max-width: 400px) {
         #menu {
-            width: 24rem;
-            height: 14rem;
+            width: 26rem;
+            height: 42rem;
             transform: translate(calc(100% - 20px), 0%);
         }
         #menuToggle input {
             width: 20px;
-            height: 14rem;
+            height: 42rem;
             &:checked {
-                right: 22rem;
+                right: 24rem;
             }
         }
 
@@ -513,20 +557,32 @@ export default function Cta() {
                 />
                 <div className='menuContainer' id='menu'>
                     <div className='triangle trigger' />
-                    <div className='buttonContainer'>
-                        <a 
-                            href='https://ericphifer.com/contact' 
-                            className='buttonesque first' 
-                        >
-                            Have Questions? Contact Me
-                        </a>
-                        <a 
-                            href='' 
-                            className='buttonesque' 
-                            rel='noreferrer noopener'
-                        >
-                            Build this Site for Me
-                        </a>
+                    <div className='flex'>
+                        <div className='info'>
+                            <p>
+                                This template includes the design &amp; build of your website with 12 months of website maintenance. 
+                            </p>
+                            <p>
+                                You will provide content - words and images - unless you select otherwise at checkout.
+                            </p>
+                            <p> 
+                                Need something customized? Send me a message.
+                            </p>
+                        </div>
+                        <div className='buttonContainer'>
+                            <a 
+                                href='https://ericphifer.com/contact' 
+                                className='buttonesque first' 
+                                >
+                                Have Questions? Contact Me
+                            </a>
+                            <a 
+                                href='https://buy.stripe.com/cN2165gw1982fmw000' 
+                                className='buttonesque' 
+                                >
+                                Build this Site for Me
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -540,20 +596,32 @@ export default function Cta() {
                 />
                 <div className='menuContainer' id='menu'>
                     <div className='triangle trigger' />
-                    <div className='buttonContainer'>
-                        <a 
-                            href='https://ericphifer.com/contact' 
-                            className='buttonesque first' 
-                        >
-                            Have Questions? Contact Me
-                        </a>
-                        <a 
-                            href='' 
-                            className='buttonesque' 
-                            rel='noreferrer noopener'
-                        >
-                            Build this Site for Me
-                        </a>
+                    <div className='flex'>
+                        <div className='info'>
+                            <p>
+                                This template includes the design &amp; build of your website with 12 months of website maintenance. 
+                            </p>
+                            <p>
+                                You will provide content - words and images - unless you select otherwise at checkout.
+                            </p>
+                            <p> 
+                                Need something customized? Send me a message.
+                            </p>
+                        </div>
+                        <div className='buttonContainer'>
+                            <a 
+                                href='https://ericphifer.com/contact' 
+                                className='buttonesque first' 
+                            >
+                                Have Questions? Contact Me
+                            </a>
+                            <a 
+                                href='https://buy.stripe.com/cN2165gw1982fmw000' 
+                                className='buttonesque' 
+                            >
+                                Build this Site for Me
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -567,20 +635,32 @@ export default function Cta() {
                 />
                 <div className='menuContainer' id='menu'>
                     <div className='triangle trigger' />
-                    <div className='buttonContainer'>
-                        <a 
-                            href='https://ericphifer.com/contact' 
-                            className='buttonesque first' 
-                        >
-                            Have Questions? Contact Me
-                        </a>
-                        <a 
-                            href='' 
-                            className='buttonesque' 
-                            rel='noreferrer noopener'
-                        >
-                            Build this Site for Me
-                        </a>
+                    <div className='flex'>
+                        <div className='info'>
+                            <p>
+                                This template includes the design &amp; build of your website with 12 months of website maintenance. 
+                            </p>
+                            <p>
+                                You will provide content - words and images - unless you select otherwise at checkout.
+                            </p>
+                            <p> 
+                                Need something customized? Send me a message.
+                            </p>
+                        </div>
+                        <div className='buttonContainer'>
+                            <a 
+                                href='https://ericphifer.com/contact' 
+                                className='buttonesque first' 
+                            >
+                                Have Questions? Contact Me
+                            </a>
+                            <a 
+                                href='https://buy.stripe.com/cN2165gw1982fmw000' 
+                                className='buttonesque' 
+                            >
+                                Build this Site for Me
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -594,17 +674,30 @@ export default function Cta() {
                 />
                 <div className='menuContainer' id='menu'>
                     <div className='triangle trigger' />
-                    <div className='buttonContainer'>
-                        <a href='https://ericphifer.com/contact' 
-                        className='buttonesque first' 
-                        rel='noreferrer noopener'>
-                            Have Questions? Contact Me
-                        </a>
-                        <a href='' 
-                        className='buttonesque' 
-                        rel='noreferrer noopener'>
-                            Build this Site for Me
-                        </a>
+                    <div className='flex'>
+                        <div className='info'>
+                            <p>
+                                This template includes the design &amp; build of your website with 12 months of website maintenance. 
+                            </p>
+                            <p>
+                                You will provide content - words and images - unless you select otherwise at checkout.
+                            </p>
+                            <p> 
+                                Need something customized? Send me a message.
+                            </p>
+                        </div>
+                        <div className='buttonContainer'>
+                            <a href='https://ericphifer.com/contact' 
+                            className='buttonesque first' 
+                            rel='noreferrer noopener'>
+                                Have Questions? Contact Me
+                            </a>
+                            <a href='https://buy.stripe.com/cN2165gw1982fmw000' 
+                            className='buttonesque' 
+                            rel='noreferrer noopener'>
+                                Build this Site for Me
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
