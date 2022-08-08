@@ -832,7 +832,7 @@ const MobileCityChurchStyles = styled.div`
         margin: 0 auto;
         padding: 1rem 2rem;
         color: var(--white);
-        font-size: 1.5rem;
+        font-size: 1.9rem;
       }
     }
     section {
@@ -1246,8 +1246,11 @@ export default function CityChurch() {
                 </div>
               </div>
               <div className='content'>
-                  <p>Jesus tells his followers in Luke 9 to "take up your cross daily" and in Matthew 11 He says "my yoke is easy and my burden is light".</p>
-                  <p>If you believe in Jesus alone for your salvation then his followers have a responsibility to follow what He says and as we follow we find that Jesus carries those responsibilities along side us.</p>
+                  <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
+                  <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
+                  <p>Man was committed to defy moral and natural order - committed to sin.</p>
+                  <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
+                  <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
               </div>
               <section className='inline' id='history'>
                 <div className='left'>
@@ -1466,8 +1469,11 @@ export default function CityChurch() {
               </div>
             </div>
             <div className='content'>
-                <p>Jesus tells his followers in Luke 9 to "take up your cross daily" and in Matthew 11 He says "my yoke is easy and my burden is light".</p>
-                <p>If you believe in Jesus alone for your salvation then his followers have a responsibility to follow what He says and as we follow we find that Jesus carries those responsibilities along side us.</p>
+              <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
+              <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
+              <p>Man was committed to defy moral and natural order - committed to sin.</p>
+              <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
+              <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
             </div>
             <section className='responsiveFlex center' id='history'>
               <div className='left'>
@@ -1686,8 +1692,11 @@ export default function CityChurch() {
               </div>
             </div>
             <div className='content'>
-                <p>Jesus tells his followers in Luke 9 to "take up your cross daily" and in Matthew 11 He says "my yoke is easy and my burden is light".</p>
-                <p>If you believe in Jesus alone for your salvation then his followers have a responsibility to follow what He says and as we follow we find that Jesus carries those responsibilities along side us.</p>
+              <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
+              <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
+              <p>Man was committed to defy moral and natural order - committed to sin.</p>
+              <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
+              <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
             </div>
             <section className='responsiveFlex center' id='history'>
               <div className='left'>
@@ -1873,13 +1882,16 @@ export default function CityChurch() {
                   <div className='wordContainer'>
                     <h1>City Church</h1>
                     <h2 className='increase'>Come join us!</h2>
-                    <h2>Sundays from 9-10am and 11am-12pm</h2>
+                    <h2>Sundays 9-10am &amp; 11am-12pm</h2>
                   </div>
                 </div>
                 <div className='content'>
-                  <p>Jesus tells his followers in Luke 9 to "take up your cross daily" and in Matthew 11 He says "my yoke is easy and my burden is light".</p>
-                  <p>If you believe in Jesus alone for your salvation then his followers have a responsibility to follow what He says and as we follow we find that Jesus carries those responsibilities along side us.</p>
-              </div>
+                  <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
+                  <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
+                  <p>Man was committed to defy moral and natural order - committed to sin.</p>
+                  <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
+                  <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+                </div>
                 <section className='flex center' id='history'>
                   <div className='left'>
                     <div className='section1Img' />
