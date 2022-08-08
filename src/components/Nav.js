@@ -887,7 +887,7 @@ const fixedNav = {
         <div className="nodeParser" style={ fixedNav } key={node.id}>
           <NavStyles>
             <div className="navContainer">
-              <div className="logo">
+              <Link to='https://ericphifer.com' className="logo">
                 <SanityImage 
                   {...node.mainlogo}
                   alt={node.mainalt}
@@ -896,7 +896,7 @@ const fixedNav = {
                     auto: 'format',
                   }}
                 />
-              </div>
+              </Link>
               <nav>
                 <ul className='navigation'>
                   <a href="https://ericphifer.com">
@@ -954,7 +954,7 @@ const fixedNav = {
           </NavStyles>
           <LandscapeNavStyles>
             <div className="navContainer">
-              <div className="logo">
+              <Link to='https://ericphifer.com' className="logo">
                 <SanityImage 
                   {...node.mainlogo}
                   alt={node.mainalt}
@@ -963,7 +963,7 @@ const fixedNav = {
                     auto: 'format',
                   }}
                 />
-              </div>
+              </Link>
               <div id="menuToggle">
                 <input 
                   type="checkbox" 
@@ -1034,7 +1034,7 @@ const fixedNav = {
           </LandscapeNavStyles>
           <TabletNavStyles>
             <div className="navContainer">
-              <div className="logo">
+              <Link to='https://ericphifer.com' className="logo">
                 <SanityImage 
                   {...node.mainlogo}
                   alt={node.mainalt}
@@ -1043,7 +1043,7 @@ const fixedNav = {
                     auto: 'format',
                   }}
                 />
-              </div>
+              </Link>
               <nav>
                 <ul className='navigation'>
                   <a href="https://ericphifer.com" rel="noreferrer">
@@ -1101,7 +1101,7 @@ const fixedNav = {
           </TabletNavStyles>
           <MobileNavStyles>
             <div className="navContainer">
-              <div className="logo">
+              <Link to='https://ericphifer.com' className="logo">
                 <SanityImage 
                   {...node.mainlogo}
                   alt={node.mainalt}
@@ -1110,7 +1110,7 @@ const fixedNav = {
                     auto: 'format',
                   }}
                 />
-              </div>
+              </Link>
               <nav>
                 <ul className='navigation'>
                   <a href="https://ericphifer.com" rel="noreferrer">
