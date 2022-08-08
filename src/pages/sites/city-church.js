@@ -1391,7 +1391,7 @@ export default function CityChurch() {
               <div className="center">
                 <nav>
                   <ul className='inline center'>
-                      <a href={history}>
+                      <a href='https://services.ericphifer.com/sites/city-church#history'>
                         <li>History</li>
                       </a>
                       <a href='https://services.ericphifer.com/sites/city-church#worship'>
@@ -1429,7 +1429,7 @@ export default function CityChurch() {
                   <div className="center">
                     <nav>
                       <ul className='flex center'>
-                          <a href={history}>
+                          <a href='https://services.ericphifer.com/sites/city-church#history'>
                             <li>History</li>
                           </a>
                           <a href='https://services.ericphifer.com/sites/city-church#worship'>
@@ -1611,7 +1611,7 @@ export default function CityChurch() {
               <div className="center">
                 <nav>
                   <ul className='inline center'>
-                      <a href={history}>
+                      <a href='https://services.ericphifer.com/sites/city-church#history'>
                         <li>History</li>
                       </a>
                       <a href='https://services.ericphifer.com/sites/city-church#worship'>
@@ -1649,7 +1649,7 @@ export default function CityChurch() {
                   <div className="center">
                     <nav>
                       <ul className='flex center'>
-                          <a href={history}>
+                          <a href='https://services.ericphifer.com/sites/city-church#history'>
                             <li>History</li>
                           </a>
                           <a href='https://services.ericphifer.com/sites/city-church#worship'>
@@ -1841,7 +1841,7 @@ export default function CityChurch() {
                       <div className="center">
                         <nav>
                           <ul className='flex center'>
-                              <a href={history}>
+                              <a href='https://services.ericphifer.com/sites/city-church#history'>
                                 <li>History</li>
                               </a>
                               <a href='https://services.ericphifer.com/sites/city-church#worship'>

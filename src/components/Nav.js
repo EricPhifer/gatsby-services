@@ -873,7 +873,7 @@ export default function Nav() {
 
 const nodes = navigation.nodes;
 const [checked, setChecked] = useState(true || '');
-const [menuchecked, setMenuChecked] = useState(true || '');
+const [menuchecked, setMenuChecked] = useState(false || '');
 const [footerchecked, setFooterChecked] = useState(true || '');
 const fixedNav = {
   position: "fixed",
