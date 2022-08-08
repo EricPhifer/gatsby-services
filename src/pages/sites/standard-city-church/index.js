@@ -585,7 +585,7 @@ const MobileStandardCityChurchStyles = styled.div`
         margin: 0 auto;
         padding: 1rem 2rem;
         color: var(--white);
-        font-size: 1.5rem;
+        font-size: 1.9rem;
       }
     }
     section {
@@ -899,11 +899,11 @@ export default function StandardCityChurch() {
                 </div>
               </div>
               <div className='content'>
-                  <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
-                  <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
-                  <p>Man was committed to defy moral and natural order - committed to sin.</p>
-                  <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
-                  <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+                <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
+                <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
+                <p>Man was committed to defy moral and natural order - committed to sin.</p>
+                <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
+                <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
               </div>
               <section className='inline' id='history'>
                 <div className='left'>

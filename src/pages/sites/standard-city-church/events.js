@@ -639,7 +639,7 @@ const MobileCityChurchStyles = styled.div`
         margin: 0 auto;
         padding: 1rem 2rem;
         color: var(--white);
-        font-size: 1.5rem;
+        font-size: 1.9rem;
       }
     }
     section {
