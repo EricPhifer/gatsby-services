@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import CtaStandardChurch from '../../../components/CtaStandardChurch';
 
 // Images
-import biblevector from '../../../assets/images/books-bible-vector.jpg';
-import pews from '../../../assets/images/church-pews-sanctuary-reduced.jpg';
-import pastor from '../../../assets/images/pastor-example.png';
-import bible from '../../../assets/images/quiet-time-bible-coffee-study.jpg';
+import biblevector from '../../../assets/images/city-church/books-bible-vector.jpg';
+import pews from '../../../assets/images/city-church/church-pews-sanctuary-reduced.jpg';
+import pastor from '../../../assets/images/city-church/pastor-example.png';
+import bible from '../../../assets/images/city-church/quiet-time-bible-coffee-study.jpg';
 import { Link } from 'gatsby';
 
 const CityChurchStyles = styled.div`

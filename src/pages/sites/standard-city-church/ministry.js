@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import CtaStandardChurch from '../../../components/CtaStandardChurch';
 
 // Images
-import biblevector from '../../../assets/images/books-bible-vector.jpg';
-import history from '../../../assets/images/christ-jesus-crucified-cross-redemption-redeemed-salvation-saved-death-history-historical.jpg';
-import study from '../../../assets/images/church-pews-bible-message-study-sermon.jpg';
-import ministry from '../../../assets/images/circle-people-together-hands.jpg';
+import biblevector from '../../../assets/images/city-church/books-bible-vector.jpg';
+import history from '../../../assets/images/city-church/christ-jesus-crucified-cross-redemption-redeemed-salvation-saved-death-history-historical.jpg';
+import study from '../../../assets/images/city-church/church-pews-bible-message-study-sermon.jpg';
+import ministry from '../../../assets/images/city-church/circle-people-together-hands.jpg';
 import { Link } from 'gatsby';
 
 const CityChurchStyles = styled.div`

@@ -17,7 +17,7 @@ const HomeStyles = styled.div`
     width: 100%;
   }
   h1 {
-    margin: 5rem 0 0;
+    margin: 5rem 0 0 4rem;
     text-transform: uppercase;
     text-align: center;
     font-size: 8rem;
@@ -104,13 +104,14 @@ const HomeStyles = styled.div`
       }
     }
     h3 {
-      margin-top: 7rem;
+      margin-top: 5rem;
       color: var(--white);
       text-align: center;
       text-transform: uppercase;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
     p {
+      min-height: 12rem;
       padding: 2rem;
       color: var(--white);
       font-size: 1.5rem;

@@ -5,12 +5,12 @@ import useForm from '../../utils/useForm';
 import useContact from '../../utils/useContact';
 
 // Images
-import biblevector from '../../assets/images/books-bible-vector.jpg';
-import cross from '../../assets/images/carry-cross-daily-man-burden-field.jpg';
-import cathedral from '../../assets/images/church-cathedral-stained-glass-windows-pews.jpg';
-import history from '../../assets/images/christ-jesus-crucified-cross-redemption-redeemed-salvation-saved-death-history-historical.jpg';
-import study from '../../assets/images/church-pews-bible-message-study-sermon.jpg';
-import ministry from '../../assets/images/circle-people-together-hands.jpg';
+import biblevector from '../../assets/images/city-church/books-bible-vector.jpg';
+import cross from '../../assets/images/city-church/carry-cross-daily-man-burden-field.jpg';
+import cathedral from '../../assets/images/city-church/church-cathedral-stained-glass-windows-pews.jpg';
+import history from '../../assets/images/city-church/christ-jesus-crucified-cross-redemption-redeemed-salvation-saved-death-history-historical.jpg';
+import study from '../../assets/images/city-church/church-pews-bible-message-study-sermon.jpg';
+import ministry from '../../assets/images/city-church/circle-people-together-hands.jpg';
 
 const CityChurchStyles = styled.div`
   width: calc(100vw - 100px);
@@ -579,7 +579,7 @@ const TabletCityChurchStyles = styled.div`
       }
     }
     .textSide {
-      height: 100vh;
+      height: 100rem;
       background-color: var(--white);
       opacity: 0.7;
       @media only screen and (max-width: 900px) {
@@ -601,7 +601,7 @@ const TabletCityChurchStyles = styled.div`
     // Image Styles
     .section1Img {
       width: 100%;
-      height: 100vh;
+      height: 100rem;
       background-image: url(${history});
       background-size: cover;
       background-repeat: norepeat;
@@ -615,7 +615,7 @@ const TabletCityChurchStyles = styled.div`
     }
     .section2Img {
       width: 100%;
-      height: 100vh;
+      height: 100rem;
       background-image: url(${cathedral});
       background-size: cover;
       background-repeat: norepeat;
@@ -629,7 +629,7 @@ const TabletCityChurchStyles = styled.div`
     }
     .section3Img {
       width: 100%;
-      height: 100vh;
+      height: 100rem;
       background-image: url(${ministry});
       background-size: cover;
       background-repeat: norepeat;
@@ -643,7 +643,7 @@ const TabletCityChurchStyles = styled.div`
     }
     .section4Img {
       width: 100%;
-      height: 100vh;
+      height: 100rem;
       background-image: url(${study});
       background-size: cover;
       background-repeat: norepeat;
@@ -1215,8 +1215,8 @@ export default function CityChurch() {
                       <a href='https://services.ericphifer.com/sites/city-church#history'>
                         <li>History</li>
                       </a>
-                      <a href='https://services.ericphifer.com/sites/city-church#worship'>
-                        <li>Worship</li>
+                      <a href='https://services.ericphifer.com/sites/city-church#beliefs'>
+                        <li>Beliefs</li>
                       </a>
                       <a href='https://services.ericphifer.com/sites/city-church#ministry'>
                         <li>Our Ministries</li>
@@ -1246,11 +1246,19 @@ export default function CityChurch() {
                 </div>
               </div>
               <div className='content'>
-                  <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
-                  <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
-                  <p>Man was committed to defy moral and natural order - committed to sin.</p>
-                  <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
-                  <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+                <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
+                <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
+                <p>Man was committed to defy moral and natural order - committed to sin.</p>
+                <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
+                <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+
+                <p>Romans 10:9-10 says, “If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”</p>
+
+                <p>Whether you are a “seasoned” Christian or unsure of what you believe, we hope you will join us this Sunday! We want to walk alongside you wherever you are on your faith journey.</p>
+
+                <p>Sunday School 9:30a</p>
+                <p>Sunday Worship 10:30a, 5:30p</p>
+                <p>Wednesday Prayer 6:00p</p>
               </div>
               <section className='inline' id='history'>
                 <div className='left'>
@@ -1258,17 +1266,18 @@ export default function CityChurch() {
                 </div>
                 <div className='right textSide'>
                   <h3>History</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <p>Our founding pastor, Alan Boyd, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
+                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Boyd at the helm. In 2004 Pastor Boyd and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
+                  <p>Home Church cares about our community and continues the outreach programs started in 1987, as well as several others. Our services remain what they have always been; simple and straightforward. We preach the word of God from the word of God, we sing hymns with a piano accompaniment, we pray together. We hope anyone who joins us for a service will feel like they are coming home as they draw nearer to Christ.</p>
                 </div>
               </section>
-              <section className='inline' id='worship'>
+              <section className='inline' id='beliefs'>
                 <div className='left textSide'>
-                  <h3>Worship</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <h3>Beliefs</h3>
+                  <p>{`We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)`}</p> 
+                  <p>{`We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)`}</p> 
+                  <p>{`We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)`}</p>
+                  <p>{`Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.`}</p>
                 </div>
                 <div className='right'>
                   <div className='section2Img' />
@@ -1280,17 +1289,28 @@ export default function CityChurch() {
                 </div>
                 <div className='right textSide'>
                   <h3>Our Ministries</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p>
+
+                  <p>Please email Elder Alan Boyd at homechurchoutreach@snailmail.com for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
+                  <ul>
+                    <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
+                    <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
+                    <li>Taxes to Tithes - periodic financial workshops and how tos from a biblical viewpoint.</li>
+                    <li>Messages for Missionaries - correspondence with the missionaries Home Church supports.</li>
+                    <li>From Atheist to Apologists - discussion and training in a defense of the faith.</li> 
+                    <li>Vacation Bible School - annual week-long event for children K-7th grade.</li>
+                  </ul>
                 </div>
               </section>
               <section className='inline' id='study'>
                 <div className='left textSide'>
                   <h3>Bible Studies</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <p>{`Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. Please contact Elder Evan Gavries at homechurchstudies@snailmail.com with any questions.`}</p>
+                  <ul>
+                    <li>{`Men’s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)`}</li>
+                    <li>{`Women’s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)`}</li>
+                    <li>{`Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)`}</li>
+                  </ul>
                 </div>
                 <div className='right'>
                   <div className='section4Img' />
@@ -1397,8 +1417,8 @@ export default function CityChurch() {
                       <a href='https://services.ericphifer.com/sites/city-church#history'>
                         <li>History</li>
                       </a>
-                      <a href='https://services.ericphifer.com/sites/city-church#worship'>
-                        <li>Worship</li>
+                      <a href='https://services.ericphifer.com/sites/city-church#beliefs'>
+                        <li>Beliefs</li>
                       </a>
                       <a href='https://services.ericphifer.com/sites/city-church#ministry'>
                         <li>Our Ministries</li>
@@ -1435,8 +1455,8 @@ export default function CityChurch() {
                           <a href='https://services.ericphifer.com/sites/city-church#history'>
                             <li>History</li>
                           </a>
-                          <a href='https://services.ericphifer.com/sites/city-church#worship'>
-                            <li>Worship</li>
+                          <a href='https://services.ericphifer.com/sites/city-church#beliefs'>
+                            <li>Beliefs</li>
                           </a>
                           <a href='https://services.ericphifer.com/sites/city-church#ministry'>
                             <li>Our Ministries</li>
@@ -1474,6 +1494,14 @@ export default function CityChurch() {
               <p>Man was committed to defy moral and natural order - committed to sin.</p>
               <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
               <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+
+              <p>Romans 10:9-10 says, “If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”</p>
+
+              <p>Whether you are a “seasoned” Christian or unsure of what you believe, we hope you will join us this Sunday! We want to walk alongside you wherever you are on your faith journey.</p>
+
+              <p>Sunday School 9:30a</p>
+              <p>Sunday Worship 10:30a, 5:30p</p>
+              <p>Wednesday Prayer 6:00p</p>
             </div>
             <section className='responsiveFlex center' id='history'>
               <div className='left'>
@@ -1481,17 +1509,18 @@ export default function CityChurch() {
               </div>
               <div className='right textSide'>
                 <h3>History</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              </div>
+                  <p>Our founding pastor, Alan Boyd, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
+                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Boyd at the helm. In 2004 Pastor Boyd and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
+                  <p>Home Church cares about our community and continues the outreach programs started in 1987, as well as several others. Our services remain what they have always been; simple and straightforward. We preach the word of God from the word of God, we sing hymns with a piano accompaniment, we pray together. We hope anyone who joins us for a service will feel like they are coming home as they draw nearer to Christ.</p>
+                </div>
             </section>
-            <section className='responsiveFlex invert center' id='worship'>
+            <section className='responsiveFlex invert center' id='beliefs'>
               <div className='left textSide'>
-                <h3>Worship</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+              <h3>Beliefs</h3>
+                  <p>{`We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)`}</p> 
+                  <p>{`We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)`}</p> 
+                  <p>{`We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)`}</p>
+                  <p>{`Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.`}</p>
               </div>
               <div className='right'>
                 <div className='section2Img' />
@@ -1502,18 +1531,29 @@ export default function CityChurch() {
                 <div className='section3Img' />
               </div>
               <div className='right textSide'>
-                <h3>Our Ministries</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+              <h3>Our Ministries</h3>
+                  <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p>
+
+                  <p>Please email Elder Alan Boyd at homechurchoutreach@snailmail.com for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
+                  <ul>
+                    <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
+                    <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
+                    <li>Taxes to Tithes - periodic financial workshops and how tos from a biblical viewpoint.</li>
+                    <li>Messages for Missionaries - correspondence with the missionaries Home Church supports.</li>
+                    <li>From Atheist to Apologists - discussion and training in a defense of the faith.</li> 
+                    <li>Vacation Bible School - annual week-long event for children K-7th grade.</li>
+                  </ul>
               </div>
             </section>
             <section className='responsiveFlex invert center' id='study'>
               <div className='left textSide'>
                 <h3>Bible Studies</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>{`Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. Please contact Elder Evan Gavries at homechurchstudies@snailmail.com with any questions.`}</p>
+                  <ul>
+                    <li>{`Men’s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)`}</li>
+                    <li>{`Women’s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)`}</li>
+                    <li>{`Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)`}</li>
+                  </ul>
               </div>
               <div className='right'>
                 <div className='section4Img' />
@@ -1620,8 +1660,8 @@ export default function CityChurch() {
                       <a href='https://services.ericphifer.com/sites/city-church#history'>
                         <li>History</li>
                       </a>
-                      <a href='https://services.ericphifer.com/sites/city-church#worship'>
-                        <li>Worship</li>
+                      <a href='https://services.ericphifer.com/sites/city-church#beliefs'>
+                        <li>Beliefs</li>
                       </a>
                       <a href='https://services.ericphifer.com/sites/city-church#ministry'>
                         <li>Our Ministries</li>
@@ -1658,8 +1698,8 @@ export default function CityChurch() {
                           <a href='https://services.ericphifer.com/sites/city-church#history'>
                             <li>History</li>
                           </a>
-                          <a href='https://services.ericphifer.com/sites/city-church#worship'>
-                            <li>Worship</li>
+                          <a href='https://services.ericphifer.com/sites/city-church#beliefs'>
+                            <li>Beliefs</li>
                           </a>
                           <a href='https://services.ericphifer.com/sites/city-church#ministry'>
                             <li>Our Ministries</li>
@@ -1697,6 +1737,13 @@ export default function CityChurch() {
               <p>Man was committed to defy moral and natural order - committed to sin.</p>
               <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
               <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+              <p>Romans 10:9-10 says, “If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”</p>
+
+              <p>Whether you are a “seasoned” Christian or unsure of what you believe, we hope you will join us this Sunday! We want to walk alongside you wherever you are on your faith journey.</p>
+
+              <p>Sunday School 9:30a</p>
+              <p>Sunday Worship 10:30a, 5:30p</p>
+              <p>Wednesday Prayer 6:00p</p>
             </div>
             <section className='responsiveFlex center' id='history'>
               <div className='left'>
@@ -1704,17 +1751,18 @@ export default function CityChurch() {
               </div>
               <div className='right textSide'>
                 <h3>History</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>Our founding pastor, Alan Boyd, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
+                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Boyd at the helm. In 2004 Pastor Boyd and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
+                  <p>Home Church cares about our community and continues the outreach programs started in 1987, as well as several others. Our services remain what they have always been; simple and straightforward. We preach the word of God from the word of God, we sing hymns with a piano accompaniment, we pray together. We hope anyone who joins us for a service will feel like they are coming home as they draw nearer to Christ.</p>
               </div>
             </section>
-            <section className='responsiveFlex invert center' id='worship'>
+            <section className='responsiveFlex invert center' id='beliefs'>
               <div className='left textSide'>
-                <h3>Worship</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>Beliefs</h3>
+                <p>{`We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)`}</p> 
+                  <p>{`We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)`}</p> 
+                  <p>{`We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)`}</p>
+                  <p>{`Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.`}</p>
               </div>
               <div className='right'>
                 <div className='section2Img' />
@@ -1726,18 +1774,29 @@ export default function CityChurch() {
               </div>
               <div className='right textSide'>
                 <h3>Our Ministries</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p>
+
+                  <p>Please email Elder Alan Boyd at homechurchoutreach@snailmail.com for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
+                  <ul>
+                    <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
+                    <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
+                    <li>Taxes to Tithes - periodic financial workshops and how tos from a biblical viewpoint.</li>
+                    <li>Messages for Missionaries - correspondence with the missionaries Home Church supports.</li>
+                    <li>From Atheist to Apologists - discussion and training in a defense of the faith.</li> 
+                    <li>Vacation Bible School - annual week-long event for children K-7th grade.</li>
+                  </ul>
               </div>
             </section>
             <section className='responsiveFlex invert center' id='study'>
               <div className='left textSide'>
                 <h3>Bible Studies</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              </div>
+                <p>{`Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. Please contact Elder Evan Gavries at homechurchstudies@snailmail.com with any questions.`}</p>
+                  <ul>
+                    <li>{`Men’s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)`}</li>
+                    <li>{`Women’s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)`}</li>
+                    <li>{`Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)`}</li>
+                  </ul>
+                </div>
               <div className='right'>
                 <div className='section4Img' />
               </div>
@@ -1853,8 +1912,8 @@ export default function CityChurch() {
                               <a href='https://services.ericphifer.com/sites/city-church#history'>
                                 <li>History</li>
                               </a>
-                              <a href='https://services.ericphifer.com/sites/city-church#worship'>
-                                <li>Worship</li>
+                              <a href='https://services.ericphifer.com/sites/city-church#beliefs'>
+                                <li>Beliefs</li>
                               </a>
                               <a href='https://services.ericphifer.com/sites/city-church#ministry'>
                                 <li>Our Ministries</li>
@@ -1891,6 +1950,13 @@ export default function CityChurch() {
                   <p>Man was committed to defy moral and natural order - committed to sin.</p>
                   <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
                   <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+                   <p>Romans 10:9-10 says, “If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”</p>
+
+                  <p>Whether you are a “seasoned” Christian or unsure of what you believe, we hope you will join us this Sunday! We want to walk alongside you wherever you are on your faith journey.</p>
+
+                  <p>Sunday School 9:30a</p>
+                  <p>Sunday Worship 10:30a, 5:30p</p>
+                  <p>Wednesday Prayer 6:00p</p>
                 </div>
                 <section className='flex center' id='history'>
                   <div className='left'>
@@ -1898,17 +1964,18 @@ export default function CityChurch() {
                   </div>
                   <div className='right textSide'>
                     <h3>History</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <p>Our founding pastor, Alan Boyd, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
+                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Boyd at the helm. In 2004 Pastor Boyd and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
+                  <p>Home Church cares about our community and continues the outreach programs started in 1987, as well as several others. Our services remain what they have always been; simple and straightforward. We preach the word of God from the word of God, we sing hymns with a piano accompaniment, we pray together. We hope anyone who joins us for a service will feel like they are coming home as they draw nearer to Christ.</p>
                   </div>
                 </section>
-                <section className='flex invert center' id='worship'>
+                <section className='flex invert center' id='beliefs'>
                   <div className='left textSide'>
-                    <h3>Worship</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <h3>Beliefs</h3>
+                    <p>{`We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)`}</p> 
+                  <p>{`We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)`}</p> 
+                  <p>{`We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)`}</p>
+                  <p>{`Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.`}</p>
                   </div>
                   <div className='right'>
                     <div className='section2Img' />
@@ -1920,17 +1987,28 @@ export default function CityChurch() {
                   </div>
                   <div className='right textSide'>
                     <h3>Our Ministries</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p>
+
+                    <p>Please email Elder Alan Boyd at homechurchoutreach@snailmail.com for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
+                    <ul>
+                      <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
+                      <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
+                      <li>Taxes to Tithes - periodic financial workshops and how tos from a biblical viewpoint.</li>
+                      <li>Messages for Missionaries - correspondence with the missionaries Home Church supports.</li>
+                      <li>From Atheist to Apologists - discussion and training in a defense of the faith.</li> 
+                      <li>Vacation Bible School - annual week-long event for children K-7th grade.</li>
+                    </ul>
                   </div>
                 </section>
                 <section className='flex invert center' id='study'>
                   <div className='left textSide'>
                     <h3>Bible Studies</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <p>{`Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. Please contact Elder Evan Gavries at homechurchstudies@snailmail.com with any questions.`}</p>
+                  <ul>
+                    <li>{`Men’s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)`}</li>
+                    <li>{`Women’s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)`}</li>
+                    <li>{`Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)`}</li>
+                  </ul>
                   </div>
                   <div className='right'>
                     <div className='section4Img' />

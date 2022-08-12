@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import CtaStandardChurch from '../../../components/CtaStandardChurch';
 
 // Images
-import biblevector from '../../../assets/images/books-bible-vector.jpg';
-import cathedral from '../../../assets/images/church-cathedral-stained-glass-windows-pews.jpg';
-import history from '../../../assets/images/christ-jesus-crucified-cross-redemption-redeemed-salvation-saved-death-history-historical.jpg';
+import biblevector from '../../../assets/images/city-church/books-bible-vector.jpg';
+import cathedral from '../../../assets/images/city-church/church-cathedral-stained-glass-windows-pews.jpg';
+import history from '../../../assets/images/city-church/christ-jesus-crucified-cross-redemption-redeemed-salvation-saved-death-history-historical.jpg';
 import { Link } from 'gatsby';
 
 const StandardCityChurchStyles = styled.div`

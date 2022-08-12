@@ -5,8 +5,8 @@ import useForm from '../../../utils/useForm';
 import useContact from '../../../utils/useContact';
 
 // Images
-import biblevector from '../../../assets/images/books-bible-vector.jpg';
-import cross from '../../../assets/images/carry-cross-daily-man-burden-field.jpg';
+import biblevector from '../../../assets/images/city-church/books-bible-vector.jpg';
+import cross from '../../../assets/images/city-church/carry-cross-daily-man-burden-field.jpg';
 import { Link } from 'gatsby';
 
 const CityChurchStyles = styled.div`

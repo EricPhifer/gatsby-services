@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import CtaStandardChurch from '../../../components/CtaStandardChurch';
 
 // Images
-import biblevector from '../../../assets/images/books-bible-vector.jpg';
-import women from '../../../assets/images/women-study-fellowship.jpg';
-import volunteer from '../../../assets/images/volunteer-name-tag.jpg';
-import waves from '../../../assets/images/water-waves-tide-crashing-rocks.jpg';
+import biblevector from '../../../assets/images/city-church/books-bible-vector.jpg';
+import women from '../../../assets/images/city-church/women-study-fellowship.jpg';
+import volunteer from '../../../assets/images/city-church/volunteer-name-tag.jpg';
+import waves from '../../../assets/images/city-church/water-waves-tide-crashing-rocks.jpg';
 
 const CityChurchStyles = styled.div`
   width: calc(100vw - 100px);
