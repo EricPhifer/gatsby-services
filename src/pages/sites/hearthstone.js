@@ -87,7 +87,7 @@ const HearthstoneStyles = styled.div`
     margin-top: 2rem;
     color: var(--white);
     text-shadow: 1px 0 1px var(--black), 0 1px 1px var(--black), -1px 0 1px var(--black), 0 -1px 1px var(--black);
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .content {
     width: 100%;
@@ -283,6 +283,13 @@ const LandscapeHearthstoneStyles = styled.div`
   .hearthstoneBody {
     position: relative;
   }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255,255,255,0.3);
+    z-index: 5;
+  }
   .background {
     width: 100%;
     height: 100%;
@@ -292,20 +299,17 @@ const LandscapeHearthstoneStyles = styled.div`
     background-size: cover;
     background-repeat: repeat;
     background-position: center center;
-    opacity: 0.4;
   }
-  .overlay {
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    background-color: rgba(255,255,255,0.3);
-    z-index: 5;
+  .header {
+    height: 80vh;
   }
   .wordContainer {
-    max-width: 450px;
-    height: auto;
-    margin: 0 auto;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     position: absolute;
+    top: 10rem;
     z-index: 5;
     .increase {
       font-size: 3rem;
@@ -315,17 +319,25 @@ const LandscapeHearthstoneStyles = styled.div`
     text-align: center;
     color: var(--black);
   }
+  .welcome {
+    margin: 0;
+    font-size: 10rem;
+  }
   h1 {
-    font-family: Georgia;
+    font-family: cursive;
     font-weight: bold;
-    color: maroon;
-    font-size: 6rem;
+    color: darkorchid;
+    font-size: 5rem;
+    text-align: left;
     text-transform: uppercase;
-    text-shadow: 1px 0 5px var(--white), 0 1px 5px var(--white), -1px 0 5px var(--white), 0 -1px 5px var(--white);
-    letter-spacing: 3rem;
+    text-shadow: 1px 0 5px lavendar, 0 1px 5px lavendar, -1px 0 5px lavendar, 0 -1px 5px lavendar;
+    letter-spacing: 1rem;
   }
   h2 {
-    text-shadow: 1px 0 1px var(--white), 0 1px 1px var(--white), -1px 0 1px var(--white), 0 -1px 1px var(--white);
+    margin-top: 2rem;
+    color: var(--white);
+    text-shadow: 1px 0 1px var(--black), 0 1px 1px var(--black), -1px 0 1px var(--black), 0 -1px 1px var(--black);
+    font-size: 2.7rem;
   }
   .content {
     width: 100%;
@@ -342,29 +354,69 @@ const LandscapeHearthstoneStyles = styled.div`
   }
   .shippingLogos {
     width: 100%;
+    height: 30rem;
+    margin-top: 30rem;
+    .logoContainer {
+      margin-right: 2rem;
+    }
     .fedex {
-      width: 100%;
-      height: 700px;
+      width: 400px;
+      height: 11rem;
       background-image: url(${fedex});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
     }
     .ups {
-      width: 100%;
-      height: 700px;
+      width: 15rem;
+      height: 18.5rem;
       background-image: url(${ups});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
     }
     .usps {
-      width: 100%;
-      height: 700px;
+      width: 25rem;
+      height: 30rem;
       background-image: url(${usps});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
+    }
+  }
+
+  // Content Sections
+  .eventSection {
+    width: 100%;
+    min-height: 5rem;
+    padding: 2rem 0;
+    background-color: rgba(0,0,0,0.5);
+    h3, p {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      color: var(--white);
+    }
+    h3 {
+      color: antiquewhite;
+    }
+  }
+
+  .aboutSection {
+    .ownerImg {
+      max-width: 700px;
+      height: 45rem;
+      margin: 0 auto;
+      background-image: url(${owner});
+      background-size: cover;
+      background-repeat: norepeat;
+      background-position: center center;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      font-size: 2rem;
     }
   }
 
@@ -481,6 +533,13 @@ const TabletHearthstoneStyles = styled.div`
   .hearthstoneBody {
     position: relative;
   }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255,255,255,0.3);
+    z-index: 5;
+  }
   .background {
     width: 100%;
     height: 100%;
@@ -490,19 +549,17 @@ const TabletHearthstoneStyles = styled.div`
     background-size: cover;
     background-repeat: repeat;
     background-position: center center;
-    opacity: 0.4;
   }
-  .overlay {
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    background-color: rgba(255,255,255,0.3);
-    z-index: 5;
+  .header {
+    height: 80vh;
   }
   .wordContainer {
-    max-width: 450px;
-    margin: 0 auto;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     position: absolute;
+    top: 10rem;
     z-index: 5;
     .increase {
       font-size: 3rem;
@@ -512,17 +569,26 @@ const TabletHearthstoneStyles = styled.div`
     text-align: center;
     color: var(--black);
   }
+  .welcome {
+    margin: 0;
+    font-size: 10rem;
+  }
   h1 {
-    font-family: Georgia;
+    font-family: cursive;
     font-weight: bold;
-    color: maroon;
-    font-size: 6rem;
+    color: darkorchid;
+    font-size: 5rem;
+    text-align: left;
     text-transform: uppercase;
-    text-shadow: 1px 0 5px var(--white), 0 1px 5px var(--white), -1px 0 5px var(--white), 0 -1px 5px var(--white);
-    letter-spacing: 3rem;
+    text-shadow: 1px 0 5px lavendar, 0 1px 5px lavendar, -1px 0 5px lavendar, 0 -1px 5px lavendar;
+    letter-spacing: 1rem;
   }
   h2 {
-    text-shadow: 1px 0 1px var(--white), 0 1px 1px var(--white), -1px 0 1px var(--white), 0 -1px 1px var(--white);
+    max-width: 900px;
+    margin-top: 2rem;
+    color: var(--white);
+    text-shadow: 1px 0 1px var(--black), 0 1px 1px var(--black), -1px 0 1px var(--black), 0 -1px 1px var(--black);
+    font-size: 2.7rem;
   }
   .content {
     width: 100%;
@@ -539,29 +605,69 @@ const TabletHearthstoneStyles = styled.div`
   }
   .shippingLogos {
     width: 100%;
+    height: 30rem;
+    margin-top: 30rem;
+    .logoContainer {
+      margin-right: 2rem;
+    }
     .fedex {
-      width: 100%;
-      height: 700px;
+      width: 300px;
+      height: 8rem;
       background-image: url(${fedex});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
     }
     .ups {
-      width: 100%;
-      height: 700px;
+      width: 11rem;
+      height: 13.5rem;
       background-image: url(${ups});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
     }
     .usps {
-      width: 100%;
-      height: 700px;
+      width: 20rem;
+      height: 20rem;
       background-image: url(${usps});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
+    }
+  }
+
+  // Content Sections
+  .eventSection {
+    width: 100%;
+    min-height: 5rem;
+    padding: 2rem 0;
+    background-color: rgba(0,0,0,0.5);
+    h3, p {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      color: var(--white);
+    }
+    h3 {
+      color: antiquewhite;
+    }
+  }
+
+  .aboutSection {
+    .ownerImg {
+      max-width: 700px;
+      height: 45rem;
+      margin: 0 auto;
+      background-image: url(${owner});
+      background-size: cover;
+      background-repeat: norepeat;
+      background-position: center center;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      font-size: 2rem;
     }
   }
 
@@ -638,7 +744,35 @@ const TabletHearthstoneStyles = styled.div`
   @media only screen and (max-width: 900px) {
     width: calc(100vw - 50px);
     margin-left: 50px;
-    position: absolute;
+    .header {
+        height: 55vh;
+    }
+    .welcome {
+        font-size: 7rem;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    h2 {
+        max-width: 500px;
+        font-size: 2.2rem;
+    }
+    .shippingLogos {
+        height: 13rem;
+        margin-top: 30rem;
+        .fedex {
+            width: 18rem;
+            height: 5rem;
+        }
+        .ups {
+            width: 6rem;
+            height: 7rem;
+        }
+        .usps {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
   }
 `;
 
@@ -677,6 +811,13 @@ const MobileHearthstoneStyles = styled.div`
     .hearthstoneBody {
       position: relative;
     }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(255,255,255,0.3);
+      z-index: 5;
+    }
     .background {
       width: 100%;
       height: 100%;
@@ -684,41 +825,47 @@ const MobileHearthstoneStyles = styled.div`
       top: 0;
       background-image: url(${wall});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: repeat;
       background-position: center center;
-      opacity: 0.4;
     }
-    .overlay {
-      width: 100%;
-      height: 500px;
-      position: absolute;
-      background-color: rgba(255,255,255,0.3);
-      z-index: 5;
+    .header {
+      height: 80vh;
     }
     .wordContainer {
-      margin: 0 auto;
+      margin: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
       position: absolute;
+      top: 10rem;
       z-index: 5;
+      .increase {
+        font-size: 3rem;
+      }
     }
     h1, h2 {
       text-align: center;
       color: var(--black);
     }
+    .welcome {
+      margin: 0;
+      font-size: 10rem;
+    }
     h1 {
-      font-family: Georgia;
+      font-family: cursive;
       font-weight: bold;
-      color: maroon;
-      font-size: 3rem;
+      color: darkorchid;
+      font-size: 5rem;
+      text-align: left;
       text-transform: uppercase;
-      text-shadow: 1px 0 5px var(--white), 0 1px 5px var(--white), -1px 0 5px var(--white), 0 -1px 5px var(--white);
-      letter-spacing: 2rem;
+      text-shadow: 1px 0 5px lavendar, 0 1px 5px lavendar, -1px 0 5px lavendar, 0 -1px 5px lavendar;
+      letter-spacing: 1rem;
     }
     h2 {
-      font-size: 1.75rem;
-      text-shadow: 1px 0 1px var(--white), 0 1px 1px var(--white), -1px 0 1px var(--white), 0 -1px 1px var(--white);
-    }
-    .increase {
-      font-size: 2.25rem;
+      margin-top: 2rem;
+      color: var(--white);
+      text-shadow: 1px 0 1px var(--black), 0 1px 1px var(--black), -1px 0 1px var(--black), 0 -1px 1px var(--black);
+      font-size: 2.7rem;
     }
     .content {
       width: 100%;
@@ -730,38 +877,74 @@ const MobileHearthstoneStyles = styled.div`
         margin: 0 auto;
         padding: 1rem 2rem;
         color: var(--white);
-        font-size: 1.9rem;
+        font-size: 2rem;
       }
     }
     .shippingLogos {
       width: 100%;
+      height: 30rem;
+      margin-top: 30rem;
       .logoContainer {
-        width: 30rem;
-        height: 10rem;
+        margin-right: 2rem;
       }
       .fedex {
-        width: 100%;
-        height: 100%;
+        width: 400px;
+        height: 11rem;
         background-image: url(${fedex});
         background-size: cover;
         background-repeat: norepeat;
         background-position: center center;
       }
       .ups {
-        width: 100%;
-        height: 100%;
+        width: 15rem;
+        height: 18.5rem;
         background-image: url(${ups});
         background-size: cover;
         background-repeat: norepeat;
         background-position: center center;
       }
       .usps {
-        width: 100%;
-        height: 100%;
+        width: 25rem;
+        height: 30rem;
         background-image: url(${usps});
         background-size: cover;
         background-repeat: norepeat;
         background-position: center center;
+      }
+    }
+  
+    // Content Sections
+    .eventSection {
+      width: 100%;
+      min-height: 5rem;
+      padding: 2rem 0;
+      background-color: rgba(0,0,0,0.5);
+      h3, p {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        color: var(--white);
+      }
+      h3 {
+        color: antiquewhite;
+      }
+    }
+  
+    .aboutSection {
+      .ownerImg {
+        max-width: 700px;
+        height: 45rem;
+        margin: 0 auto;
+        background-image: url(${owner});
+        background-size: cover;
+        background-repeat: norepeat;
+        background-position: center center;
+      }
+      p {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        font-size: 2rem;
       }
     }
   
@@ -891,7 +1074,7 @@ const Navigation = styled.div`
     }
   }
   .navBG {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(153,50,204,0.2);
     z-index: 1;
   }
   .inline {
@@ -1350,67 +1533,54 @@ export default function Hearthstone() {
             </div>
           </MobileNavigation>
           <div className='background' />
-          <div className='hearthstoneBody'>
-            <div className='header flex center'>
-              <div className='overlay' />
-              <div className='headerImg' />
-              <div className='wordContainer'>
-                <h1>City Church</h1>
-                <h2 className='increase'>Come join us!</h2>
-                <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+            <div className='hearthstoneBody'>
+              <div className='header flex center'>
+                <div className='wordContainer'>
+                  <h1 className='welcome'>Welcome</h1>
+                  {/* <h1 className='to'>to</h1> */}
+                  <h1 className='title'> to Hearthstone</h1>
+                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                </div>
+                <div className='shippingLogos inline center'>
+                  <div className='logoContainer'>
+                    <div className='fedex' />
+                  </div>
+                  <div className='logoContainer'>
+                    <div className='ups' />
+                  </div>
+                  <div className='logoContainer'>
+                    <div className='usps' />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className='content'>
-              <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
-              <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
-              <p>Man was committed to defy moral and natural order - committed to sin.</p>
-              <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
-              <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
-            </div>
-            <section className='responsiveFlex center' id='history'>
-              <div className='left'>
-                <div className='section1Img' />
-              </div>
-              <div className='right textSide'>
-                <h3>History</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
+              <div className='content'>
+                <p>Hearthstone started 16 years ago as grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </p> 
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
               </div>
-            </section>
-            <section className='responsiveFlex invert center' id='worship'>
-              <div className='left textSide'>
-                <h3>Worship</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              </div>
-              <div className='right'>
-                <div className='section2Img' />
-              </div>
-            </section>
-            <section className='responsiveFlex center' id='ministry'>
-            <div className='left'>
-                <div className='section3Img' />
-              </div>
-              <div className='right textSide'>
-                <h3>Our Ministries</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              </div>
-            </section>
-            <section className='responsiveFlex invert center' id='study'>
-              <div className='left textSide'>
-                <h3>Bible Studies</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              </div>
-              <div className='right'>
-                <div className='section4Img' />
-              </div>
-            </section>
+              <section className='productSection' id='gifts'>
+                <h2>Gifts</h2>
+                <GalleryScroll />
+              </section>
+              <section className='eventSection' id='events'>
+                <h2>Events</h2>
+                <div className='artClass'>
+                  <h3>Art Classes</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <h3>Learn a Craft</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <h3>Business Networking Event</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                </div>
+              </section>
+              <section className='aboutSection' id='about'>
+                <h2>About Us</h2>
+                <div className='owner'>
+                  <div className='ownerImg' />
+                  <p>Owner Clara Dean has been making unique products for over 16 years. She started out making small purses for her 3 nieces and found that enough people liked them they started to sell!</p>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                </div>
+              </section>
             <div className='formContainer' id='contactform'>
               <form 
                 className='flex'   
@@ -1567,67 +1737,54 @@ export default function Hearthstone() {
             </div>
           </MobileNavigation>
           <div className='background' />
-          <div className='hearthstoneBody'>
-            <div className='header flex center'>
-              <div className='overlay' />
-              <div className='headerImg' />
-              <div className='wordContainer'>
-                <h1>City Church</h1>
-                <h2 className='increase'>Come join us!</h2>
-                <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+            <div className='hearthstoneBody'>
+              <div className='header flex center'>
+                <div className='wordContainer'>
+                  <h1 className='welcome'>Welcome</h1>
+                  {/* <h1 className='to'>to</h1> */}
+                  <h1 className='title'> to Hearthstone</h1>
+                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                </div>
+                <div className='shippingLogos inline center'>
+                  <div className='logoContainer'>
+                    <div className='fedex' />
+                  </div>
+                  <div className='logoContainer'>
+                    <div className='ups' />
+                  </div>
+                  <div className='logoContainer'>
+                    <div className='usps' />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className='content'>
-              <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
-              <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
-              <p>Man was committed to defy moral and natural order - committed to sin.</p>
-              <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
-              <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
-            </div>
-            <section className='responsiveFlex center' id='history'>
-              <div className='left'>
-                <div className='section1Img' />
-              </div>
-              <div className='right textSide'>
-                <h3>History</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
+              <div className='content'>
+                <p>Hearthstone started 16 years ago as grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </p> 
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
               </div>
-            </section>
-            <section className='responsiveFlex invert center' id='worship'>
-              <div className='left textSide'>
-                <h3>Worship</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              </div>
-              <div className='right'>
-                <div className='section2Img' />
-              </div>
-            </section>
-            <section className='responsiveFlex center' id='ministry'>
-            <div className='left'>
-                <div className='section3Img' />
-              </div>
-              <div className='right textSide'>
-                <h3>Our Ministries</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              </div>
-            </section>
-            <section className='responsiveFlex invert center' id='study'>
-              <div className='left textSide'>
-                <h3>Bible Studies</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-              </div>
-              <div className='right'>
-                <div className='section4Img' />
-              </div>
-            </section>
+              <section className='productSection' id='gifts'>
+                <h2>Gifts</h2>
+                <GalleryScroll />
+              </section>
+              <section className='eventSection' id='events'>
+                <h2>Events</h2>
+                <div className='artClass'>
+                  <h3>Art Classes</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <h3>Learn a Craft</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <h3>Business Networking Event</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                </div>
+              </section>
+              <section className='aboutSection' id='about'>
+                <h2>About Us</h2>
+                <div className='owner'>
+                  <div className='ownerImg' />
+                  <p>Owner Clara Dean has been making unique products for over 16 years. She started out making small purses for her 3 nieces and found that enough people liked them they started to sell!</p>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                </div>
+              </section>
             <div className='formContainer' id='contactform'>
               <form 
                 className='flex'   
@@ -1759,66 +1916,54 @@ export default function Hearthstone() {
                 </div>
               </MobileNavigation>
               <div className='background' />
-              <div className='hearthstoneBody'>
-                <div className='header flex center'>
-                  <div className='headerImg' />
-                  <div className='wordContainer'>
-                    <h1>City Church</h1>
-                    <h2 className='increase'>Come join us!</h2>
-                    <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+            <div className='hearthstoneBody'>
+              <div className='header flex center'>
+                <div className='wordContainer'>
+                  <h1 className='welcome'>Welcome</h1>
+                  {/* <h1 className='to'>to</h1> */}
+                  <h1 className='title'> to Hearthstone</h1>
+                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                </div>
+                <div className='shippingLogos inline center'>
+                  <div className='logoContainer'>
+                    <div className='fedex' />
+                  </div>
+                  <div className='logoContainer'>
+                    <div className='ups' />
+                  </div>
+                  <div className='logoContainer'>
+                    <div className='usps' />
                   </div>
                 </div>
-                <div className='content'>
-                  <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
-                  <p>Christianity is evidentially and historically rooted in a person: Jesus of Nazareth. Jesus was a real man, who was also God. His purpose was to resolve a problem that man created. Separation from God the Father.</p>
-                  <p>Man was committed to defy moral and natural order - committed to sin.</p>
-                  <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
-                  <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+              </div>
+              <div className='content'>
+                <p>Hearthstone started 16 years ago as grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </p> 
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+              </div>
+              <section className='productSection' id='gifts'>
+                <h2>Gifts</h2>
+                <GalleryScroll />
+              </section>
+              <section className='eventSection' id='events'>
+                <h2>Events</h2>
+                <div className='artClass'>
+                  <h3>Art Classes</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <h3>Learn a Craft</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <h3>Business Networking Event</h3>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
                 </div>
-                <section className='flex center' id='history'>
-                  <div className='left'>
-                    <div className='section1Img' />
-                  </div>
-                  <div className='right textSide'>
-                    <h3>History</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                  </div>
-                </section>
-                <section className='flex invert center' id='worship'>
-                  <div className='left textSide'>
-                    <h3>Worship</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                  </div>
-                  <div className='right'>
-                    <div className='section2Img' />
-                  </div>
-                </section>
-                <section className='flex center' id='ministry'>
-                <div className='left'>
-                    <div className='section3Img' />
-                  </div>
-                  <div className='right textSide'>
-                    <h3>Our Ministries</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                  </div>
-                </section>
-                <section className='flex invert center' id='study'>
-                  <div className='left textSide'>
-                    <h3>Bible Studies</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-                  </div>
-                  <div className='right'>
-                    <div className='section4Img' />
-                  </div>
-                </section>
+              </section>
+              <section className='aboutSection' id='about'>
+                <h2>About Us</h2>
+                <div className='owner'>
+                  <div className='ownerImg' />
+                  <p>Owner Clara Dean has been making unique products for over 16 years. She started out making small purses for her 3 nieces and found that enough people liked them they started to sell!</p>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                </div>
+              </section>
                 <div className='formContainer' id='contactform'>
                   <form 
                     className='flex'   
