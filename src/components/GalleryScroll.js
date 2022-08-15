@@ -30,6 +30,25 @@ const GalleryScrollStyles = styled.div`
         color: transparent;
         border-radius: 100%;
     }
+    .infoOverlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0,0.5);
+        color: var(--white);
+        opacity: 0;
+        h3 {
+            margin-top: 7rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        p {
+            padding: 0 1rem;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
     .productContainer {
         max-width: 1080px;
         height: 100%;
@@ -39,7 +58,9 @@ const GalleryScrollStyles = styled.div`
         grid-template-columns: repeat(4, minmax(auto, 1fr));
         gap: 1.5rem;
         .product {
+            width: 275px;
             height: 275px;
+            position: relative;
             opacity: 0.7;
             cursor: pointer;
             &:hover {
@@ -187,17 +208,33 @@ export default function GalleryScroll() {
         <>
             <GalleryScrollStyles>
                 <div className='galleryContainer'>
-                    <div className='productContainer inline'>
+                    <div className='productContainer'>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <h3>Skirt Purse</h3>
+                                <p>The skirt purse is a fun flashback to girlhood. A great gift for your daughter, niece or friend!</p>
+                            </div>
                             <div className='productImg1' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <h3>Frog Bag</h3>
+                                <p>Frog bags show great personality and are surprisingly roomy.</p>
+                            </div>
                             <div className='productImg2' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <h3>Local Preserves</h3>
+                                <p>These delicious jams, jelly's, honey's and butter's are from all over the Grand Valley. Try them all!</p>
+                            </div>
                             <div className='productImg3' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <h3>Owl Statues</h3>
+                                <p>These adorable statues are an excellent addition to any household, whether collector or homemaker. Hoo are you to not like them!</p>
+                            </div>
                             <div className='productImg4' />
                         </div>
                     </div>
@@ -205,17 +242,29 @@ export default function GalleryScroll() {
             </GalleryScrollStyles>
             <TabletGalleryScrollStyles>
                 <div className='galleryContainer'>
-                    <div className='productContainer inline'>
+                    <div className='productContainer'>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <p></p>
+                            </div>
                             <div className='productImg1' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <p></p>
+                            </div>
                             <div className='productImg2' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <p></p>
+                            </div>
                             <div className='productImg3' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <p></p>
+                            </div>
                             <div className='productImg4' />
                         </div>
                     </div>
@@ -223,17 +272,29 @@ export default function GalleryScroll() {
             </TabletGalleryScrollStyles>
             <MobileGalleryScrollStyles>
                 <div className='galleryContainer'>
-                    <div className='productContainer inline'>
+                    <div className='productContainer'>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <p></p>
+                            </div>
                             <div className='productImg1' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <p></p>
+                            </div>
                             <div className='productImg2' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <p></p>
+                            </div>
                             <div className='productImg3' />
                         </div>
                         <div className='product'>
+                            <div className='infoOverlay'>
+                                <p></p>
+                            </div>
                             <div className='productImg4' />
                         </div>
                     </div>

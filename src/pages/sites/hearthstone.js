@@ -14,6 +14,7 @@ import usps from '../../assets/images/hearthstone/usps-transparent-logo.png';
 import facebook from '../../assets/images/hearthstone/facebook-logo.png';
 import GalleryScroll from '../../components/GalleryScroll';
 import owner from '../../assets/images/hearthstone/face-of-smiling-woman.jpg';
+import crafts from '../../assets/images/hearthstone/pottter-and-the-clay.png'
 
 const HearthstoneStyles = styled.div`
   width: calc(100vw - 100px);
@@ -53,6 +54,14 @@ const HearthstoneStyles = styled.div`
   .header {
     height: 80vh;
   }
+  .headerImg {
+    width: 100%;
+    height: 100%;
+    background-image: url(${crafts});
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+  }
   .wordContainer {
     margin: 0;
     display: flex;
@@ -70,7 +79,10 @@ const HearthstoneStyles = styled.div`
     color: var(--black);
   }
   .welcome {
-    margin: 0;
+    font-size: 7rem;
+  }
+  .title {
+    margin: 2rem auto;
     font-size: 10rem;
   }
   h1 {
@@ -80,8 +92,11 @@ const HearthstoneStyles = styled.div`
     font-size: 5rem;
     text-align: left;
     text-transform: uppercase;
-    text-shadow: 1px 0 5px lavendar, 0 1px 5px lavendar, -1px 0 5px lavendar, 0 -1px 5px lavendar;
+    text-shadow: 1px 0 10px var(--white), 0 1px 10px var(--white), -1px 0 10px var(--white), 0 -1px 10px var(--white);
     letter-spacing: 1rem;
+  }
+  .header h2 {
+    max-width: 777px;
   }
   h2 {
     margin-top: 2rem;
@@ -105,12 +120,11 @@ const HearthstoneStyles = styled.div`
   .shippingLogos {
     width: 100%;
     height: 30rem;
-    margin-top: 30rem;
     .logoContainer {
       margin-right: 2rem;
     }
     .fedex {
-      width: 400px;
+      width: 40rem;
       height: 11rem;
       background-image: url(${fedex});
       background-size: cover;
@@ -232,6 +246,18 @@ const HearthstoneStyles = styled.div`
     .map {
       width: 80%;
       height: 500px;
+    }
+  }
+  footer {
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    background-color: var(--black);
+    p {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--white);
     }
   }
   .hidden {
@@ -1331,12 +1357,15 @@ export default function Hearthstone() {
             <div className='background' />
             <div className='hearthstoneBody'>
               <div className='header flex center'>
+                <div className='headerImg' />
                 <div className='wordContainer'>
-                  <h1 className='welcome'>Welcome</h1>
-                  {/* <h1 className='to'>to</h1> */}
-                  <h1 className='title'> to Hearthstone</h1>
-                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                  <h1 className='welcome'>Welcome to</h1>
+                  <h1 className='title'>Hearthstone</h1>
+                  <h2>Hearthstone started 16 years ago as a grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </h2> 
                 </div>
+              </div>
+              <div className='content'>
+                  <h2>We handle packing and shipping through all major shipping companies!</h2>
                 <div className='shippingLogos inline center'>
                   <div className='logoContainer'>
                     <div className='fedex' />
@@ -1348,9 +1377,6 @@ export default function Hearthstone() {
                     <div className='usps' />
                   </div>
                 </div>
-              </div>
-              <div className='content'>
-                <p>Hearthstone started 16 years ago as grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </p> 
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
               </div>
               <section className='productSection' id='gifts'>
@@ -1360,11 +1386,11 @@ export default function Hearthstone() {
               <section className='eventSection' id='events'>
                 <h2>Events</h2>
                 <div className='artClass'>
-                  <h3>Art Classes</h3>
+                  <h3>Art Classes - Sept. 4</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <h3>Learn a Craft</h3>
+                  <h3>Learn a Craft - Sept. 15</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <h3>Business Networking Event</h3>
+                  <h3>Business Networking Event - Oct. 5</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
                 </div>
               </section>
@@ -1467,6 +1493,9 @@ export default function Hearthstone() {
                 </div>
               </div>
             </div>
+            <footer>
+              <p>This template is inspired by a real business with these real products in Clifton, CO called "Homespun" and is dedicated in memory of Sonja Kent, a true entrepreneur for her community. Product images are provided by Homespun. </p>
+            </footer>
         </HearthstoneStyles>
         <LandscapeHearthstoneStyles>
           <CtaHearthstone />
@@ -1564,11 +1593,11 @@ export default function Hearthstone() {
               <section className='eventSection' id='events'>
                 <h2>Events</h2>
                 <div className='artClass'>
-                  <h3>Art Classes</h3>
+                  <h3>Art Classes - Sept. 4</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <h3>Learn a Craft</h3>
+                  <h3>Learn a Craft - Sept. 15</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <h3>Business Networking Event</h3>
+                  <h3>Business Networking Event - Oct. 5</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
                 </div>
               </section>
@@ -1768,11 +1797,11 @@ export default function Hearthstone() {
               <section className='eventSection' id='events'>
                 <h2>Events</h2>
                 <div className='artClass'>
-                  <h3>Art Classes</h3>
+                  <h3>Art Classes - Sept. 4</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <h3>Learn a Craft</h3>
+                  <h3>Learn a Craft - Sept. 15</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <h3>Business Networking Event</h3>
+                  <h3>Business Networking Event - Oct. 5</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
                 </div>
               </section>
@@ -1947,11 +1976,11 @@ export default function Hearthstone() {
               <section className='eventSection' id='events'>
                 <h2>Events</h2>
                 <div className='artClass'>
-                  <h3>Art Classes</h3>
+                  <h3>Art Classes - Sept. 4</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <h3>Learn a Craft</h3>
+                  <h3>Learn a Craft - Sept. 15</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <h3>Business Networking Event</h3>
+                  <h3>Business Networking Event - Oct. 5</h3>
                   <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
                 </div>
               </section>
