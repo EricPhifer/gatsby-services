@@ -38,7 +38,7 @@ const HearthstoneStyles = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(0,0,0,0.3);
     z-index: 5;
   }
   .background {
@@ -99,7 +99,7 @@ const HearthstoneStyles = styled.div`
     max-width: 777px;
   }
   h2 {
-    margin-top: 2rem;
+    margin: 2rem;
     color: var(--white);
     text-shadow: 1px 0 1px var(--black), 0 1px 1px var(--black), -1px 0 1px var(--black), 0 -1px 1px var(--black);
     font-size: 2.7rem;
@@ -290,9 +290,13 @@ const LandscapeHearthstoneStyles = styled.div`
   .inline {
     display: inline-flex;
   }
+  .center {
+    justify-content: center;
+    align-items: center;
+  }
   .responsiveFlex {
     display: inline-flex;
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 940px) {
       display: flex;
       flex-flow: column wrap;
     }
@@ -301,10 +305,6 @@ const LandscapeHearthstoneStyles = styled.div`
     @media only screen and (max-width: 900px) {
       flex-flow: column-reverse wrap;
     }
-  }
-  .center {
-    justify-content: center;
-    align-items: center;
   }
   .hearthstoneBody {
     position: relative;
@@ -326,8 +326,20 @@ const LandscapeHearthstoneStyles = styled.div`
     background-repeat: repeat;
     background-position: center center;
   }
+  .header h2 {
+    max-width: 777px;
+    font-size: 2.3rem;
+  }
   .header {
-    height: 80vh;
+    height: 100vh;
+  }
+  .headerImg {
+    width: 100%;
+    height: 100%;
+    background-image: url(${crafts});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   .wordContainer {
     margin: 0;
@@ -335,7 +347,7 @@ const LandscapeHearthstoneStyles = styled.div`
     flex-flow: column nowrap;
     align-items: center;
     position: absolute;
-    top: 10rem;
+    top: 2rem;
     z-index: 5;
     .increase {
       font-size: 3rem;
@@ -346,8 +358,11 @@ const LandscapeHearthstoneStyles = styled.div`
     color: var(--black);
   }
   .welcome {
-    margin: 0;
-    font-size: 10rem;
+    font-size: 4rem;
+  }
+  .title {
+    margin: 2rem auto;
+    font-size: 5.5rem;
   }
   h1 {
     font-family: cursive;
@@ -356,11 +371,11 @@ const LandscapeHearthstoneStyles = styled.div`
     font-size: 5rem;
     text-align: left;
     text-transform: uppercase;
-    text-shadow: 1px 0 5px lavendar, 0 1px 5px lavendar, -1px 0 5px lavendar, 0 -1px 5px lavendar;
+    text-shadow: 1px 0 10px var(--white), 0 1px 10px var(--white), -1px 0 10px var(--white), 0 -1px 10px var(--white);
     letter-spacing: 1rem;
   }
   h2 {
-    margin-top: 2rem;
+    margin: 2rem;
     color: var(--white);
     text-shadow: 1px 0 1px var(--black), 0 1px 1px var(--black), -1px 0 1px var(--black), 0 -1px 1px var(--black);
     font-size: 2.7rem;
@@ -380,10 +395,8 @@ const LandscapeHearthstoneStyles = styled.div`
   }
   .shippingLogos {
     width: 100%;
-    height: 30rem;
-    margin-top: 30rem;
     .logoContainer {
-      margin-right: 2rem;
+      margin: 2rem;
     }
     .fedex {
       width: 400px;
@@ -510,6 +523,18 @@ const LandscapeHearthstoneStyles = styled.div`
       height: 500px;
     }
   }
+  footer {
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    background-color: var(--black);
+    p {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--white);
+    }
+  }
   .hidden {
     display: none;
   }
@@ -576,8 +601,19 @@ const TabletHearthstoneStyles = styled.div`
     background-repeat: repeat;
     background-position: center center;
   }
+  .header h2 {
+    max-width: 777px;
+  }
   .header {
     height: 80vh;
+  }
+   .headerImg {
+    width: 100%;
+    height: 100%;
+    background-image: url(${crafts});
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
   }
   .wordContainer {
     margin: 0;
@@ -596,8 +632,11 @@ const TabletHearthstoneStyles = styled.div`
     color: var(--black);
   }
   .welcome {
-    margin: 0;
-    font-size: 10rem;
+    font-size: 6rem;
+  }
+  .title {
+    margin: 2rem auto;
+    font-size: 7rem;
   }
   h1 {
     font-family: cursive;
@@ -606,12 +645,12 @@ const TabletHearthstoneStyles = styled.div`
     font-size: 5rem;
     text-align: left;
     text-transform: uppercase;
-    text-shadow: 1px 0 5px lavendar, 0 1px 5px lavendar, -1px 0 5px lavendar, 0 -1px 5px lavendar;
+    text-shadow: 1px 0 10px var(--white), 0 1px 10px var(--white), -1px 0 10px var(--white), 0 -1px 10px var(--white);
     letter-spacing: 1rem;
   }
   h2 {
     max-width: 900px;
-    margin-top: 2rem;
+    margin: 2rem;
     color: var(--white);
     text-shadow: 1px 0 1px var(--black), 0 1px 1px var(--black), -1px 0 1px var(--black), 0 -1px 1px var(--black);
     font-size: 2.7rem;
@@ -632,7 +671,6 @@ const TabletHearthstoneStyles = styled.div`
   .shippingLogos {
     width: 100%;
     height: 30rem;
-    margin-top: 30rem;
     .logoContainer {
       margin-right: 2rem;
     }
@@ -761,6 +799,18 @@ const TabletHearthstoneStyles = styled.div`
       height: 500px;
     }
   }
+  footer {
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    background-color: var(--black);
+    p {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: var(--white);
+    }
+  }
   .hidden {
     display: none;
   }
@@ -772,20 +822,22 @@ const TabletHearthstoneStyles = styled.div`
     margin-left: 50px;
     .header {
         height: 55vh;
-    }
-    .welcome {
-        font-size: 7rem;
-    }
-    .title {
-        font-size: 3rem;
+        h2 {
+          font-size: 2rem;
+        }
     }
     h2 {
-        max-width: 500px;
-        font-size: 2.2rem;
+      font-size: 2.1rem;
+    }
+    .welcome {
+        font-size: 3rem;
+    }
+    .title {
+        margin: 2rem 0;
+        font-size: 4rem;
     }
     .shippingLogos {
         height: 13rem;
-        margin-top: 30rem;
         .fedex {
             width: 18rem;
             height: 5rem;
@@ -815,7 +867,7 @@ const MobileHearthstoneStyles = styled.div`
     background-color: var(--white);
     .flex {
       display: flex;
-      flex-flow: column wrap;
+      flex-flow: column nowrap;
     }
     .inline {
       display: inline-flex;
@@ -841,7 +893,7 @@ const MobileHearthstoneStyles = styled.div`
       width: 100%;
       height: 100%;
       position: absolute;
-      background-color: rgba(255,255,255,0.3);
+      background-color: rgba(0,0,0,0.3);
       z-index: 5;
     }
     .background {
@@ -854,8 +906,21 @@ const MobileHearthstoneStyles = styled.div`
       background-repeat: repeat;
       background-position: center center;
     }
+    .header h2 {
+      max-width: 777px;
+      padding: 2rem;
+      font-size: 1.75rem;
+    }
     .header {
-      height: 80vh;
+      height: 60vh;
+    }
+    .headerImg {
+      width: 100%;
+      height: 100%;
+      background-image: url(${crafts});
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: center center;
     }
     .wordContainer {
       margin: 0;
@@ -875,29 +940,37 @@ const MobileHearthstoneStyles = styled.div`
     }
     .welcome {
       margin: 0;
-      font-size: 10rem;
+      font-size: 2.5rem;
+    }
+    .title {
+      margin: 2rem auto;
+      font-size: 3rem;
     }
     h1 {
       font-family: cursive;
       font-weight: bold;
       color: darkorchid;
-      font-size: 5rem;
+      font-size: 2rem;
       text-align: left;
       text-transform: uppercase;
-      text-shadow: 1px 0 5px lavendar, 0 1px 5px lavendar, -1px 0 5px lavendar, 0 -1px 5px lavendar;
-      letter-spacing: 1rem;
+      text-shadow: 1px 0 5px var(--white), 0 1px 5px var(--white), -1px 0 5px var(--white), 0 -1px 5px var(--white);
     }
     h2 {
       margin-top: 2rem;
+      padding: 0 1rem;
       color: var(--white);
       text-shadow: 1px 0 1px var(--black), 0 1px 1px var(--black), -1px 0 1px var(--black), 0 -1px 1px var(--black);
-      font-size: 2.7rem;
+      font-size: 2rem;
     }
     .content {
       width: 100%;
       height: 100%;
-      padding: 7rem 0;
+      padding: 3rem 0;
       background-color: rgba(0,0,0,0.5);
+      h2 {
+        padding: 2rem;
+        font-size: 1.5rem;
+      }
       p {
         max-width: 600px;
         margin: 0 auto;
@@ -908,30 +981,28 @@ const MobileHearthstoneStyles = styled.div`
     }
     .shippingLogos {
       width: 100%;
-      height: 30rem;
-      margin-top: 30rem;
       .logoContainer {
-        margin-right: 2rem;
+        margin: 2rem;
       }
       .fedex {
-        width: 400px;
-        height: 11rem;
+        width: 25rem;
+        height: 7rem;
         background-image: url(${fedex});
         background-size: cover;
         background-repeat: norepeat;
         background-position: center center;
       }
       .ups {
-        width: 15rem;
-        height: 18.5rem;
+        width: 20rem;
+        height: 25rem;
         background-image: url(${ups});
         background-size: cover;
         background-repeat: norepeat;
         background-position: center center;
       }
       .usps {
-        width: 25rem;
-        height: 30rem;
+        width: 20rem;
+        height: 25rem;
         background-image: url(${usps});
         background-size: cover;
         background-repeat: norepeat;
@@ -970,7 +1041,7 @@ const MobileHearthstoneStyles = styled.div`
         max-width: 600px;
         margin: 0 auto;
         padding: 1rem 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
   
@@ -985,7 +1056,7 @@ const MobileHearthstoneStyles = styled.div`
       }
       legend {
         padding-bottom: 1rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
         color: var(--white);
         text-shadow: 1px 0 3px var(--black), 0 1px 3px var(--black), -1px 0 3px var(--black), 0 -1px 3px var(--black);
@@ -1036,6 +1107,18 @@ const MobileHearthstoneStyles = styled.div`
       .map {
         width: 80%;
         height: 300px;
+      }
+    }
+     footer {
+      width: 100%;
+      height: 18rem;
+      position: absolute;
+      background-color: var(--black);
+      p {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 2rem 7rem 2rem 2rem;
+        color: var(--white);
       }
     }
     .hidden {
@@ -1377,7 +1460,6 @@ export default function Hearthstone() {
                     <div className='usps' />
                   </div>
                 </div>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
               </div>
               <section className='productSection' id='gifts'>
                 <h2>Gifts</h2>
@@ -1387,20 +1469,20 @@ export default function Hearthstone() {
                 <h2>Events</h2>
                 <div className='artClass'>
                   <h3>Art Classes - Sept. 4</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Learn the basics in working with cloth and pottery! Each art class teaches basic techniques in painting on these mediums from start to finish. Cost is $25/person for materials. No reservation necessary, pay at the door!</p> 
                   <h3>Learn a Craft - Sept. 15</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Join us each month for a workshop given by a local artist. Everything from butter making to knitting to modern art! Cost is free with donations to the local artist.</p> 
                   <h3>Business Networking Event - Oct. 5</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Tri-annual event includes an evening of great hors d’oeuvres while networking with other businesses in the valley, from the brand new to the well-seasoned! Our owner always gives a question and answer time towards the end of the evening. Please RSVP next time you drop into the store or by calling. Cost is $15.</p> 
                 </div>
               </section>
               <section className='aboutSection' id='about'>
                 <h2>About Us</h2>
                 <div className='owner'>
                   <div className='ownerImg' />
-                  <p>Owner Clara Dean has been making unique products for over 16 years. She started out making small purses for her 3 nieces and found that enough people liked them they started to sell!</p>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>From the time she was a young girl, Clara Dean enjoyed crafts and design. When she was eight years old, instead of a lemonade stand, she would sell her wares at a small homemade booth during the summer. She would often make enough money to buy more materials for homemade gifts for family and friends. During college life took Miss Clara elsewhere and eventually she met and married her husband John. They had six children and moved to the valley during those fun chaotic years a young family brings.</p>
+                  <p>Though Miss Clara never stopped crafting for friends and family, sixteen years ago a neighbor encouraged her to start her own business. With the last of her children in high school, Clara and John converted their garage to a workshop and began selling products at farmer’s markets. The response was overwhelmingly positive from the community, and in 2008 a storefront was purchased.</p> 
+                  <p>Since that time Miss Clara has helped other local artists chase their dreams by encouraging them, teaching them basic business smarts, and giving them a place to sell their wonderful creations. This is truly a labor of love for all of us here at Hearthstone. We hope you will enjoy each purchase as much as Miss Clara and others enjoyed making it!</p> 
                 </div>
               </section>
               <div className='formContainer' id='contactform'>
@@ -1564,13 +1646,16 @@ export default function Hearthstone() {
           <div className='background' />
             <div className='hearthstoneBody'>
               <div className='header flex center'>
+                <div className='headerImg' />
                 <div className='wordContainer'>
-                  <h1 className='welcome'>Welcome</h1>
-                  {/* <h1 className='to'>to</h1> */}
-                  <h1 className='title'> to Hearthstone</h1>
-                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                  <h1 className='welcome'>Welcome to</h1>
+                  <h1 className='title'>Hearthstone</h1>
+                  <h2>Hearthstone started 16 years ago as a grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </h2> 
                 </div>
-                <div className='shippingLogos inline center'>
+              </div>
+              <div className='content'>
+                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                <div className='shippingLogos responsiveFlex center'>
                   <div className='logoContainer'>
                     <div className='fedex' />
                   </div>
@@ -1582,10 +1667,6 @@ export default function Hearthstone() {
                   </div>
                 </div>
               </div>
-              <div className='content'>
-                <p>Hearthstone started 16 years ago as grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-              </div>
               <section className='productSection' id='gifts'>
                 <h2>Gifts</h2>
                 <GalleryScroll />
@@ -1594,112 +1675,115 @@ export default function Hearthstone() {
                 <h2>Events</h2>
                 <div className='artClass'>
                   <h3>Art Classes - Sept. 4</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Learn the basics in working with cloth and pottery! Each art class teaches basic techniques in painting on these mediums from start to finish. Cost is $25/person for materials. No reservation necessary, pay at the door!</p> 
                   <h3>Learn a Craft - Sept. 15</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Join us each month for a workshop given by a local artist. Everything from butter making to knitting to modern art! Cost is free with donations to the local artist.</p> 
                   <h3>Business Networking Event - Oct. 5</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Tri-annual event includes an evening of great hors d’oeuvres while networking with other businesses in the valley, from the brand new to the well-seasoned! Our owner always gives a question and answer time towards the end of the evening. Please RSVP next time you drop into the store or by calling. Cost is $15.</p> 
                 </div>
               </section>
               <section className='aboutSection' id='about'>
                 <h2>About Us</h2>
                 <div className='owner'>
                   <div className='ownerImg' />
-                  <p>Owner Clara Dean has been making unique products for over 16 years. She started out making small purses for her 3 nieces and found that enough people liked them they started to sell!</p>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>From the time she was a young girl, Clara Dean enjoyed crafts and design. When she was eight years old, instead of a lemonade stand, she would sell her wares at a small homemade booth during the summer. She would often make enough money to buy more materials for homemade gifts for family and friends. During college life took Miss Clara elsewhere and eventually she met and married her husband John. They had six children and moved to the valley during those fun chaotic years a young family brings.</p>
+                  <p>Though Miss Clara never stopped crafting for friends and family, sixteen years ago a neighbor encouraged her to start her own business. With the last of her children in high school, Clara and John converted their garage to a workshop and began selling products at farmer’s markets. The response was overwhelmingly positive from the community, and in 2008 a storefront was purchased.</p> 
+                  <p>Since that time Miss Clara has helped other local artists chase their dreams by encouraging them, teaching them basic business smarts, and giving them a place to sell their wonderful creations. This is truly a labor of love for all of us here at Hearthstone. We hope you will enjoy each purchase as much as Miss Clara and others enjoyed making it!</p> 
                 </div>
               </section>
-            <div className='formContainer' id='contactform'>
-              <form 
-                className='flex'   
-                method="post"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-                name="church-contact"
-              >
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="contact" />
-                <legend>
-                  Have Questions? Need help? Let us know.
-                </legend>
-                <label htmlFor='firstname' className='firstNameLabel hidden'>
-                  First Name
-                </label>
-                <fieldset className='inline'>
-                  <input 
-                    type="text"
-                    name="firstname"
-                    id="firstname"
-                    value={values.firstname}
-                    onChange={updateValue}
-                    className='required'
-                    placeholder='First Name'
-                  />
-                  <label htmlFor='lastname' className='lastNameLabel hidden'>
-                  Last Name
-                </label>
-                  <input 
-                    type="text"
-                    name="lastname"
-                    id="lastname"
-                    value={values.lastname}
-                    onChange={updateValue}
-                    className='required'
-                    placeholder='Last Name'
-                  />
-                </fieldset>
-                <fieldset className='inline'>
-                  <label htmlFor='email' className='emailLabel hidden'>
-                    Email Address
-                  </label>
-                  <input 
-                    type="email"
-                    name="email"
-                    id="email"
-                    value={values.email}
-                    onChange={updateValue}
-                    className='required'
-                    placeholder='Email Address'
-                  />
-                  <label htmlFor='phone' className='phoneLabel hidden'>
-                    Phone Number
-                  </label>
-                  <input 
-                    type="phone"
-                    name="phone"
-                    id="phone"
-                    value={values.phone}
-                    onChange={updateValue}
-                    className='required'
-                    placeholder='Phone Number'
-                  />
-                </fieldset>
-                <textarea 
-                  name="message"
-                  id="message"
-                  value={values.message}
-                  onChange={updateValue}rows='5' placeholder='How can we help?' 
-                />
-                <button 
-                  type='submit' 
-                  value='Submit'
+              <div className='formContainer' id='contactform'>
+                <form 
+                  className='flex'   
+                  method="post"
+                  netlify-honeypot="bot-field"
+                  data-netlify="true"
+                  name="church-contact"
                 >
-                    Submit
-                </button>
-              </form>
-            </div>
-            <div className='mapContainer' id='location'>
-              <h3 className='upgraded cakes'>You can find us at:</h3>
-              <div className='address cakes'>
-                <h3>123 Example St</h3>
-                <h3>Goliath Peak, CO 80452</h3>
+                  <input type="hidden" name="bot-field" />
+                  <input type="hidden" name="form-name" value="contact" />
+                  <legend>
+                    Have Questions? Need help? Let us know.
+                  </legend>
+                  <label htmlFor='firstname' className='firstNameLabel hidden'>
+                    First Name
+                  </label>
+                  <fieldset className='inline'>
+                    <input 
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      value={values.firstname}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='First Name'
+                    />
+                    <label htmlFor='lastname' className='lastNameLabel hidden'>
+                    Last Name
+                  </label>
+                    <input 
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      value={values.lastname}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Last Name'
+                    />
+                  </fieldset>
+                  <fieldset className='inline'>
+                    <label htmlFor='email' className='emailLabel hidden'>
+                      Email Address
+                    </label>
+                    <input 
+                      type="email"
+                      name="email"
+                      id="email"
+                      value={values.email}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Email Address'
+                    />
+                    <label htmlFor='phone' className='phoneLabel hidden'>
+                      Phone Number
+                    </label>
+                    <input 
+                      type="phone"
+                      name="phone"
+                      id="phone"
+                      value={values.phone}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Phone Number'
+                    />
+                  </fieldset>
+                  <textarea 
+                    name="message"
+                    id="message"
+                    value={values.message}
+                    onChange={updateValue}rows='5' placeholder='How can we help?' 
+                  />
+                  <button 
+                    type='submit' 
+                    value='Submit'
+                  >
+                      Submit
+                  </button>
+                </form>
               </div>
-              <div className='map'>
-              <iframe src="https://api.jawg.io/maps/6114b2aa-b264-4676-8613-a223490f1ca7/34d24c11-da73-4602-9cae-dc3eaa69b1e9.html?access-token=qbjWqcSa2nN3qdaLVnyV7hQFyFKIF8CpxjM8y7dJFr7lzLmiKVA1EEZK9xmfDrUy" title="Example Map" width="100%" height="100%"></iframe>
+              <div className='mapContainer' id='location'>
+                <h3 className='upgraded cakes'>You can find us at:</h3>
+                <div className='address cakes'>
+                  <h3>123 Example St</h3>
+                  <h3>Goliath Peak, CO 80452</h3>
+                </div>
+                <div className='map'>
+                <iframe src="https://api.jawg.io/maps/6114b2aa-b264-4676-8613-a223490f1ca7/34d24c11-da73-4602-9cae-dc3eaa69b1e9.html?access-token=qbjWqcSa2nN3qdaLVnyV7hQFyFKIF8CpxjM8y7dJFr7lzLmiKVA1EEZK9xmfDrUy" title="Example Map" width="100%" height="100%"></iframe>
+                </div>
               </div>
             </div>
-          </div>
+            <footer>
+              <p>This template is inspired by a real business with these real products in Clifton, CO called "Homespun" and is dedicated in memory of Sonja Kent, a true entrepreneur for her community. Product images are provided by Homespun. </p>
+            </footer>
         </LandscapeHearthstoneStyles>
         <TabletHearthstoneStyles>
           <CtaHearthstone />
@@ -1768,12 +1852,15 @@ export default function Hearthstone() {
           <div className='background' />
             <div className='hearthstoneBody'>
               <div className='header flex center'>
+                <div className='headerImg' />
                 <div className='wordContainer'>
-                  <h1 className='welcome'>Welcome</h1>
-                  {/* <h1 className='to'>to</h1> */}
-                  <h1 className='title'> to Hearthstone</h1>
-                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                  <h1 className='welcome'>Welcome to</h1>
+                  <h1 className='title'>Hearthstone</h1>
+                  <h2>Hearthstone started 16 years ago as a grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </h2> 
                 </div>
+              </div>
+              <div className='content'>
+                  <h2>We handle packing and shipping through all major shipping companies!</h2>
                 <div className='shippingLogos inline center'>
                   <div className='logoContainer'>
                     <div className='fedex' />
@@ -1786,10 +1873,6 @@ export default function Hearthstone() {
                   </div>
                 </div>
               </div>
-              <div className='content'>
-                <p>Hearthstone started 16 years ago as grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-              </div>
               <section className='productSection' id='gifts'>
                 <h2>Gifts</h2>
                 <GalleryScroll />
@@ -1798,112 +1881,115 @@ export default function Hearthstone() {
                 <h2>Events</h2>
                 <div className='artClass'>
                   <h3>Art Classes - Sept. 4</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Learn the basics in working with cloth and pottery! Each art class teaches basic techniques in painting on these mediums from start to finish. Cost is $25/person for materials. No reservation necessary, pay at the door!</p> 
                   <h3>Learn a Craft - Sept. 15</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Join us each month for a workshop given by a local artist. Everything from butter making to knitting to modern art! Cost is free with donations to the local artist.</p> 
                   <h3>Business Networking Event - Oct. 5</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Tri-annual event includes an evening of great hors d’oeuvres while networking with other businesses in the valley, from the brand new to the well-seasoned! Our owner always gives a question and answer time towards the end of the evening. Please RSVP next time you drop into the store or by calling. Cost is $15.</p> 
                 </div>
               </section>
               <section className='aboutSection' id='about'>
                 <h2>About Us</h2>
                 <div className='owner'>
                   <div className='ownerImg' />
-                  <p>Owner Clara Dean has been making unique products for over 16 years. She started out making small purses for her 3 nieces and found that enough people liked them they started to sell!</p>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>From the time she was a young girl, Clara Dean enjoyed crafts and design. When she was eight years old, instead of a lemonade stand, she would sell her wares at a small homemade booth during the summer. She would often make enough money to buy more materials for homemade gifts for family and friends. During college life took Miss Clara elsewhere and eventually she met and married her husband John. They had six children and moved to the valley during those fun chaotic years a young family brings.</p>
+                  <p>Though Miss Clara never stopped crafting for friends and family, sixteen years ago a neighbor encouraged her to start her own business. With the last of her children in high school, Clara and John converted their garage to a workshop and began selling products at farmer’s markets. The response was overwhelmingly positive from the community, and in 2008 a storefront was purchased.</p> 
+                  <p>Since that time Miss Clara has helped other local artists chase their dreams by encouraging them, teaching them basic business smarts, and giving them a place to sell their wonderful creations. This is truly a labor of love for all of us here at Hearthstone. We hope you will enjoy each purchase as much as Miss Clara and others enjoyed making it!</p> 
                 </div>
               </section>
-            <div className='formContainer' id='contactform'>
-              <form 
-                className='flex'   
-                method="post"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-                name="church-contact"
-              >
-                <input type="hidden" name="bot-field" />
-                <input type="hidden" name="form-name" value="contact" />
-                <legend>
-                  Have Questions? Need help? Let us know.
-                </legend>
-                <label htmlFor='firstname' className='firstNameLabel hidden'>
-                  First Name
-                </label>
-                <fieldset className='inline'>
-                  <input 
-                    type="text"
-                    name="firstname"
-                    id="firstname"
-                    value={values.firstname}
-                    onChange={updateValue}
-                    className='required'
-                    placeholder='First Name'
-                  />
-                  <label htmlFor='lastname' className='lastNameLabel hidden'>
-                  Last Name
-                </label>
-                  <input 
-                    type="text"
-                    name="lastname"
-                    id="lastname"
-                    value={values.lastname}
-                    onChange={updateValue}
-                    className='required'
-                    placeholder='Last Name'
-                  />
-                </fieldset>
-                <fieldset className='inline'>
-                  <label htmlFor='email' className='emailLabel hidden'>
-                    Email Address
-                  </label>
-                  <input 
-                    type="email"
-                    name="email"
-                    id="email"
-                    value={values.email}
-                    onChange={updateValue}
-                    className='required'
-                    placeholder='Email Address'
-                  />
-                  <label htmlFor='phone' className='phoneLabel hidden'>
-                    Phone Number
-                  </label>
-                  <input 
-                    type="phone"
-                    name="phone"
-                    id="phone"
-                    value={values.phone}
-                    onChange={updateValue}
-                    className='required'
-                    placeholder='Phone Number'
-                  />
-                </fieldset>
-                <textarea 
-                  name="message"
-                  id="message"
-                  value={values.message}
-                  onChange={updateValue}rows='5' placeholder='How can we help?' 
-                />
-                <button 
-                  type='submit' 
-                  value='Submit'
+              <div className='formContainer' id='contactform'>
+                <form 
+                  className='flex'   
+                  method="post"
+                  netlify-honeypot="bot-field"
+                  data-netlify="true"
+                  name="church-contact"
                 >
-                    Submit
-                </button>
-              </form>
-            </div>
-            <div className='mapContainer' id='location'>
-              <h3 className='upgraded cakes'>You can find us at:</h3>
-              <div className='address cakes'>
-                <h3>123 Example St</h3>
-                <h3>Goliath Peak, CO 80452</h3>
+                  <input type="hidden" name="bot-field" />
+                  <input type="hidden" name="form-name" value="contact" />
+                  <legend>
+                    Have Questions? Need help? Let us know.
+                  </legend>
+                  <label htmlFor='firstname' className='firstNameLabel hidden'>
+                    First Name
+                  </label>
+                  <fieldset className='inline'>
+                    <input 
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      value={values.firstname}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='First Name'
+                    />
+                    <label htmlFor='lastname' className='lastNameLabel hidden'>
+                    Last Name
+                  </label>
+                    <input 
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      value={values.lastname}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Last Name'
+                    />
+                  </fieldset>
+                  <fieldset className='inline'>
+                    <label htmlFor='email' className='emailLabel hidden'>
+                      Email Address
+                    </label>
+                    <input 
+                      type="email"
+                      name="email"
+                      id="email"
+                      value={values.email}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Email Address'
+                    />
+                    <label htmlFor='phone' className='phoneLabel hidden'>
+                      Phone Number
+                    </label>
+                    <input 
+                      type="phone"
+                      name="phone"
+                      id="phone"
+                      value={values.phone}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Phone Number'
+                    />
+                  </fieldset>
+                  <textarea 
+                    name="message"
+                    id="message"
+                    value={values.message}
+                    onChange={updateValue}rows='5' placeholder='How can we help?' 
+                  />
+                  <button 
+                    type='submit' 
+                    value='Submit'
+                  >
+                      Submit
+                  </button>
+                </form>
               </div>
-              <div className='map'>
-              <iframe src="https://api.jawg.io/maps/6114b2aa-b264-4676-8613-a223490f1ca7/34d24c11-da73-4602-9cae-dc3eaa69b1e9.html?access-token=qbjWqcSa2nN3qdaLVnyV7hQFyFKIF8CpxjM8y7dJFr7lzLmiKVA1EEZK9xmfDrUy" title="Example Map" width="100%" height="100%"></iframe>
+              <div className='mapContainer' id='location'>
+                <h3 className='upgraded cakes'>You can find us at:</h3>
+                <div className='address cakes'>
+                  <h3>123 Example St</h3>
+                  <h3>Goliath Peak, CO 80452</h3>
+                </div>
+                <div className='map'>
+                <iframe src="https://api.jawg.io/maps/6114b2aa-b264-4676-8613-a223490f1ca7/34d24c11-da73-4602-9cae-dc3eaa69b1e9.html?access-token=qbjWqcSa2nN3qdaLVnyV7hQFyFKIF8CpxjM8y7dJFr7lzLmiKVA1EEZK9xmfDrUy" title="Example Map" width="100%" height="100%"></iframe>
+                </div>
               </div>
             </div>
-          </div>
+            <footer>
+              <p>This template is inspired by a real business with these real products in Clifton, CO called "Homespun" and is dedicated in memory of Sonja Kent, a true entrepreneur for her community. Product images are provided by Homespun. </p>
+            </footer>
         </TabletHearthstoneStyles>
         <MobileHearthstoneStyles>
             <CtaHearthstone />
@@ -1947,13 +2033,16 @@ export default function Hearthstone() {
               <div className='background' />
             <div className='hearthstoneBody'>
               <div className='header flex center'>
+                <div className='headerImg' />
                 <div className='wordContainer'>
-                  <h1 className='welcome'>Welcome</h1>
-                  {/* <h1 className='to'>to</h1> */}
-                  <h1 className='title'> to Hearthstone</h1>
-                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                  <h1 className='welcome'>Welcome to</h1>
+                  <h1 className='title'>Hearthstone</h1>
+                  <h2>Hearthstone started 16 years ago as a grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </h2> 
                 </div>
-                <div className='shippingLogos inline center'>
+              </div>
+              <div className='content'>
+                  <h2>We handle packing and shipping through all major shipping companies!</h2>
+                <div className='shippingLogos flex center'>
                   <div className='logoContainer'>
                     <div className='fedex' />
                   </div>
@@ -1965,10 +2054,6 @@ export default function Hearthstone() {
                   </div>
                 </div>
               </div>
-              <div className='content'>
-                <p>Hearthstone started 16 years ago as grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-              </div>
               <section className='productSection' id='gifts'>
                 <h2>Gifts</h2>
                 <GalleryScroll />
@@ -1977,101 +2062,101 @@ export default function Hearthstone() {
                 <h2>Events</h2>
                 <div className='artClass'>
                   <h3>Art Classes - Sept. 4</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Learn the basics in working with cloth and pottery! Each art class teaches basic techniques in painting on these mediums from start to finish. Cost is $25/person for materials. No reservation necessary, pay at the door!</p> 
                   <h3>Learn a Craft - Sept. 15</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Join us each month for a workshop given by a local artist. Everything from butter making to knitting to modern art! Cost is free with donations to the local artist.</p> 
                   <h3>Business Networking Event - Oct. 5</h3>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>Tri-annual event includes an evening of great hors d’oeuvres while networking with other businesses in the valley, from the brand new to the well-seasoned! Our owner always gives a question and answer time towards the end of the evening. Please RSVP next time you drop into the store or by calling. Cost is $15.</p> 
                 </div>
               </section>
               <section className='aboutSection' id='about'>
                 <h2>About Us</h2>
                 <div className='owner'>
                   <div className='ownerImg' />
-                  <p>Owner Clara Dean has been making unique products for over 16 years. She started out making small purses for her 3 nieces and found that enough people liked them they started to sell!</p>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+                  <p>From the time she was a young girl, Clara Dean enjoyed crafts and design. When she was eight years old, instead of a lemonade stand, she would sell her wares at a small homemade booth during the summer. She would often make enough money to buy more materials for homemade gifts for family and friends. During college life took Miss Clara elsewhere and eventually she met and married her husband John. They had six children and moved to the valley during those fun chaotic years a young family brings.</p>
+                  <p>Though Miss Clara never stopped crafting for friends and family, sixteen years ago a neighbor encouraged her to start her own business. With the last of her children in high school, Clara and John converted their garage to a workshop and began selling products at farmer’s markets. The response was overwhelmingly positive from the community, and in 2008 a storefront was purchased.</p> 
+                  <p>Since that time Miss Clara has helped other local artists chase their dreams by encouraging them, teaching them basic business smarts, and giving them a place to sell their wonderful creations. This is truly a labor of love for all of us here at Hearthstone. We hope you will enjoy each purchase as much as Miss Clara and others enjoyed making it!</p> 
                 </div>
               </section>
-                <div className='formContainer' id='contactform'>
-                  <form 
-                    className='flex'   
-                    method="post"
-                    netlify-honeypot="bot-field"
-                    data-netlify="true"
-                    name="church-contact"
-                  >
-                    <input type="hidden" name="bot-field" />
-                    <input type="hidden" name="form-name" value="contact" />
-                    <legend>
-                      Have Questions? Need help? Let us know.
-                    </legend>
-                    <label htmlFor='firstname' className='firstNameLabel hidden'>
-                      First Name
-                    </label>
-                    <fieldset className='flex'>
-                      <input 
-                        type="text"
-                        name="firstname"
-                        id="firstname"
-                        value={values.firstname}
-                        onChange={updateValue}
-                        className='required'
-                        placeholder='First Name'
-                      />
-                      <label htmlFor='lastname' className='lastNameLabel hidden'>
-                      Last Name
-                      </label>
-                      <input 
-                        type="text"
-                        name="lastname"
-                        id="lastname"
-                        value={values.lastname}
-                        onChange={updateValue}
-                        className='required'
-                        placeholder='Last Name'
-                      />
-                    </fieldset>
-                    <fieldset className='flex'>
-                      <label htmlFor='email' className='emailLabel hidden'>
-                        Email Address
-                      </label>
-                      <input 
-                        type="email"
-                        name="email"
-                        id="email"
-                        value={values.email}
-                        onChange={updateValue}
-                        className='required'
-                        placeholder='Email Address'
-                      />
-                      <label htmlFor='phone' className='phoneLabel hidden'>
-                        Phone Number
-                      </label>
-                      <input 
-                        type="phone"
-                        name="phone"
-                        id="phone"
-                        value={values.phone}
-                        onChange={updateValue}
-                        className='required'
-                        placeholder='Phone Number'
-                      />
-                    </fieldset>
-                    <textarea 
-                      name="message"
-                      id="message"
-                      value={values.message}
-                      onChange={updateValue}rows='5' placeholder='How can we help?' 
+              <div className='formContainer' id='contactform'>
+                <form 
+                  className='flex'   
+                  method="post"
+                  netlify-honeypot="bot-field"
+                  data-netlify="true"
+                  name="church-contact"
+                >
+                  <input type="hidden" name="bot-field" />
+                  <input type="hidden" name="form-name" value="contact" />
+                  <legend>
+                    Have Questions? Need help? Let us know.
+                  </legend>
+                  <label htmlFor='firstname' className='firstNameLabel hidden'>
+                    First Name
+                  </label>
+                  <fieldset className='flex'>
+                    <input 
+                      type="text"
+                      name="firstname"
+                      id="firstname"
+                      value={values.firstname}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='First Name'
                     />
-                    <button 
-                      type='submit' 
-                      value='Submit'
-                    >
-                        Submit
-                    </button>
-                  </form>
-                </div>
+                    <label htmlFor='lastname' className='lastNameLabel hidden'>
+                    Last Name
+                  </label>
+                    <input 
+                      type="text"
+                      name="lastname"
+                      id="lastname"
+                      value={values.lastname}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Last Name'
+                    />
+                  </fieldset>
+                  <fieldset className='flex'>
+                    <label htmlFor='email' className='emailLabel hidden'>
+                      Email Address
+                    </label>
+                    <input 
+                      type="email"
+                      name="email"
+                      id="email"
+                      value={values.email}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Email Address'
+                    />
+                    <label htmlFor='phone' className='phoneLabel hidden'>
+                      Phone Number
+                    </label>
+                    <input 
+                      type="phone"
+                      name="phone"
+                      id="phone"
+                      value={values.phone}
+                      onChange={updateValue}
+                      className='required'
+                      placeholder='Phone Number'
+                    />
+                  </fieldset>
+                  <textarea 
+                    name="message"
+                    id="message"
+                    value={values.message}
+                    onChange={updateValue}rows='5' placeholder='How can we help?' 
+                  />
+                  <button 
+                    type='submit' 
+                    value='Submit'
+                  >
+                      Submit
+                  </button>
+                </form>
+              </div>
               <div className='mapContainer' id='location'>
                 <h3 className='upgraded cakes'>You can find us at:</h3>
                 <div className='address cakes'>
@@ -2079,11 +2164,14 @@ export default function Hearthstone() {
                   <h3>Goliath Peak, CO 80452</h3>
                 </div>
                 <div className='map'>
-                  <iframe src="https://api.jawg.io/maps/6114b2aa-b264-4676-8613-a223490f1ca7/34d24c11-da73-4602-9cae-dc3eaa69b1e9.html?access-token=qbjWqcSa2nN3qdaLVnyV7hQFyFKIF8CpxjM8y7dJFr7lzLmiKVA1EEZK9xmfDrUy" title="Example Map" width="100%" height="100%"></iframe>
+                <iframe src="https://api.jawg.io/maps/6114b2aa-b264-4676-8613-a223490f1ca7/34d24c11-da73-4602-9cae-dc3eaa69b1e9.html?access-token=qbjWqcSa2nN3qdaLVnyV7hQFyFKIF8CpxjM8y7dJFr7lzLmiKVA1EEZK9xmfDrUy" title="Example Map" width="100%" height="100%"></iframe>
                 </div>
               </div>
             </div>
-        </MobileHearthstoneStyles>
+            <footer>
+              <p>This template is inspired by a real business with these real products in Clifton, CO called "Homespun" and is dedicated in memory of Sonja Kent, a true entrepreneur for her community. Product images are provided by Homespun. </p>
+            </footer>
+          </MobileHearthstoneStyles>
         </>
     )
 }
