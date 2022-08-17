@@ -10,15 +10,14 @@ const GlobalStyles = createGlobalStyle`
     --red: #EB5E55;
     --green: #00916E;
   }
-  html {
-    background-color: var(--bg);
-    font-size: 10px;
-  }
-
   html, body {
     min-height: 100%;
     max-width: 100vw;
     overflow-x: hidden;
+  }
+  html {
+    background-color: var(--bg);
+    font-size: 10px;
   }
   body {
     position: relative;

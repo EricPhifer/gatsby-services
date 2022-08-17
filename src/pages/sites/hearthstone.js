@@ -14,7 +14,7 @@ import usps from '../../assets/images/hearthstone/usps-transparent-logo.png';
 import facebook from '../../assets/images/hearthstone/facebook-logo.png';
 import GalleryScroll from '../../components/GalleryScroll';
 import owner from '../../assets/images/hearthstone/face-of-smiling-woman.jpg';
-import crafts from '../../assets/images/hearthstone/pottter-and-the-clay.png'
+import crafts from '../../assets/images/hearthstone/pottter-and-the-clay.png';
 
 const HearthstoneStyles = styled.div`
   width: calc(100vw - 100px);
@@ -944,7 +944,7 @@ const MobileHearthstoneStyles = styled.div`
     }
     .title {
       margin: 2rem auto;
-      font-size: 3rem;
+      font-size: 3.1rem;
     }
     h1 {
       font-family: cursive;
@@ -1444,7 +1444,7 @@ export default function Hearthstone() {
                 <div className='wordContainer'>
                   <h1 className='welcome'>Welcome to</h1>
                   <h1 className='title'>Hearthstone</h1>
-                  <h2>Hearthstone started 16 years ago as a grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </h2> 
+                  <h2>Sixteen years ago we started in our garage with an idea, now we carry over 80 unique products! </h2> 
                 </div>
               </div>
               <div className='content'>
@@ -1650,7 +1650,7 @@ export default function Hearthstone() {
                 <div className='wordContainer'>
                   <h1 className='welcome'>Welcome to</h1>
                   <h1 className='title'>Hearthstone</h1>
-                  <h2>Hearthstone started 16 years ago as a grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </h2> 
+                  <h2>Sixteen years ago we started in our garage with an idea, now we carry over 80 unique products! </h2> 
                 </div>
               </div>
               <div className='content'>
@@ -1856,7 +1856,7 @@ export default function Hearthstone() {
                 <div className='wordContainer'>
                   <h1 className='welcome'>Welcome to</h1>
                   <h1 className='title'>Hearthstone</h1>
-                  <h2>Hearthstone started 16 years ago as a grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </h2> 
+                  <h2>Sixteen years ago we started in our garage with an idea, now we carry over 80 unique products! </h2> 
                 </div>
               </div>
               <div className='content'>
@@ -2037,7 +2037,7 @@ export default function Hearthstone() {
                 <div className='wordContainer'>
                   <h1 className='welcome'>Welcome to</h1>
                   <h1 className='title'>Hearthstone</h1>
-                  <h2>Hearthstone started 16 years ago as a grassroots startup working out of our garage. Since then we've grown to have a storefront with nearly 80 different products! </h2> 
+                  <h2>Sixteen years ago we started in our garage with an idea, now we carry over 80 unique products! </h2> 
                 </div>
               </div>
               <div className='content'>

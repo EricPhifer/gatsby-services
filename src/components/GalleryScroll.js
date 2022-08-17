@@ -120,10 +120,10 @@ const TabletGalleryScrollStyles = styled.div`
     .inline {
         display: inline-flex;
     }
-  .flex {
-      display: flex;
-      flex-flow: column nowrap;
-  }
+    .flex {
+        display: flex;
+        flex-flow: column nowrap;
+    }
     .center {
         justify-content: center;
     }
@@ -133,7 +133,7 @@ const TabletGalleryScrollStyles = styled.div`
       position: relative;
       @media only screen and (max-width: 650px) {
         height: 120rem;
-    }
+        }
     }
     button {
       display: block;
@@ -143,25 +143,36 @@ const TabletGalleryScrollStyles = styled.div`
       color: transparent;
       border-radius: 100%;
     }
+    .galleryContainer input {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        cursor: pointer;
+        z-index: 6;
+        opacity: 0;
+    }
     .infoOverlay {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background: rgba(0,0,0,0.5);
-      color: var(--white);
-      opacity: 0;
-      h3 {
-          margin-top: 7rem;
-          text-align: center;
-          font-size: 2.5rem;
-      }
-      p {
-          padding: 0 1rem;
-      }
-      &:hover {
-          opacity: 1;
-      }
-  }
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0,0.5);
+        color: var(--white);
+        opacity: 0;
+        transition: all 0.5s ease;
+        h3 {
+            margin-top: 7rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        p {
+            padding: 0 1rem;
+        }
+    }
+    .galleryContainer input:checked ~ .infoOverlay {
+        opacity: 1;
+    }
     .productContainer {
         display: grid;
         grid-template-columns: repeat(2, minmax(auto, 1fr));
@@ -246,6 +257,16 @@ const MobileGalleryScrollStyles = styled.div`
         color: transparent;
         border-radius: 100%;
     }
+    .galleryContainer input {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        cursor: pointer;
+        z-index: 6;
+        opacity: 0;
+    }
     .infoOverlay {
         width: 100%;
         height: 100%;
@@ -261,9 +282,9 @@ const MobileGalleryScrollStyles = styled.div`
         p {
             padding: 0 1rem;
         }
-        &:hover {
-            opacity: 1;
-        }
+    }
+    .galleryContainer input:checked ~ .infoOverlay {
+        opacity: 1;
     }
     .productContainer {
         max-width: 1080px;
@@ -324,6 +345,10 @@ const MobileGalleryScrollStyles = styled.div`
 `;
 
 export default function GalleryScroll() {
+    const [skirt, setSkirt] = React.useState(false || '');    
+    const [frog, setFrog] = React.useState(false || '');    
+    const [preserves, setPreserves] = React.useState(false || '');    
+    const [owl, setOwl] = React.useState(false || '');    
     return (
         <>
             <GalleryScrollStyles>
@@ -361,9 +386,14 @@ export default function GalleryScroll() {
                 </div>
             </GalleryScrollStyles>
             <TabletGalleryScrollStyles>
-            <div className='galleryContainer'>
+                <div className='galleryContainer'>
                     <div className='productContainer'>
                         <div className='product'>
+                            <input 
+                                type='checkbox' 
+                                checked={skirt} 
+                                onClick={() => {setSkirt(old => !old)}} 
+                            />
                             <div className='infoOverlay'>
                                 <h3>Skirt Purse</h3>
                                 <p>The skirt purse is a fun flashback to girlhood. A great gift for your daughter, niece or friend!</p>
@@ -371,6 +401,11 @@ export default function GalleryScroll() {
                             <div className='productImg1' />
                         </div>
                         <div className='product'>
+                            <input 
+                                type='checkbox' 
+                                checked={frog} 
+                                onClick={() => {setFrog(old => !old)}} 
+                            />
                             <div className='infoOverlay'>
                                 <h3>Frog Bag</h3>
                                 <p>Frog bags show great personality and are surprisingly roomy.</p>
@@ -378,6 +413,11 @@ export default function GalleryScroll() {
                             <div className='productImg2' />
                         </div>
                         <div className='product'>
+                            <input 
+                                type='checkbox' 
+                                checked={preserves} 
+                                onClick={() => {setPreserves(old => !old)}} 
+                            />
                             <div className='infoOverlay'>
                                 <h3>Local Preserves</h3>
                                 <p>We sell delicious jam, honey and butter made by local Grand Valley artisans. Return your jar for a discount on your next tasty purchase. Try them all!</p>
@@ -385,6 +425,11 @@ export default function GalleryScroll() {
                             <div className='productImg3' />
                         </div>
                         <div className='product'>
+                            <input 
+                                type='checkbox' 
+                                checked={owl} 
+                                onClick={() => {setOwl(old => !old)}} 
+                            />
                             <div className='infoOverlay'>
                                 <h3>Owl Statues</h3>
                                 <p>These adorable statues are an excellent addition to any household, whether collector or homemaker. Hoo are you to not like them!</p>
@@ -398,6 +443,11 @@ export default function GalleryScroll() {
                 <div className='galleryContainer'>
                     <div className='productContainer'>
                         <div className='product'>
+                            <input 
+                                type='checkbox' 
+                                checked={skirt} 
+                                onClick={() => {setSkirt(old => !old)}} 
+                            />
                             <div className='infoOverlay'>
                                 <h3>Skirt Purse</h3>
                                 <p>The skirt purse is a fun flashback to girlhood. A great gift for your daughter, niece or friend!</p>
@@ -405,6 +455,11 @@ export default function GalleryScroll() {
                             <div className='productImg1' />
                         </div>
                         <div className='product'>
+                        <input 
+                                type='checkbox' 
+                                checked={frog} 
+                                onClick={() => {setFrog(old => !old)}} 
+                            />
                             <div className='infoOverlay'>
                                 <h3>Frog Bag</h3>
                                 <p>Frog bags show great personality and are surprisingly roomy.</p>
@@ -412,6 +467,11 @@ export default function GalleryScroll() {
                             <div className='productImg2' />
                         </div>
                         <div className='product'>
+                            <input 
+                                type='checkbox' 
+                                checked={preserves} 
+                                onClick={() => {setPreserves(old => !old)}} 
+                            />
                             <div className='infoOverlay'>
                                 <h3>Local Preserves</h3>
                                 <p>We sell delicious jam, honey and butter made by local Grand Valley artisans. Return your jar for a discount on your next tasty purchase. Try them all!</p>
@@ -419,6 +479,11 @@ export default function GalleryScroll() {
                             <div className='productImg3' />
                         </div>
                         <div className='product'>
+                            <input 
+                                type='checkbox' 
+                                checked={owl} 
+                                onClick={() => {setOwl(old => !old)}} 
+                            />
                             <div className='infoOverlay'>
                                 <h3>Owl Statues</h3>
                                 <p>These adorable statues are an excellent addition to any household, whether collector or homemaker. Hoo are you to not like them!</p>
