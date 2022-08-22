@@ -38,7 +38,7 @@ const HearthstoneStyles = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgbe(60,20,80,0.3);
     z-index: 5;
   }
   .background {
@@ -108,7 +108,7 @@ const HearthstoneStyles = styled.div`
     width: 100%;
     height: 100%;
     padding: 7rem 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     p {
       max-width: 600px;
       margin: 0 auto;
@@ -128,7 +128,7 @@ const HearthstoneStyles = styled.div`
       height: 11rem;
       background-image: url(${fedex});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     .ups {
@@ -136,7 +136,7 @@ const HearthstoneStyles = styled.div`
       height: 18.5rem;
       background-image: url(${ups});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     .usps {
@@ -144,7 +144,7 @@ const HearthstoneStyles = styled.div`
       height: 30rem;
       background-image: url(${usps});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
   }
@@ -154,7 +154,7 @@ const HearthstoneStyles = styled.div`
     width: 100%;
     min-height: 5rem;
     padding: 2rem 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     h3, p {
       max-width: 600px;
       margin: 0 auto;
@@ -173,7 +173,7 @@ const HearthstoneStyles = styled.div`
       margin: 0 auto;
       background-image: url(${owner});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     p {
@@ -187,7 +187,7 @@ const HearthstoneStyles = styled.div`
   // Contact Form
   .formContainer {
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     padding: 5rem 0;
     form {
       max-width: 600px;
@@ -229,7 +229,7 @@ const HearthstoneStyles = styled.div`
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     padding: 3rem 0;
     .upgraded {
       text-transform: uppercase;
@@ -251,7 +251,7 @@ const HearthstoneStyles = styled.div`
   footer {
     width: 100%;
     height: 12rem;
-    position: absolute;
+    position: relative;
     background-color: var(--black);
     p {
       max-width: 500px;
@@ -384,7 +384,7 @@ const LandscapeHearthstoneStyles = styled.div`
     width: 100%;
     height: 100%;
     padding: 7rem 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     p {
       max-width: 600px;
       margin: 0 auto;
@@ -403,7 +403,7 @@ const LandscapeHearthstoneStyles = styled.div`
       height: 11rem;
       background-image: url(${fedex});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     .ups {
@@ -411,7 +411,7 @@ const LandscapeHearthstoneStyles = styled.div`
       height: 18.5rem;
       background-image: url(${ups});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     .usps {
@@ -419,7 +419,7 @@ const LandscapeHearthstoneStyles = styled.div`
       height: 30rem;
       background-image: url(${usps});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
   }
@@ -429,7 +429,7 @@ const LandscapeHearthstoneStyles = styled.div`
     width: 100%;
     min-height: 5rem;
     padding: 2rem 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     h3, p {
       max-width: 600px;
       margin: 0 auto;
@@ -448,7 +448,7 @@ const LandscapeHearthstoneStyles = styled.div`
       margin: 0 auto;
       background-image: url(${owner});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     p {
@@ -462,7 +462,7 @@ const LandscapeHearthstoneStyles = styled.div`
   // Contact Form Styles
   .formContainer {
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     padding: 5rem 0;
     form {
       max-width: 600px;
@@ -504,7 +504,7 @@ const LandscapeHearthstoneStyles = styled.div`
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     padding: 3rem 0;
     .upgraded {
       text-transform: uppercase;
@@ -526,7 +526,7 @@ const LandscapeHearthstoneStyles = styled.div`
   footer {
     width: 100%;
     height: 12rem;
-    position: absolute;
+    position: relative;
     background-color: var(--black);
     p {
       max-width: 500px;
@@ -602,7 +602,7 @@ const TabletHearthstoneStyles = styled.div`
     background-position: center center;
   }
   .header h2 {
-    max-width: 777px;
+    max-width: 575px;
   }
   .header {
     height: 80vh;
@@ -659,7 +659,7 @@ const TabletHearthstoneStyles = styled.div`
     width: 100%;
     height: 100%;
     padding: 7rem 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     p {
       max-width: 600px;
       margin: 0 auto;
@@ -679,7 +679,7 @@ const TabletHearthstoneStyles = styled.div`
       height: 8rem;
       background-image: url(${fedex});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     .ups {
@@ -687,7 +687,7 @@ const TabletHearthstoneStyles = styled.div`
       height: 13.5rem;
       background-image: url(${ups});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     .usps {
@@ -695,7 +695,7 @@ const TabletHearthstoneStyles = styled.div`
       height: 20rem;
       background-image: url(${usps});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
   }
@@ -705,7 +705,7 @@ const TabletHearthstoneStyles = styled.div`
     width: 100%;
     min-height: 5rem;
     padding: 2rem 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     h3, p {
       max-width: 600px;
       margin: 0 auto;
@@ -724,7 +724,7 @@ const TabletHearthstoneStyles = styled.div`
       margin: 0 auto;
       background-image: url(${owner});
       background-size: cover;
-      background-repeat: norepeat;
+      background-repeat: no-repeat;
       background-position: center center;
     }
     p {
@@ -738,7 +738,7 @@ const TabletHearthstoneStyles = styled.div`
   // Contact Form Styles
   .formContainer {
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     padding: 5rem 0;
     form {
       max-width: 600px;
@@ -780,7 +780,7 @@ const TabletHearthstoneStyles = styled.div`
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(60,20,80,0.5);
     padding: 3rem 0;
     .upgraded {
       text-transform: uppercase;
@@ -802,7 +802,7 @@ const TabletHearthstoneStyles = styled.div`
   footer {
     width: 100%;
     height: 12rem;
-    position: absolute;
+    position: relative;
     background-color: var(--black);
     p {
       max-width: 500px;
@@ -826,6 +826,11 @@ const TabletHearthstoneStyles = styled.div`
           font-size: 2rem;
         }
     }
+    .content h2 {
+      font-size: 2.1rem;
+      max-width: 515px;
+      margin: 2rem auto;
+    }
     h2 {
       font-size: 2.1rem;
     }
@@ -834,7 +839,7 @@ const TabletHearthstoneStyles = styled.div`
     }
     .title {
         margin: 2rem 0;
-        font-size: 4rem;
+        font-size: 6rem;
     }
     .shippingLogos {
         height: 13rem;
@@ -850,6 +855,11 @@ const TabletHearthstoneStyles = styled.div`
             width: 10rem;
             height: 10rem;
         }
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .title {
+      font-size: 4rem;
     }
   }
 `;
@@ -893,7 +903,7 @@ const MobileHearthstoneStyles = styled.div`
       width: 100%;
       height: 100%;
       position: absolute;
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgbe(60,20,80,0.3);
       z-index: 5;
     }
     .background {
@@ -966,7 +976,7 @@ const MobileHearthstoneStyles = styled.div`
       width: 100%;
       height: 100%;
       padding: 3rem 0;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(60,20,80,0.5);
       h2 {
         padding: 2rem;
         font-size: 1.5rem;
@@ -989,7 +999,7 @@ const MobileHearthstoneStyles = styled.div`
         height: 7rem;
         background-image: url(${fedex});
         background-size: cover;
-        background-repeat: norepeat;
+        background-repeat: no-repeat;
         background-position: center center;
       }
       .ups {
@@ -997,7 +1007,7 @@ const MobileHearthstoneStyles = styled.div`
         height: 25rem;
         background-image: url(${ups});
         background-size: cover;
-        background-repeat: norepeat;
+        background-repeat: no-repeat;
         background-position: center center;
       }
       .usps {
@@ -1005,7 +1015,7 @@ const MobileHearthstoneStyles = styled.div`
         height: 25rem;
         background-image: url(${usps});
         background-size: cover;
-        background-repeat: norepeat;
+        background-repeat: no-repeat;
         background-position: center center;
       }
     }
@@ -1015,7 +1025,7 @@ const MobileHearthstoneStyles = styled.div`
       width: 100%;
       min-height: 5rem;
       padding: 2rem 0;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(60,20,80,0.5);
       h3, p {
         max-width: 600px;
         margin: 0 auto;
@@ -1034,7 +1044,7 @@ const MobileHearthstoneStyles = styled.div`
         margin: 0 auto;
         background-image: url(${owner});
         background-size: cover;
-        background-repeat: norepeat;
+        background-repeat: no-repeat;
         background-position: center center;
       }
       p {
@@ -1048,7 +1058,7 @@ const MobileHearthstoneStyles = styled.div`
     // Contact Form Styles
     .formContainer {
       width: 100%;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(60,20,80,0.5);
       padding: 5rem 0;
       form {
         max-width: 600px;
@@ -1090,7 +1100,7 @@ const MobileHearthstoneStyles = styled.div`
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(60,20,80,0.5);
       padding: 3rem 0;
       .upgraded {
         text-transform: uppercase;
@@ -1112,7 +1122,7 @@ const MobileHearthstoneStyles = styled.div`
      footer {
       width: 100%;
       height: 18rem;
-      position: absolute;
+      position: relative;
       background-color: var(--black);
       p {
         max-width: 300px;
@@ -1218,20 +1228,31 @@ const MobileNavigation = styled.div`
   position: fixed;
   top: 0;
   z-index: 7;
+  .absolute {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
   .logo {
-    width: 100%;
-    height: 100%;
+    width: 240px;
+    height: 120px;
     background-image: url(${logo});
     background-size: cover;
-    background-repeat: norepeat;
+    background-repeat: no-repeat;
     background-position: center center;
+    @media only screen and (max-width: 500px) {
+      width: 200px;
+      height: 100px;
+      position: relative;
+      top: 5rem;
+    }
   }   
   .facebook {
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
     background-image: url(${facebook});
     background-size: cover;
-    background-repeat: norepeat;
+    background-repeat: no-repeat;
     background-position: center center;
   }
   #menuToggle {
@@ -1432,7 +1453,7 @@ export default function Hearthstone() {
                   </ul>
                 </nav>
               </div>
-              <a href='facebook.com' className='right'>
+              <a href='https://www.facebook.com/profile.php?id=100069726706760' className='right'>
                 <div className='facebook' />
               </a>
             </div>
@@ -1601,6 +1622,9 @@ export default function Hearthstone() {
                     <a href='https://services.ericphifer.com/sites/city-church#location'>
                       <li>Location</li>
                     </a>
+                    <a href='https://www.facebook.com/profile.php?id=100069726706760' className='right'>
+                      <li className='facebook'></li>
+                    </a>
                   </ul>
                 </nav>
               </div>
@@ -1618,6 +1642,9 @@ export default function Hearthstone() {
               <span />
               <div id="menu" className="menuContainer">
                 <div className="navBG">
+                  <Link to='/' className='flex center'>
+                    <div className='logo' />
+                  </Link>
                   <div className="center">
                     <nav>
                       <ul className='flex center'>
@@ -1641,6 +1668,9 @@ export default function Hearthstone() {
                   </div>
                 </div>
               </div>
+              <a href='https://www.facebook.com/profile.php?id=100069726706760' className='flex center absolute'>
+                <div className='facebook' />
+              </a>
             </div>
           </MobileNavigation>
           <div className='background' />
@@ -1789,6 +1819,9 @@ export default function Hearthstone() {
           <CtaHearthstone />
           <Navigation>
             <div className="full navBG">
+              <Link to='/' className='left'>
+                <div className='logo' />
+              </Link>
               <div className="center">
                 <nav>
                   <ul className='inline center'>
@@ -1810,6 +1843,9 @@ export default function Hearthstone() {
                   </ul>
                 </nav>
               </div>
+              <a href='https://www.facebook.com/profile.php?id=100069726706760' className='right'>
+                <div className='facebook' />
+              </a>
             </div>
           </Navigation>
           <MobileNavigation>
@@ -1824,6 +1860,9 @@ export default function Hearthstone() {
               <span />
               <div id="menu" className="menuContainer">
                 <div className="navBG">
+                  <Link to='/' className='flex center'>
+                    <div className='logo' />
+                  </Link>
                   <div className="center">
                     <nav>
                       <ul className='flex center'>
@@ -1846,6 +1885,9 @@ export default function Hearthstone() {
                     </nav>
                   </div>
                 </div>
+              <a href='https://www.facebook.com/profile.php?id=100069726706760' className='flex center absolute'>
+                <div className='facebook' />
+              </a>
               </div>
             </div>
           </MobileNavigation>
@@ -2005,6 +2047,9 @@ export default function Hearthstone() {
                   <span />
                   <div id="menu" className="menuContainer">
                     <div className="navBG">
+                      <Link to='/' className='flex center'>
+                        <div className='logo' />
+                      </Link>
                       <div className="center">
                         <nav>
                           <ul className='flex center'>
@@ -2027,6 +2072,9 @@ export default function Hearthstone() {
                         </nav>
                       </div>
                     </div>
+                    <a href='https://www.facebook.com/profile.php?id=100069726706760' className='flex center absolute'>
+                      <div className='facebook' />
+                    </a>
                   </div>
                 </div>
               </MobileNavigation>

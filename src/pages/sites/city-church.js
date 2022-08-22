@@ -730,7 +730,6 @@ const TabletCityChurchStyles = styled.div`
   @media only screen and (max-width: 900px) {
     width: calc(100vw - 50px);
     margin-left: 50px;
-    position: absolute;
   }
 `;
 

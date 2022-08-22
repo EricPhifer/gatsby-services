@@ -483,7 +483,6 @@ const TabletStandardCityChurchStyles = styled.div`
   @media only screen and (max-width: 900px) {
     width: calc(100vw - 50px);
     margin-left: 50px;
-    position: absolute;
   }
 `;
 
@@ -895,8 +894,7 @@ export default function StandardCityChurch() {
                 <div className='wordContainer'>
                   <h1>City Church</h1>
                   <h2>Come join us!</h2>
-                  <h2>Sundays 9-10 &amp; 11-12</h2>
-                </div>
+                  <h2>Sundays at 10am</h2>
               </div>
               <div className='content'>
                 <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
@@ -904,6 +902,8 @@ export default function StandardCityChurch() {
                 <p>Man was committed to defy moral and natural order - committed to sin.</p>
                 <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
                 <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+                <p>Romans 10:9-10 says, “If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”</p>
+                <p>Whether you are a “seasoned” Christian or unsure of what you believe, we hope you will join us this Sunday! We want to walk alongside you wherever you are on your faith journey.</p>
               </div>
               <section className='inline' id='history'>
                 <div className='left'>
@@ -920,6 +920,7 @@ export default function StandardCityChurch() {
                 </div>
               </section>
             </div>
+          </div>
         </StandardCityChurchStyles>
         <LandscapeStandardCityChurchStyles>
           <CtaStandardChurch />
@@ -992,7 +993,7 @@ export default function StandardCityChurch() {
               <div className='wordContainer'>
                 <h1>City Church</h1>
                 <h2 className='increase'>Come join us!</h2>
-                <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+                <h2>Sundays at 10am</h2>
               </div>
             </div>
             <div className='content'>
@@ -1001,6 +1002,8 @@ export default function StandardCityChurch() {
               <p>Man was committed to defy moral and natural order - committed to sin.</p>
               <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
               <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+              <p>Romans 10:9-10 says, “If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”</p>
+              <p>Whether you are a “seasoned” Christian or unsure of what you believe, we hope you will join us this Sunday! We want to walk alongside you wherever you are on your faith journey.</p>
             </div>
             <section className='responsiveFlex center' id='history'>
               <div className='left'>
@@ -1089,7 +1092,7 @@ export default function StandardCityChurch() {
               <div className='wordContainer'>
                 <h1>City Church</h1>
                 <h2 className='increase'>Come join us!</h2>
-                <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+                <h2>Sundays at 10am</h2>
               </div>
             </div>
             <div className='content'>
@@ -1098,6 +1101,8 @@ export default function StandardCityChurch() {
               <p>Man was committed to defy moral and natural order - committed to sin.</p>
               <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
               <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+              <p>Romans 10:9-10 says, “If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”</p>
+              <p>Whether you are a “seasoned” Christian or unsure of what you believe, we hope you will join us this Sunday! We want to walk alongside you wherever you are on your faith journey.</p>
             </div>
             <section className='responsiveFlex center' id='history'>
               <div className='left'>
@@ -1161,7 +1166,7 @@ export default function StandardCityChurch() {
                   <div className='wordContainer'>
                     <h1>City Church</h1>
                     <h2 className='increase'>Come join us!</h2>
-                    <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+                    <h2>Sundays at 10am</h2>
                   </div>
                 </div>
                 <div className='content'>
@@ -1170,6 +1175,8 @@ export default function StandardCityChurch() {
                   <p>Man was committed to defy moral and natural order - committed to sin.</p>
                   <p>Jesus was born among us, human, in order to show us what is right, to take the debt we owed - death - once for all and proved His deity by rising again after three days.</p>
                   <p>Now, through Jesus, all can come before the Creator of existence and speak plainly with a God who sees and knows us.</p>
+                  <p>Romans 10:9-10 says, “If you declare with your mouth, “Jesus is Lord,” and believe in your heart that God raised him from the dead, you will be saved. For it is with your heart that you believe and are justified, and it is with your mouth that you profess your faith and are saved.”</p>
+                  <p>Whether you are a “seasoned” Christian or unsure of what you believe, we hope you will join us this Sunday! We want to walk alongside you wherever you are on your faith journey.</p>
                 </div>
                 <section className='flex center' id='history'>
                   <div className='left'>

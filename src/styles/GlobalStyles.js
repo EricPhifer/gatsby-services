@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     min-height: 100%;
     max-width: 100vw;
     overflow-x: hidden;
+    overflow-y: visible;
   }
   html {
     background-color: var(--bg);
@@ -21,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     position: relative;
+    overflow-block: hidden;
   }
   button {
     display: flex;
