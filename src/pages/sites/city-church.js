@@ -462,7 +462,6 @@ const LandscapeCityChurchStyles = styled.div`
   @media only screen and (max-width: 900px) {
     width: calc(100vw - 50px);
     margin-left: 50px;
-    position: absolute;
   }
 `;
 const TabletCityChurchStyles = styled.div`
@@ -1241,7 +1240,7 @@ export default function CityChurch() {
                 <div className='wordContainer'>
                   <h1>City Church</h1>
                   <h2>Come join us!</h2>
-                  <h2>Sundays from 9-10 and 11-12</h2>
+                  <h2>Sundays at 10am</h2>
                 </div>
               </div>
               <div className='content'>
@@ -1484,7 +1483,7 @@ export default function CityChurch() {
               <div className='wordContainer'>
                 <h1>City Church</h1>
                 <h2 className='increase'>Come join us!</h2>
-                <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+                <h2>Sundays at 10am</h2>
               </div>
             </div>
             <div className='content'>
@@ -1727,7 +1726,7 @@ export default function CityChurch() {
               <div className='wordContainer'>
                 <h1>City Church</h1>
                 <h2 className='increase'>Come join us!</h2>
-                <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+                <h2>Sundays at 10am</h2>
               </div>
             </div>
             <div className='content'>
@@ -1940,7 +1939,7 @@ export default function CityChurch() {
                   <div className='wordContainer'>
                     <h1>City Church</h1>
                     <h2 className='increase'>Come join us!</h2>
-                    <h2>Sundays 9-10am &amp; 11am-12pm</h2>
+                    <h2>Sundays at 10am</h2>
                   </div>
                 </div>
                 <div className='content'>

@@ -5,9 +5,9 @@ import CtaStandardChurch from '../../../components/CtaStandardChurch';
 
 // Images
 import biblevector from '../../../assets/images/city-church/books-bible-vector.jpg';
-import women from '../../../assets/images/city-church/women-study-fellowship.jpg';
 import volunteer from '../../../assets/images/city-church/volunteer-name-tag.jpg';
-import waves from '../../../assets/images/city-church/water-waves-tide-crashing-rocks.jpg';
+import history from '../../../assets/images/city-church/christ-jesus-crucified-cross-redemption-redeemed-salvation-saved-death-history-historical.jpg';
+import study from '../../../assets/images/city-church/church-pews-bible-message-study-sermon.jpg';
 
 const CityChurchStyles = styled.div`
   width: calc(100vw - 100px);
@@ -80,18 +80,9 @@ const CityChurchStyles = styled.div`
     text-shadow: 1px 0 1px var(--white), 0 1px 1px var(--white), -1px 0 1px var(--white), 0 -1px 1px var(--white);
   }
   .header .buttonesque {
-    margin: 2rem 0;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    color: var(--white);
-    border-radius: 20px;
-    font-size: 2rem;
+    color: purple;
     &:hover {
-      color: purple;
-      background-color: #e4e4e4;
+      color: crimson;
     }
   }
   .content {
@@ -109,6 +100,12 @@ const CityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
     }
@@ -127,7 +124,7 @@ const CityChurchStyles = styled.div`
     .section1Img {
       width: 100%;
       height: 700px;
-      background-image: url(${women});
+      background-image: url(${history});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -135,7 +132,7 @@ const CityChurchStyles = styled.div`
     .section2Img {
       width: 100%;
       height: 700px;
-      background-image: url(${waves});
+      background-image: url(${study});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -245,18 +242,9 @@ const LandscapeCityChurchStyles = styled.div`
     text-shadow: 1px 0 1px var(--white), 0 1px 1px var(--white), -1px 0 1px var(--white), 0 -1px 1px var(--white);
   }
   .header .buttonesque {
-    margin: 2rem 0;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    color: var(--white);
-    border-radius: 20px;
-    font-size: 2rem;
+    color: purple;
     &:hover {
-      color: purple;
-      background-color: #e4e4e4;
+      color: crimson;
     }
   }
   .content {
@@ -274,6 +262,12 @@ const LandscapeCityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
       @media only screen and (max-width: 900px) {
@@ -301,7 +295,7 @@ const LandscapeCityChurchStyles = styled.div`
     .section1Img {
       width: 100%;
       height: 223vh;
-      background-image: url(${women});
+      background-image: url(${history});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -313,7 +307,7 @@ const LandscapeCityChurchStyles = styled.div`
     .section2Img {
       width: 100%;
       height: 223vh;
-      background-image: url(${waves});
+      background-image: url(${study});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -330,7 +324,6 @@ const LandscapeCityChurchStyles = styled.div`
   @media only screen and (max-width: 900px) {
     width: calc(100vw - 50px);
     margin-left: 50px;
-    position: absolute;
   }
 `;
 const TabletCityChurchStyles = styled.div`
@@ -426,18 +419,9 @@ const TabletCityChurchStyles = styled.div`
     text-shadow: 1px 0 1px var(--white), 0 1px 1px var(--white), -1px 0 1px var(--white), 0 -1px 1px var(--white);
   }
   .header .buttonesque {
-    margin: 2rem 0;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    color: var(--white);
-    border-radius: 20px;
-    font-size: 2rem;
+    color: purple;
     &:hover {
-      color: purple;
-      background-color: #e4e4e4;
+      color: crimson;
     }
   }
   .content {
@@ -455,6 +439,12 @@ const TabletCityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
       @media only screen and (max-width: 900px) {
@@ -485,7 +475,7 @@ const TabletCityChurchStyles = styled.div`
     .section1Img {
       width: 100%;
       height: 100vh;
-      background-image: url(${women});
+      background-image: url(${history});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -499,7 +489,7 @@ const TabletCityChurchStyles = styled.div`
     .section2Img {
       width: 100%;
       height: 100vh;
-      background-image: url(${waves});
+      background-image: url(${study});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -521,7 +511,6 @@ const TabletCityChurchStyles = styled.div`
   @media only screen and (max-width: 900px) {
     width: calc(100vw - 50px);
     margin-left: 50px;
-    position: absolute;
   }
 `;
 
@@ -664,7 +653,7 @@ const MobileCityChurchStyles = styled.div`
       .section1Img {
         width: 100%;
         height: 100%;
-        background-image: url(${women});
+        background-image: url(${history});
         background-size: cover;
         background-repeat: norepeat;
         background-position: center center;
@@ -675,7 +664,7 @@ const MobileCityChurchStyles = styled.div`
       .section2Img {
         width: 100%;
         height: 100%;
-        background-image: url(${waves});
+        background-image: url(${study});
         background-size: cover;
         background-repeat: norepeat;
         background-position: center center;
@@ -945,30 +934,35 @@ export default function CityChurch() {
                 <div className='headerImg' />
                 <div className='wordContainer'>
                   <h1>Events</h1>
-                  <h2>We're always looking for people willing to help. Contact us if you're interested!</h2>
-                  <Link to='/sites/standard-city-church/contact' className='buttonesque'>Contact Us</Link>
+                  <h2>We're always looking for people willing to help. <Link to='/sites/standard-city-church/contact' className='buttonesque'>Contact Us</Link> if you're interested!</h2>
                 </div>
               </div>
               <div className='content'>
                 <p>Jesus brought in all kinds of people into His ministry, from prostitutes to tax collectors. We believe that everyone can be saved from the debt we owe the Creator. This is our outreach to a world in need of a savior.</p>
               </div>
-              <section className='inline' id='local'>
+              <section className='inline' id='history'>
                 <div className='left'>
                   <div className='section1Img' />
                 </div>
                 <div className='right textSide'>
-                  <h3>Local Ministries</h3>
-                  <p>We support three ministries in Colorado: Choice Academies, The Joseph Center and University Outreach.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <h3>Who was Jesus in History?</h3>
+                  <p>Christianity is extraordinary in its foundation in a single man and, even further, a single event. If this event is true, then Christianity is undeniable.</p> 
+                  <p>This class focuses on understanding who Jesus was in history and the events surrounding his resurrection, which boils down to three questions:</p> 
+                  <ul>
+                    <li>Did Jesus live?</li>
+                    <li>Did Jesus die?</li>
+                    <li>Did Jesus rise?</li>
+                  </ul>
+                  <p>Join us every Friday evening from 6-7pm to talk about why we believe what we believe.</p>
                 </div>
               </section>
               <section className='inline' id='intl'>
                 <div className='right textSide'>
-                  <h3>International Ministries</h3>
-                  <p>We financially support twelve ministries across the world from Brazil to China.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <h3>Bible Studies</h3>
+                  <p>Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. <Link to='/contact'>Please contact Elder John Perry with any questions</Link>.</p>
+                  <p>Men&apos;s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)</p>
+                  <p>Women&apos;s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)</p>
+                  <p>Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)</p>
                 </div>
                 <div className='left'>
                   <div className='section2Img' />
@@ -1046,30 +1040,35 @@ export default function CityChurch() {
               <div className='headerImg' />
                 <div className='wordContainer'>
                   <h1>Events</h1>
-                  <h2>We're always looking for people willing to help. Contact us if you're interested!</h2>
-                  <Link to='/sites/standard-city-church/contact' className='buttonesque'>Contact Us</Link>
+                  <h2>We're always looking for people willing to help. <Link to='/sites/standard-city-church/contact' className='buttonesque'>Contact Us</Link> if you're interested!</h2>
                 </div>
               </div>
               <div className='content'>
                 <p>Jesus brought in all kinds of people into His ministry, from prostitutes to tax collectors. We believe that everyone can be saved from the debt we owe the Creator. This is our outreach to a world in need of a savior.</p>
               </div>
-            <section className='responsiveFlex center' id='local'>
+            <section className='responsiveFlex center' id='history'>
               <div className='left'>
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                <h3>Local Ministries</h3>
-                <p>We support three ministries in Colorado: Choice Academies, The Joseph Center and University Outreach.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>Who was Jesus in History?</h3>
+                <p>Christianity is extraordinary in its foundation in a single man and, even further, a single event. If this event is true, then Christianity is undeniable.</p> 
+                  <p>This class focuses on understanding who Jesus was in history and the events surrounding his resurrection, which boils down to three questions:</p> 
+                  <ul>
+                    <li>Did Jesus live?</li>
+                    <li>Did Jesus die?</li>
+                    <li>Did Jesus rise?</li>
+                  </ul>
+                  <p>Join us every Friday evening from 6-7pm to talk about why we believe what we believe.</p>
               </div>
             </section>
             <section className='responsiveFlex invert' id='intl'>
                 <div className='right textSide'>
-                  <h3>International Ministries</h3>
-                  <p>We financially support twelve ministries across the world from Brazil to China.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <h3>Bible Studies</h3>
+                  <p>Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. <Link to='/contact'>Please contact Elder John Perry with any questions</Link>.</p>
+                  <p>Men&apos;s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)</p>
+                  <p>Women&apos;s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)</p>
+                  <p>Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)</p>
                 </div>
                 <div className='left'>
                   <div className='section2Img' />
@@ -1147,30 +1146,35 @@ export default function CityChurch() {
               <div className='headerImg' />
               <div className='wordContainer'>
                 <h1>Events</h1>
-                <h2>We're always looking for people willing to help. Contact us if you're interested!</h2>
-                <Link to='/sites/standard-city-church/contact' className='buttonesque'>Contact Us</Link>
+                <h2>We're always looking for people willing to help. <Link to='/sites/standard-city-church/contact' className='buttonesque'>Contact Us</Link> if you're interested!</h2>
               </div>
             </div>
             <div className='content'>
               <p>Jesus brought in all kinds of people into His ministry, from prostitutes to tax collectors. We believe that everyone can be saved from the debt we owe the Creator. This is our outreach to a world in need of a savior.</p>
             </div>
-            <section className='responsiveFlex center' id='local'>
+            <section className='responsiveFlex center' id='history'>
               <div className='left'>
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                <h3>Local Ministries</h3>
-                <p>We support three ministries in Colorado: Choice Academies, The Joseph Center and University Outreach.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>Who was Jesus in History?</h3>
+                <p>Christianity is extraordinary in its foundation in a single man and, even further, a single event. If this event is true, then Christianity is undeniable.</p> 
+                  <p>This class focuses on understanding who Jesus was in history and the events surrounding his resurrection, which boils down to three questions:</p> 
+                  <ul>
+                    <li>Did Jesus live?</li>
+                    <li>Did Jesus die?</li>
+                    <li>Did Jesus rise?</li>
+                  </ul>
+                  <p>Join us every Friday evening from 6-7pm to talk about why we believe what we believe.</p>
               </div>
             </section>
             <section className='responsiveFlex invert' id='intl'>
               <div className='right textSide'>
-                <h3>International Ministries</h3>
-                <p>We financially support twelve ministries across the world from Brazil to China.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>Bible Studies</h3>
+                <p>Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. <Link to='/contact'>Please contact Elder John Perry with any questions</Link>.</p>
+                  <p>Men&apos;s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)</p>
+                  <p>Women&apos;s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)</p>
+                  <p>Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)</p>
               </div>
               <div className='left'>
                 <div className='section2Img' />
@@ -1223,30 +1227,35 @@ export default function CityChurch() {
                 <div className='headerImg' />
                 <div className='wordContainer'>
                   <h1>Events</h1>
-                  <h2>We're always looking for people willing to help. Contact us if you're interested!</h2>
-                  <Link to='/sites/standard-city-church/contact' className='buttonesque'>Contact Us</Link>
+                  <h2>We're always looking for people willing to help. <Link to='/sites/standard-city-church/contact' className='buttonesque'>Contact Us</Link> if you're interested!</h2>
                 </div>
               </div>
               <div className='content'>
                 <p>Jesus brought in all kinds of people into His ministry, from prostitutes to tax collectors. We believe that everyone can be saved from the debt we owe the Creator. This is our outreach to a world in need of a savior.</p>
               </div>
-              <section className='flex center' id='local'>
+              <section className='flex center' id='history'>
                 <div className='left'>
                   <div className='section1Img' />
                 </div>
                 <div className='right textSide'>
-                  <h3>Local Ministries</h3>
-                  <p>We support three ministries in Colorado: Choice Academies, The Joseph Center and University Outreach.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <h3>Who was Jesus in History?</h3>
+                  <p>Christianity is extraordinary in its foundation in a single man and, even further, a single event. If this event is true, then Christianity is undeniable.</p> 
+                  <p>This class focuses on understanding who Jesus was in history and the events surrounding his resurrection, which boils down to three questions:</p> 
+                  <ul>
+                    <li>Did Jesus live?</li>
+                    <li>Did Jesus die?</li>
+                    <li>Did Jesus rise?</li>
+                  </ul>
+                  <p>Join us every Friday evening from 6-7pm to talk about why we believe what we believe.</p>
                 </div>
               </section>
               <section className='responsiveFlex invert' id='intl'>
                 <div className='right textSide'>
-                  <h3>International Ministries</h3>
-                  <p>We financially support twelve ministries across the world from Brazil to China.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <h3>Bible Studies</h3>
+                  <p>Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. <Link to='/contact'>Please contact Elder John Perry with any questions</Link>.</p>
+                  <p>Men&apos;s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)</p>
+                  <p>Women&apos;s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)</p>
+                  <p>Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)</p>
                 </div>
                 <div className='left'>
                   <div className='section2Img' />

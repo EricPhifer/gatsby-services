@@ -305,7 +305,6 @@ const LandscapeStandardCityChurchStyles = styled.div`
   @media only screen and (max-width: 900px) {
     width: calc(100vw - 50px);
     margin-left: 50px;
-    position: absolute;
   }
 `;
 const TabletStandardCityChurchStyles = styled.div`
@@ -895,6 +894,7 @@ export default function StandardCityChurch() {
                   <h1>City Church</h1>
                   <h2>Come join us!</h2>
                   <h2>Sundays at 10am</h2>
+                </div>
               </div>
               <div className='content'>
                 <p>No matter what you believe existence leaves us with questions. Chief among them, what happens when you die?</p>
@@ -910,7 +910,7 @@ export default function StandardCityChurch() {
                   <div className='section1Img' />
                 </div>
                 <div className='right textSide'>
-                  <h3>History</h3>
+                  <h3>Who was Jesus in History?</h3>
                   <p>One of the amazing things about Christianity is that it's falsifiable. Wait, what does that mean? That means that it can be evidentially determined to be true or false.</p> 
                   <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
                   <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>
@@ -920,7 +920,6 @@ export default function StandardCityChurch() {
                 </div>
               </section>
             </div>
-          </div>
         </StandardCityChurchStyles>
         <LandscapeStandardCityChurchStyles>
           <CtaStandardChurch />
@@ -1010,7 +1009,7 @@ export default function StandardCityChurch() {
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                  <h3>History</h3>
+                  <h3>Who was Jesus in History?</h3>
                   <p>One of the amazing things about Christianity is that it's falsifiable. Wait, what does that mean? That means that it can be evidentially determined to be true or false.</p> 
                   <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
                   <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>
@@ -1109,7 +1108,7 @@ export default function StandardCityChurch() {
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                  <h3>History</h3>
+                  <h3>Who was Jesus in History?</h3>
                   <p>One of the amazing things about Christianity is that it's falsifiable. Wait, what does that mean? That means that it can be evidentially determined to be true or false.</p> 
                   <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
                   <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>
@@ -1183,7 +1182,7 @@ export default function StandardCityChurch() {
                     <div className='section1Img' />
                   </div>
                   <div className='right textSide'>
-                    <h3>History</h3>
+                    <h3>Who was Jesus in History?</h3>
                     <p>One of the amazing things about Christianity is that it's falsifiable. Wait, what does that mean? That means that it can be evidentially determined to be true or false.</p> 
                     <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
                     <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>

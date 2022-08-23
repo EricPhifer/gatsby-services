@@ -4,8 +4,8 @@ import CtaStandardChurch from '../../../components/CtaStandardChurch';
 
 // Images
 import biblevector from '../../../assets/images/city-church/books-bible-vector.jpg';
-import history from '../../../assets/images/city-church/christ-jesus-crucified-cross-redemption-redeemed-salvation-saved-death-history-historical.jpg';
-import study from '../../../assets/images/city-church/church-pews-bible-message-study-sermon.jpg';
+import women from '../../../assets/images/city-church/women-study-fellowship.jpg';
+import waves from '../../../assets/images/city-church/water-waves-tide-crashing-rocks.jpg';
 import ministry from '../../../assets/images/city-church/circle-people-together-hands.jpg';
 import { Link } from 'gatsby';
 
@@ -95,6 +95,12 @@ const CityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
     }
@@ -113,7 +119,7 @@ const CityChurchStyles = styled.div`
     .section1Img {
       width: 100%;
       height: 700px;
-      background-image: url(${history});
+      background-image: url(${women});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -121,7 +127,7 @@ const CityChurchStyles = styled.div`
     .section2Img {
       width: 100%;
       height: 700px;
-      background-image: url(${study});
+      background-image: url(${waves});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -245,6 +251,12 @@ const LandscapeCityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
       @media only screen and (max-width: 900px) {
@@ -269,7 +281,7 @@ const LandscapeCityChurchStyles = styled.div`
     .section1Img {
       width: 100%;
       height: 223vh;
-      background-image: url(${history});
+      background-image: url(${women});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -280,7 +292,7 @@ const LandscapeCityChurchStyles = styled.div`
     .section2Img {
       width: 100%;
       height: 223vh;
-      background-image: url(${study});
+      background-image: url(${waves});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -296,7 +308,6 @@ const LandscapeCityChurchStyles = styled.div`
   @media only screen and (max-width: 900px) {
     width: calc(100vw - 50px);
     margin-left: 50px;
-    position: absolute;
   }
 `;
 const TabletCityChurchStyles = styled.div`
@@ -407,6 +418,12 @@ const TabletCityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
       @media only screen and (max-width: 900px) {
@@ -435,7 +452,7 @@ const TabletCityChurchStyles = styled.div`
     .section1Img {
       width: 100%;
       height: 100vh;
-      background-image: url(${history});
+      background-image: url(${women});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -449,7 +466,7 @@ const TabletCityChurchStyles = styled.div`
     .section2Img {
       width: 100%;
       height: 100vh;
-      background-image: url(${study});
+      background-image: url(${waves});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -607,7 +624,7 @@ const MobileCityChurchStyles = styled.div`
     .section1Img {
       width: 100%;
       height: 100%;
-      background-image: url(${history});
+      background-image: url(${women});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -618,7 +635,7 @@ const MobileCityChurchStyles = styled.div`
     .section2Img {
       width: 100%;
       height: 100%;
-      background-image: url(${study});
+      background-image: url(${waves});
       background-size: cover;
       background-repeat: norepeat;
       background-position: center center;
@@ -890,26 +907,32 @@ export default function CityChurch() {
               </div>
             </div>
             <div className='content'>
-                <p>Jesus tells his followers in Luke 9 to "take up your cross daily" and in Matthew 11 He says "my yoke is easy and my burden is light".</p>
-                <p>If you believe in Jesus alone for your salvation then his followers have a responsibility to follow what He says and as we follow we find that Jesus carries those responsibilities along side us.</p>
+                <p>Do not merely listen to the word, and so deceive yourselves. Do what it says…What good is it, my brothers, if someone claims to have faith but has no deeds? Can such faith save them? Suppose a brother is without clothes and daily food. If one of you says to them, “Go, in peace; keep warm and well fed,” but does nothing about their physical needs, what good is it? In the same way, faith by itself, if it is not accompanied by action, is dead. <strong>James 1:22; 2:14-17</strong></p>
+                <p>“Is not this the kind of fasting I have chosen: to loose the chains of injustice and untie the cords of the yoke, to set the oppressed free and break every yoke? Is it not to share your food with the hungry and to provide the poor wanderer with shelter - when you see the naked, to clothe them, and not to turn away from your own flesh and blood?” <strong>Isaiah 58:6-7</strong></p>
+                <p>Then Jesus came to them and said, “All authority in heaven and on earth has been given to me. Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.” <strong>Matthew 28:18:-20</strong></p>
             </div>
-            <section className='inline' id='history'>
+            <section className='inline' id='local'>
               <div className='left'>
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                <h3>History</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>Local Ministries</h3>
+                <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p> 
+                <p>Please <Link to='/contact'>contact Elder Alan Gavry</Link> for further information on any of the following ministries, or you can visit with him any Sunday morning. He often wears a sweater vest, regardless of the time of year.</p> 
+                <ul>
+                  <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
+                  <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
+                  <li>Taxes to Tithes - periodic financial workshops and how to's from a biblical viewpoint.</li>
+                  <li>Messages for Missionaries - correspondence with the missionaries Home Church supports.</li>
+                  <li>From Atheist to Apologists - discussion and training in a defense of the faith.</li>
+                  <li>Vacation Bible School - annual week-long event for children K-7th grade.</li>
+                </ul>
               </div>
             </section>
             <section className='inline' id='study'>
               <div className='left textSide'>
-                <h3>Bible Studies</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>International Ministries</h3>
+                <p>We have seven missionaries/missionary families we support around the world. <Link to='/contact'>Please contact us for further information</Link> and to sign up for the prayer list.</p> 
               </div>
               <div className='right'>
                 <div className='section2Img' />
@@ -991,26 +1014,32 @@ export default function CityChurch() {
               </div>
             </div>
             <div className='content'>
-                <p>Jesus tells his followers in Luke 9 to "take up your cross daily" and in Matthew 11 He says "my yoke is easy and my burden is light".</p>
-                <p>If you believe in Jesus alone for your salvation then his followers have a responsibility to follow what He says and as we follow we find that Jesus carries those responsibilities along side us.</p>
+              <p>Do not merely listen to the word, and so deceive yourselves. Do what it says…What good is it, my brothers, if someone claims to have faith but has no deeds? Can such faith save them? Suppose a brother is without clothes and daily food. If one of you says to them, “Go, in peace; keep warm and well fed,” but does nothing about their physical needs, what good is it? In the same way, faith by itself, if it is not accompanied by action, is dead. <strong>James 1:22; 2:14-17</strong></p>
+              <p>“Is not this the kind of fasting I have chosen: to loose the chains of injustice and untie the cords of the yoke, to set the oppressed free and break every yoke? Is it not to share your food with the hungry and to provide the poor wanderer with shelter - when you see the naked, to clothe them, and not to turn away from your own flesh and blood?” <strong>Isaiah 58:6-7</strong></p>
+              <p>Then Jesus came to them and said, “All authority in heaven and on earth has been given to me. Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.” <strong>Matthew 28:18:-20</strong></p>
             </div>
-            <section className='responsiveFlex center' id='history'>
+            <section className='responsiveFlex center' id='local'>
               <div className='left'>
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                <h3>History</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+              <h3>Local Ministries</h3>
+              <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p> 
+                <p>Please <Link to='/contact'>contact Elder Alan Gavry</Link> for further information on any of the following ministries, or you can visit with him any Sunday morning. He often wears a sweater vest, regardless of the time of year.</p> 
+                <ul>
+                  <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
+                  <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
+                  <li>Taxes to Tithes - periodic financial workshops and how to's from a biblical viewpoint.</li>
+                  <li>Messages for Missionaries - correspondence with the missionaries Home Church supports.</li>
+                  <li>From Atheist to Apologists - discussion and training in a defense of the faith.</li>
+                  <li>Vacation Bible School - annual week-long event for children K-7th grade.</li>
+                </ul>
               </div>
             </section>
             <section className='responsiveFlex invert center' id='study'>
               <div className='left textSide'>
-                <h3>Worship</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>International Ministries</h3>
+                <p>We have seven missionaries/missionary families we support around the world. <Link to='/contact'>Please contact us for further information</Link> and to sign up for the prayer list.</p> 
               </div>
               <div className='right'>
                 <div className='section2Img' />
@@ -1092,26 +1121,32 @@ export default function CityChurch() {
               </div>
             </div>
             <div className='content'>
-                <p>Jesus tells his followers in Luke 9 to "take up your cross daily" and in Matthew 11 He says "my yoke is easy and my burden is light".</p>
-                <p>If you believe in Jesus alone for your salvation then his followers have a responsibility to follow what He says and as we follow we find that Jesus carries those responsibilities along side us.</p>
+              <p>Do not merely listen to the word, and so deceive yourselves. Do what it says…What good is it, my brothers, if someone claims to have faith but has no deeds? Can such faith save them? Suppose a brother is without clothes and daily food. If one of you says to them, “Go, in peace; keep warm and well fed,” but does nothing about their physical needs, what good is it? In the same way, faith by itself, if it is not accompanied by action, is dead. <strong>James 1:22; 2:14-17</strong></p>
+                <p>“Is not this the kind of fasting I have chosen: to loose the chains of injustice and untie the cords of the yoke, to set the oppressed free and break every yoke? Is it not to share your food with the hungry and to provide the poor wanderer with shelter - when you see the naked, to clothe them, and not to turn away from your own flesh and blood?” <strong>Isaiah 58:6-7</strong></p>
+                <p>Then Jesus came to them and said, “All authority in heaven and on earth has been given to me. Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.” <strong>Matthew 28:18:-20</strong></p>
             </div>
-            <section className='responsiveFlex center' id='history'>
+            <section className='responsiveFlex center' id='local'>
               <div className='left'>
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                <h3>History</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+              <h3>Local Ministries</h3>
+              <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p> 
+                <p>Please <Link to='/contact'>contact Elder Alan Gavry</Link> for further information on any of the following ministries, or you can visit with him any Sunday morning. He often wears a sweater vest, regardless of the time of year.</p> 
+                <ul>
+                  <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
+                  <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
+                  <li>Taxes to Tithes - periodic financial workshops and how to's from a biblical viewpoint.</li>
+                  <li>Messages for Missionaries - correspondence with the missionaries Home Church supports.</li>
+                  <li>From Atheist to Apologists - discussion and training in a defense of the faith.</li>
+                  <li>Vacation Bible School - annual week-long event for children K-7th grade.</li>
+                </ul>
               </div>
             </section>
             <section className='responsiveFlex invert center' id='study'>
               <div className='left textSide'>
-                <h3>Worship</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>International Ministries</h3>
+                <p>We have seven missionaries/missionary families we support around the world. <Link to='/contact'>Please contact us for further information</Link> and to sign up for the prayer list.</p> 
               </div>
               <div className='right'>
                 <div className='section2Img' />
@@ -1168,26 +1203,32 @@ export default function CityChurch() {
                 </div>
               </div>
               <div className='content'>
-                <p>Jesus tells his followers in Luke 9 to "take up your cross daily" and in Matthew 11 He says "my yoke is easy and my burden is light".</p>
-                <p>If you believe in Jesus alone for your salvation then his followers have a responsibility to follow what He says and as we follow we find that Jesus carries those responsibilities along side us.</p>
+              <p>Do not merely listen to the word, and so deceive yourselves. Do what it says…What good is it, my brothers, if someone claims to have faith but has no deeds? Can such faith save them? Suppose a brother is without clothes and daily food. If one of you says to them, “Go, in peace; keep warm and well fed,” but does nothing about their physical needs, what good is it? In the same way, faith by itself, if it is not accompanied by action, is dead. <strong>James 1:22; 2:14-17</strong></p>
+                <p>“Is not this the kind of fasting I have chosen: to loose the chains of injustice and untie the cords of the yoke, to set the oppressed free and break every yoke? Is it not to share your food with the hungry and to provide the poor wanderer with shelter - when you see the naked, to clothe them, and not to turn away from your own flesh and blood?” <strong>Isaiah 58:6-7</strong></p>
+                <p>Then Jesus came to them and said, “All authority in heaven and on earth has been given to me. Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.” <strong>Matthew 28:18:-20</strong></p>
             </div>
-            <section className='flex center' id='history'>
+            <section className='flex center' id='local'>
               <div className='left'>
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                <h3>History</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>Local Ministries</h3>
+                <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p> 
+                <p>Please <Link to='/contact'>contact Elder Alan Gavry</Link> for further information on any of the following ministries, or you can visit with him any Sunday morning. He often wears a sweater vest, regardless of the time of year.</p> 
+                <ul>
+                  <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
+                  <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
+                  <li>Taxes to Tithes - periodic financial workshops and how to's from a biblical viewpoint.</li>
+                  <li>Messages for Missionaries - correspondence with the missionaries Home Church supports.</li>
+                  <li>From Atheist to Apologists - discussion and training in a defense of the faith.</li>
+                  <li>Vacation Bible School - annual week-long event for children K-7th grade.</li>
+                </ul>
               </div>
             </section>
             <section className='flex invert center' id='study'>
               <div className='left textSide'>
-                <h3>Bible Studies</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                <h3>International Ministries</h3>
+                <p>We have seven missionaries/missionary families we support around the world. <Link to='/contact'>Please contact us for further information</Link> and to sign up for the prayer list.</p> 
               </div>
               <div className='right'>
                 <div className='section2Img' />
