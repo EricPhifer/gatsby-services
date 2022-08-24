@@ -72,8 +72,17 @@ const HomeStyles = styled.div`
   .explanation {
     width: 100%;
     p {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0.5rem 2rem;
       text-align: center;
       color: var(--white);
+    }
+    a {
+      color: var(--green);
+      &:hover {
+        color: var(--mint);
+      }
     }
   }
   .gridContainer {
@@ -246,8 +255,17 @@ const TabletHomeStyles = styled.div`
   .explanation {
     width: 100%;
     p {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0.5rem 2rem;
       text-align: center;
       color: var(--white);
+    }
+    a {
+      color: var(--green);
+      &:hover {
+        color: var(--mint);
+      }
     }
   }
   .gridContainer {
@@ -446,8 +464,17 @@ const MobileHomeStyles = styled.div`
   .explanation {
     width: 100%;
     p {
-      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0.5rem 2rem;
+      text-align: justify;
       color: var(--white);
+    }
+    a {
+      color: var(--green);
+      &:hover {
+        color: var(--mint);
+      }
     }
   }
   .gridContainer {
@@ -564,6 +591,7 @@ export default function HomePage({ data }) {
         </div>
         <hr /> */}
         <div className='explanation'>
+          <p>Not looking for a template, but still on a budget? No worries! The internet has so many options for building websites, I can meet any budget point you need. <a href='https://ericphifer.com/contact'>Contact me</a> and we'll work out a custom agreement.</p>
           <p>Hover over each template to see more details.</p>
         </div>
         <div className='gridContainer'>
@@ -614,6 +642,7 @@ export default function HomePage({ data }) {
         </div>
         <hr /> */}
         <div className='explanation'>
+          <p>Not looking for a template, but still on a budget? No worries! The internet has so many options for building websites, I can meet any budget point you need. <a href='https://ericphifer.com/contact'>Contact me</a> and we'll work out a custom agreement.</p>
           <p>Tap on a template to see more details.</p>
         </div>
         <div className='gridContainer'>
@@ -669,6 +698,7 @@ export default function HomePage({ data }) {
         </div>
         <hr /> */}
         <div className='explanation'>
+          <p>Not looking for a template, but still on a budget? No worries! The internet has so many options for building websites, I can meet any budget point you need. <a href='https://ericphifer.com/contact'>Contact me</a> and we'll work out a custom agreement.</p>
           <p>Tap on a template to see more details.</p>
         </div>
         <div className='gridContainer'>
