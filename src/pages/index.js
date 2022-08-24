@@ -270,7 +270,7 @@ const TabletHomeStyles = styled.div`
       width: 100%;
       height: 100%;
     }
-    .overlay-spheres, .overlay-the-dapper-diaper, .overlay-day-of-pi, .overlay-delightful-cakes, .overlay-caring-hands, .overlay-city-church, .overlay-hearthstone, .overlay-decision-institute, .overlay-holtz-landscaping  {
+    .overlay-spheres, .overlay-the-dapper-diaper, .overlay-day-of-pi, .overlay-delightful-cakes, .overlay-caring-hands, .overlay-city-church, .overlay-hearthstone, .overlay-decision-institute, .overlay-holtz-landscaping, .overlay-standard-city-church  {
       background-color: rgba(0,0,0,0.5);
       width: 300px;
       height: 400px;
@@ -515,7 +515,7 @@ const MobileHomeStyles = styled.div`
       .card {
         width: 250px;
       }
-      .overlay-spheres, .overlay-the-dapper-diaper, .overlay-day-of-pi, .overlay-delightful-cakes, .overlay-caring-hands, .overlay-city-church, .overlay-hearthstone, .overlay-decision-institute, .overlay-holtz-landscaping {
+      .overlay-spheres, .overlay-the-dapper-diaper, .overlay-day-of-pi, .overlay-delightful-cakes, .overlay-caring-hands, .overlay-city-church, .overlay-hearthstone, .overlay-decision-institute, .overlay-holtz-landscaping, .overlay-standard-city-church {
         width: 250px;
       }
       .buttonesque {
