@@ -911,11 +911,11 @@ export default function StandardCityChurch() {
                 </div>
                 <div className='right textSide'>
                   <h3>Who was Jesus in History?</h3>
-                  <p>One of the amazing things about Christianity is that it's falsifiable. Wait, what does that mean? That means that it can be evidentially determined to be true or false.</p> 
+                  <p>One of the amazing things about Christianity is that it's falsifiable. What does that mean? That means that it can be evidentially determined to be true or false.</p> 
                   <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
                   <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>
                   <div className='buttonAlign'>
-                    <a href='https://ericphifer.com/sites/standard-city-church/ministry#history' className='buttonesque'>Learn More</a> 
+                    <a href='https://ericphifer.com/sites/standard-city-church/events#history' className='buttonesque'>Learn More</a> 
                   </div>
                 </div>
               </section>
@@ -1009,14 +1009,14 @@ export default function StandardCityChurch() {
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                  <h3>Who was Jesus in History?</h3>
-                  <p>One of the amazing things about Christianity is that it's falsifiable. Wait, what does that mean? That means that it can be evidentially determined to be true or false.</p> 
-                  <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
-                  <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>
-                  <div className='buttonAlign'>
-                    <a href='https://ericphifer.com/sites/standard-city-church/ministry#history' className='buttonesque'>Learn More</a> 
-                  </div>
+                <h3>Who was Jesus in History?</h3>
+                <p>One of the amazing things about Christianity is that it's falsifiable. What does that mean? That means that it can be evidentially determined to be true or false.</p> 
+                <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
+                <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>
+                <div className='buttonAlign'>
+                  <a href='https://ericphifer.com/sites/standard-city-church/events#history' className='buttonesque'>Learn More</a> 
                 </div>
+              </div>
             </section>
           </div>
         </LandscapeStandardCityChurchStyles>
@@ -1109,11 +1109,11 @@ export default function StandardCityChurch() {
               </div>
               <div className='right textSide'>
                   <h3>Who was Jesus in History?</h3>
-                  <p>One of the amazing things about Christianity is that it's falsifiable. Wait, what does that mean? That means that it can be evidentially determined to be true or false.</p> 
+                  <p>One of the amazing things about Christianity is that it's falsifiable. What does that mean? That means that it can be evidentially determined to be true or false.</p> 
                   <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
                   <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>
                   <div className='buttonAlign'>
-                    <a href='https://ericphifer.com/sites/standard-city-church/ministry#history' className='buttonesque'>Learn More</a> 
+                    <a href='https://ericphifer.com/sites/standard-city-church/events#history' className='buttonesque'>Learn More</a> 
                   </div>
                 </div>
             </section>
@@ -1183,11 +1183,11 @@ export default function StandardCityChurch() {
                   </div>
                   <div className='right textSide'>
                     <h3>Who was Jesus in History?</h3>
-                    <p>One of the amazing things about Christianity is that it's falsifiable. Wait, what does that mean? That means that it can be evidentially determined to be true or false.</p> 
+                    <p>One of the amazing things about Christianity is that it's falsifiable. What does that mean? That means that it can be evidentially determined to be true or false.</p> 
                     <p>How? Since Christianity follows the life and teaching of Jesus, it hinges upon an actual historical figure who lived, died and rose again. If any of these facts can be determined evidentially as false, then Christianity is false.</p> 
                     <p>As a believer, this may be a shocking realization and even sound heretical, but Paul says the very same in 1 Corinthians 15:14 - "if Christ has not been raised, our preaching is useless and so is our faith".</p>
                     <div className='buttonAlign'>
-                      <a href='https://ericphifer.com/sites/standard-city-church/ministry#history' className='buttonesque'>Learn More</a> 
+                      <a href='https://ericphifer.com/sites/standard-city-church/events#history' className='buttonesque'>Learn More</a> 
                     </div>
                   </div>
                 </section>

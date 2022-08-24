@@ -97,6 +97,12 @@ const CityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
     }
@@ -325,6 +331,12 @@ const LandscapeCityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
       @media only screen and (max-width: 900px) {
@@ -571,6 +583,12 @@ const TabletCityChurchStyles = styled.div`
   }
   section {
     width: 100%;
+    a {
+      color: purple;
+      &:hover {
+        color: crimson;
+      }
+    }
     .left, .right {
       width: 50%;
       @media only screen and (max-width: 900px) {
@@ -835,6 +853,12 @@ const MobileCityChurchStyles = styled.div`
     }
     section {
       width: 100%;
+      a {
+        color: purple;
+        &:hover {
+          color: crimson;
+        }
+      }
       .left, .right {
         width: 100%;
       }
@@ -1263,19 +1287,19 @@ export default function CityChurch() {
                   <div className='section1Img' />
                 </div>
                 <div className='right textSide'>
-                  <h3>History</h3>
-                  <p>Our founding pastor, Alan Boyd, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
-                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Boyd at the helm. In 2004 Pastor Boyd and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
+                  <h3>History of Our Church</h3>
+                  <p>Our founding pastor, Alan Gavry, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
+                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Gavry at the helm. In 2004 Pastor Gavry and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
                   <p>Home Church cares about our community and continues the outreach programs started in 1987, as well as several others. Our services remain what they have always been; simple and straightforward. We preach the word of God from the word of God, we sing hymns with a piano accompaniment, we pray together. We hope anyone who joins us for a service will feel like they are coming home as they draw nearer to Christ.</p>
                 </div>
               </section>
               <section className='inline' id='beliefs'>
                 <div className='left textSide'>
                   <h3>Beliefs</h3>
-                  <p>{`We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)`}</p> 
-                  <p>{`We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)`}</p> 
-                  <p>{`We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)`}</p>
-                  <p>{`Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.`}</p>
+                  <p>We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)</p> 
+                  <p>We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God&apos;s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)</p> 
+                  <p>We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)</p>
+                  <p>Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.</p>
                 </div>
                 <div className='right'>
                   <div className='section2Img' />
@@ -1289,7 +1313,7 @@ export default function CityChurch() {
                   <h3>Our Ministries</h3>
                   <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p>
 
-                  <p>Please email Elder Alan Boyd at homechurchoutreach@snailmail.com for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
+                  <p><a href='https://services.ericphifer.com/sites/city-church#contactform'>Please email Elder Alan Gavry</a> for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
                   <ul>
                     <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
                     <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
@@ -1303,11 +1327,11 @@ export default function CityChurch() {
               <section className='inline' id='study'>
                 <div className='left textSide'>
                   <h3>Bible Studies</h3>
-                  <p>{`Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. Please contact Elder Evan Gavries at homechurchstudies@snailmail.com with any questions.`}</p>
+                  <p>Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. <a href='https://services.ericphifer.com/sites/city-church#contactform'>Please contact Elder Evan Turboldt</a> with any questions.</p>
                   <ul>
-                    <li>{`Men’s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)`}</li>
-                    <li>{`Women’s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)`}</li>
-                    <li>{`Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)`}</li>
+                    <li>Men&apos;s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)</li>
+                    <li>Women&apos;s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)</li>
+                    <li>Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)</li>
                   </ul>
                 </div>
                 <div className='right'>
@@ -1506,19 +1530,19 @@ export default function CityChurch() {
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                <h3>History</h3>
-                  <p>Our founding pastor, Alan Boyd, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
-                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Boyd at the helm. In 2004 Pastor Boyd and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
+                <h3>History of Our Church</h3>
+                  <p>Our founding pastor, Alan Gavry, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
+                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Gavry at the helm. In 2004 Pastor Gavry and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
                   <p>Home Church cares about our community and continues the outreach programs started in 1987, as well as several others. Our services remain what they have always been; simple and straightforward. We preach the word of God from the word of God, we sing hymns with a piano accompaniment, we pray together. We hope anyone who joins us for a service will feel like they are coming home as they draw nearer to Christ.</p>
                 </div>
             </section>
             <section className='responsiveFlex invert center' id='beliefs'>
               <div className='left textSide'>
               <h3>Beliefs</h3>
-                  <p>{`We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)`}</p> 
-                  <p>{`We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)`}</p> 
-                  <p>{`We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)`}</p>
-                  <p>{`Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.`}</p>
+                  <p>We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)</p> 
+                  <p>We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God&apos;s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)</p> 
+                  <p>We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)</p>
+                  <p>Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.</p>
               </div>
               <div className='right'>
                 <div className='section2Img' />
@@ -1532,7 +1556,7 @@ export default function CityChurch() {
               <h3>Our Ministries</h3>
                   <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p>
 
-                  <p>Please email Elder Alan Boyd at homechurchoutreach@snailmail.com for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
+                  <p><a href='https://services.ericphifer.com/sites/city-church#contactform'>Please email Elder Alan Gavry</a> for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
                   <ul>
                     <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
                     <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
@@ -1546,11 +1570,11 @@ export default function CityChurch() {
             <section className='responsiveFlex invert center' id='study'>
               <div className='left textSide'>
                 <h3>Bible Studies</h3>
-                <p>{`Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. Please contact Elder Evan Gavries at homechurchstudies@snailmail.com with any questions.`}</p>
+                <p>Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. <a href='https://services.ericphifer.com/sites/city-church#contactform'>Please contact Elder Evan Turboldt</a> with any questions.</p>
                   <ul>
-                    <li>{`Men’s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)`}</li>
-                    <li>{`Women’s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)`}</li>
-                    <li>{`Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)`}</li>
+                    <li>Men&apos;s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)</li>
+                    <li>Women&apos;s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)</li>
+                    <li>Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)</li>
                   </ul>
               </div>
               <div className='right'>
@@ -1748,19 +1772,19 @@ export default function CityChurch() {
                 <div className='section1Img' />
               </div>
               <div className='right textSide'>
-                <h3>History</h3>
-                <p>Our founding pastor, Alan Boyd, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
-                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Boyd at the helm. In 2004 Pastor Boyd and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
+                <h3>History of Our Church</h3>
+                  <p>Our founding pastor, Alan Gavry, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
+                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Gavry at the helm. In 2004 Pastor Gavry and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
                   <p>Home Church cares about our community and continues the outreach programs started in 1987, as well as several others. Our services remain what they have always been; simple and straightforward. We preach the word of God from the word of God, we sing hymns with a piano accompaniment, we pray together. We hope anyone who joins us for a service will feel like they are coming home as they draw nearer to Christ.</p>
               </div>
             </section>
             <section className='responsiveFlex invert center' id='beliefs'>
               <div className='left textSide'>
                 <h3>Beliefs</h3>
-                <p>{`We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)`}</p> 
-                  <p>{`We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)`}</p> 
-                  <p>{`We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)`}</p>
-                  <p>{`Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.`}</p>
+                  <p>We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)</p> 
+                  <p>We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God&apos;s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)</p> 
+                  <p>We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)</p>
+                  <p>Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.</p>
               </div>
               <div className='right'>
                 <div className='section2Img' />
@@ -1774,7 +1798,7 @@ export default function CityChurch() {
                 <h3>Our Ministries</h3>
                 <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p>
 
-                  <p>Please email Elder Alan Boyd at homechurchoutreach@snailmail.com for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
+                  <p><a href='https://services.ericphifer.com/sites/city-church#contactform'>Please email Elder Alan Gavry</a> for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
                   <ul>
                     <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
                     <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
@@ -1788,11 +1812,11 @@ export default function CityChurch() {
             <section className='responsiveFlex invert center' id='study'>
               <div className='left textSide'>
                 <h3>Bible Studies</h3>
-                <p>{`Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. Please contact Elder Evan Gavries at homechurchstudies@snailmail.com with any questions.`}</p>
+                <p>Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. <a href='https://services.ericphifer.com/sites/city-church#contactform'>Please contact Elder Evan Turboldt</a> with any questions.</p>
                   <ul>
-                    <li>{`Men’s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)`}</li>
-                    <li>{`Women’s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)`}</li>
-                    <li>{`Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)`}</li>
+                    <li>Men&apos;s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)</li>
+                    <li>Women&apos;s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)</li>
+                    <li>Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)</li>
                   </ul>
                 </div>
               <div className='right'>
@@ -1961,19 +1985,19 @@ export default function CityChurch() {
                     <div className='section1Img' />
                   </div>
                   <div className='right textSide'>
-                    <h3>History</h3>
-                    <p>Our founding pastor, Alan Boyd, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
-                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Boyd at the helm. In 2004 Pastor Boyd and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
+                    <h3>History of Our Church</h3>
+                    <p>Our founding pastor, Alan Gavry, began serving the community of Shelby, IA in 1985 by holding weekly prayer meetings in his home on Sunday evenings. By 1987 the group had doubled in size with around 30 people assembling for bible study, prayer and worship. Throughout the week the members of Home Church served throughout the community by offering yard work free of charge to their elderly neighbors and hosting monthly dinners to the homeless.</p> 
+                  <p>Late in 1987 Home Church pooled their resources and purchased the building, formerly Old Baptist Church, at 54285 Martin Luther King Blvd. Home Church began holding services there in January 1988 with Pastor Gavry at the helm. In 2004 Pastor Gavry and his lovely wife Rae stepped back from the role of pastor and into an eldership role, making way for our current pastor, Shane Spencer.</p> 
                   <p>Home Church cares about our community and continues the outreach programs started in 1987, as well as several others. Our services remain what they have always been; simple and straightforward. We preach the word of God from the word of God, we sing hymns with a piano accompaniment, we pray together. We hope anyone who joins us for a service will feel like they are coming home as they draw nearer to Christ.</p>
                   </div>
                 </section>
                 <section className='flex invert center' id='beliefs'>
                   <div className='left textSide'>
                     <h3>Beliefs</h3>
-                    <p>{`We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)`}</p> 
-                  <p>{`We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God’s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)`}</p> 
-                  <p>{`We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)`}</p>
-                  <p>{`Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.`}</p>
+                    <p>We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)</p> 
+                  <p>We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God&apos;s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)</p> 
+                  <p>We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)</p>
+                  <p>Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.</p>
                   </div>
                   <div className='right'>
                     <div className='section2Img' />
@@ -1987,7 +2011,7 @@ export default function CityChurch() {
                     <h3>Our Ministries</h3>
                     <p>Our ministries are a way for us to serve and reach our community, as well as to strengthen and encourage our brothers and sisters in Christ. Each one is open and available to anybody in need.</p>
 
-                    <p>Please email Elder Alan Boyd at homechurchoutreach@snailmail.com for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
+                    <p><a href='https://services.ericphifer.com/sites/city-church#contactform'>Please email Elder Alan Gavry</a> for further information on any of the following ministries, or you can visit with him any given Sunday morning. He often wears a sweater vest, regardless of the time of year.</p>
                     <ul>
                       <li>Weeding for The Word - assisting the elderly with routine yard work.</li>
                       <li>Feast for Friends - hosting monthly dinner parties for the homeless.</li>
@@ -2001,11 +2025,11 @@ export default function CityChurch() {
                 <section className='flex invert center' id='study'>
                   <div className='left textSide'>
                     <h3>Bible Studies</h3>
-                    <p>{`Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. Please contact Elder Evan Gavries at homechurchstudies@snailmail.com with any questions.`}</p>
+                    <p>Our studies run throughout the year as we make our way through the bible with our fellow brothers or sisters in Christ. <a href='https://services.ericphifer.com/sites/city-church#contactform'>Please contact Elder Evan Turboldt</a> with any questions.</p>
                   <ul>
-                    <li>{`Men’s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)`}</li>
-                    <li>{`Women’s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)`}</li>
-                    <li>{`Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)`}</li>
+                    <li>Men&apos;s Bible Study, Thursdays 6a-7a (Leading in a Lost Land, a study of the book of Joshua)</li>
+                    <li>Women&apos;s Bible Study, Tuesdays 8a-9a (Godly Womanhood, a study of the book of Galatians)</li>
+                    <li>Truth Trackers, Wednesdays 6p-8p (children K-12, scripture memorization and fellowship)</li>
                   </ul>
                   </div>
                   <div className='right'>
