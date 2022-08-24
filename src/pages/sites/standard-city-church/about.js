@@ -1162,7 +1162,7 @@ export default function CityChurch() {
             </div>
             <div className='right textSide'>
               <h3>Our Pastor</h3>
-                            <p>When Pastor Gavry&apos;s health began to turn in mid 2004, Pastor Spencer graciously stepped into the lead pastoral role. He still consults with Pastor Gavry on a regular basis, wanting to continue Home Church&apos;s tradition of teaching the bible faithfully.</p> 
+              <p>When Pastor Gavry&apos;s health began to turn in mid 2004, Pastor Spencer graciously stepped into the lead pastoral role. He still consults with Pastor Gavry on a regular basis, wanting to continue Home Church&apos;s tradition of teaching the bible faithfully.</p> 
             </div>
           </section>
           <section className='responsiveFlex invert' id='beliefs'>
@@ -1237,17 +1237,16 @@ export default function CityChurch() {
                 </div>
                 <div className='right textSide'>
                   <h3>Our Pastor</h3>
-                  <p>Pastor David has been watching over and helping to guide our church since 2006. He started out in Chicago Ministries and worked for 6 years as a missionary in Haiti before God called Him to Goliath Peak.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <p>When Pastor Gavry&apos;s health began to turn in mid 2004, Pastor Spencer graciously stepped into the lead pastoral role. He still consults with Pastor Gavry on a regular basis, wanting to continue Home Church&apos;s tradition of teaching the bible faithfully.</p> 
                 </div>
               </section>
               <section className='responsiveFlex invert' id='beliefs'>
                 <div className='left textSide'>
                   <h3>Our Beliefs</h3>
-                  <p>We believe in one God in three persons, the Trinity, made up of the Father, the Son and the Holy Spirit.</p> 
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
-                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                  <p>We believe in a triune God: God the Father, Jesus the Son, and The Holy Spirit. (“The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all.” 2 Corinthians 13:14)</p>
+                  <p>We believe we are saved by grace alone through faith alone in Christ alone. (“It is by grace you have been saved, through faith - and this is not from yourselves, it is the gift of God - not by works, so that no one can boast. For we are God&apos;s handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.” Ephesians 2:8-10)</p>
+                  <p>We believe the Christian bible is the holy, authoritative, inerrant Word of God. (“All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness, so that the servant of God may be thoroughly equipped for every good work.” 2 Timothy 3:16-17)</p>
+                  <p>Psalm 33:1-3 commands, “Sing joyfully to the Lord, you righteous; it is fitting for the upright to praise him. Praise the Lord with the harp; make music to him on the ten-stringed lyre. Sing to him a new song; play skillfully, and shout for joy.” With that in mind we invite everyone to join us in singing hymns to the Lord, accompanied often by our piano. We include worship every time we meet together.</p>
                 </div>
                 <div className='right'>
                   <div className='section2Img' />
