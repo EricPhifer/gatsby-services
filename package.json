@@ -48,9 +48,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsby-services"
+    "url": "https://github.com/EricPhifer/gatsby-services"
   },
   "bugs": {
-    "url": "https://github.com/gatsby-services/issues"
+    "url": "https://github.com/EricPhifer/gatsby-services/issues"
   }
 }

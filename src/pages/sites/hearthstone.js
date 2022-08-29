@@ -1434,19 +1434,19 @@ export default function Hearthstone() {
               <div className="center">
                 <nav>
                   <ul className='inline center'>
-                    <a href='https://services.ericphifer.com/sites/city-church#gifts'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#gifts'>
                       <li>Gifts</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#events'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#events'>
                       <li>Events</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#about'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#about'>
                       <li>About Us</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#contact'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#contact'>
                       <li>Contact Us</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#location'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#location'>
                       <li>Location</li>
                     </a>
                   </ul>
@@ -1606,19 +1606,19 @@ export default function Hearthstone() {
               <div className="center">
                 <nav>
                   <ul className='inline center'>
-                    <a href='https://services.ericphifer.com/sites/city-church#gifts'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#gifts'>
                       <li>Gifts</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#events'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#events'>
                       <li>Events</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#about'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#about'>
                       <li>About Us</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#contact'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#contact'>
                       <li>Contact Us</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#location'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#location'>
                       <li>Location</li>
                     </a>
                     <a href='https://www.facebook.com/profile.php?id=100069726706760' className='right'>
@@ -1647,19 +1647,19 @@ export default function Hearthstone() {
                   <div className="center">
                     <nav>
                       <ul className='flex center'>
-                        <a href='https://services.ericphifer.com/sites/city-church#gifts'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#gifts'>
                           <li>Gifts</li>
                         </a>
-                        <a href='https://services.ericphifer.com/sites/city-church#events'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#events'>
                           <li>Events</li>
                         </a>
-                        <a href='https://services.ericphifer.com/sites/city-church#about'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#about'>
                           <li>About Us</li>
                         </a>
-                        <a href='https://services.ericphifer.com/sites/city-church#contact'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#contact'>
                           <li>Contact Us</li>
                         </a>
-                        <a href='https://services.ericphifer.com/sites/city-church#location'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#location'>
                           <li>Location</li>
                         </a>
                       </ul>
@@ -1824,19 +1824,19 @@ export default function Hearthstone() {
               <div className="center">
                 <nav>
                   <ul className='inline center'>
-                    <a href='https://services.ericphifer.com/sites/city-church#gifts'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#gifts'>
                       <li>Gifts</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#events'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#events'>
                       <li>Events</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#about'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#about'>
                       <li>About Us</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#contact'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#contact'>
                       <li>Contact Us</li>
                     </a>
-                    <a href='https://services.ericphifer.com/sites/city-church#location'>
+                    <a href='https://services.ericphifer.com/sites/hearthstone#location'>
                       <li>Location</li>
                     </a>
                   </ul>
@@ -1865,19 +1865,19 @@ export default function Hearthstone() {
                   <div className="center">
                     <nav>
                       <ul className='flex center'>
-                        <a href='https://services.ericphifer.com/sites/city-church#gifts'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#gifts'>
                           <li>Gifts</li>
                         </a>
-                        <a href='https://services.ericphifer.com/sites/city-church#events'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#events'>
                           <li>Events</li>
                         </a>
-                        <a href='https://services.ericphifer.com/sites/city-church#about'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#about'>
                           <li>About Us</li>
                         </a>
-                        <a href='https://services.ericphifer.com/sites/city-church#contact'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#contact'>
                           <li>Contact Us</li>
                         </a>
-                        <a href='https://services.ericphifer.com/sites/city-church#location'>
+                        <a href='https://services.ericphifer.com/sites/hearthstone#location'>
                           <li>Location</li>
                         </a>
                       </ul>
@@ -2052,19 +2052,19 @@ export default function Hearthstone() {
                       <div className="center">
                         <nav>
                           <ul className='flex center'>
-                            <a href='https://services.ericphifer.com/sites/city-church#gifts'>
+                            <a href='https://services.ericphifer.com/sites/hearthstone#gifts'>
                               <li>Gifts</li>
                             </a>
-                            <a href='https://services.ericphifer.com/sites/city-church#events'>
+                            <a href='https://services.ericphifer.com/sites/hearthstone#events'>
                               <li>Events</li>
                             </a>
-                            <a href='https://services.ericphifer.com/sites/city-church#about'>
+                            <a href='https://services.ericphifer.com/sites/hearthstone#about'>
                               <li>About Us</li>
                             </a>
-                            <a href='https://services.ericphifer.com/sites/city-church#contact'>
+                            <a href='https://services.ericphifer.com/sites/hearthstone#contact'>
                               <li>Contact Us</li>
                             </a>
-                            <a href='https://services.ericphifer.com/sites/city-church#location'>
+                            <a href='https://services.ericphifer.com/sites/hearthstone#location'>
                               <li>Location</li>
                             </a>
                           </ul>
