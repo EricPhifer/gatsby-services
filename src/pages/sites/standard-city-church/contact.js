@@ -954,7 +954,7 @@ export default function ContactCityChurch() {
                   method="post"
                   netlify-honeypot="bot-field"
                   data-netlify="true"
-                  name="church-contact"
+                  name="standard-church-contact"
                 >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />
@@ -1118,7 +1118,7 @@ export default function ContactCityChurch() {
                   method="post"
                   netlify-honeypot="bot-field"
                   data-netlify="true"
-                  name="church-contact"
+                  name="standard-church-contact"
                 >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />
@@ -1282,7 +1282,7 @@ export default function ContactCityChurch() {
                   method="post"
                   netlify-honeypot="bot-field"
                   data-netlify="true"
-                  name="church-contact"
+                  name="standard-church-contact"
                 >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />
@@ -1421,7 +1421,7 @@ export default function ContactCityChurch() {
                   method="post"
                   netlify-honeypot="bot-field"
                   data-netlify="true"
-                  name="church-contact"
+                  name="standard-church-contact"
                 >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />

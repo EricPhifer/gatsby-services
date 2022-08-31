@@ -1511,7 +1511,7 @@ export default function Hearthstone() {
                   method="post"
                   netlify-honeypot="bot-field"
                   data-netlify="true"
-                  name="church-contact"
+                  name="hearthstone-contact"
                 >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />
@@ -1726,7 +1726,7 @@ export default function Hearthstone() {
                   method="post"
                   netlify-honeypot="bot-field"
                   data-netlify="true"
-                  name="church-contact"
+                  name="hearthstone-contact"
                 >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />
@@ -1944,7 +1944,7 @@ export default function Hearthstone() {
                   method="post"
                   netlify-honeypot="bot-field"
                   data-netlify="true"
-                  name="church-contact"
+                  name="hearthstone-contact"
                 >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />
@@ -2131,7 +2131,7 @@ export default function Hearthstone() {
                   method="post"
                   netlify-honeypot="bot-field"
                   data-netlify="true"
-                  name="church-contact"
+                  name="hearthstone-contact"
                 >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />
