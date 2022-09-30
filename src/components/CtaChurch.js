@@ -566,7 +566,7 @@ export default function Cta() {
                                 You will provide content - words and images - unless you select otherwise at checkout.
                             </p>
                             <p> 
-                                Need something customized? Send me a message.
+                                <a href='https://ericphifer.com/contact' rel='noreferrer noopener'>Contact me to start your building journey!</a>
                             </p>
                         </div>
                         <div className='buttonContainer'>
@@ -576,12 +576,12 @@ export default function Cta() {
                                 >
                                 Have Questions? Contact Me
                             </a>
-                            <a 
+                            {/* <a 
                                 href='https://buy.stripe.com/00g165frXgAu1vG9AJ' 
                                 className='buttonesque' 
                                 >
                                 Build this Site for Me
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -605,7 +605,7 @@ export default function Cta() {
                                 You will provide content - words and images - unless you select otherwise at checkout.
                             </p>
                             <p> 
-                                Need something customized? Send me a message.
+                                <a href='https://ericphifer.com/contact' rel='noreferrer noopener'>Contact me to start your building journey!</a>
                             </p>
                         </div>
                         <div className='buttonContainer'>
@@ -615,12 +615,12 @@ export default function Cta() {
                             >
                                 Have Questions? Contact Me
                             </a>
-                            <a 
+                            {/* <a 
                                 href='https://buy.stripe.com/00g165frXgAu1vG9AJ' 
                                 className='buttonesque' 
                             >
                                 Build this Site for Me
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -644,7 +644,7 @@ export default function Cta() {
                                 You will provide content - words and images - unless you select otherwise at checkout.
                             </p>
                             <p> 
-                                Need something customized? Send me a message.
+                                <a href='https://ericphifer.com/contact' rel='noreferrer noopener'>Contact me to start your building journey!</a>
                             </p>
                         </div>
                         <div className='buttonContainer'>
@@ -654,12 +654,12 @@ export default function Cta() {
                             >
                                 Have Questions? Contact Me
                             </a>
-                            <a 
+                            {/* <a 
                                 href='https://buy.stripe.com/00g165frXgAu1vG9AJ' 
                                 className='buttonesque' 
                             >
                                 Build this Site for Me
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -683,7 +683,7 @@ export default function Cta() {
                                 You will provide content - words and images - unless you select otherwise at checkout.
                             </p>
                             <p> 
-                                Need something customized? Send me a message.
+                                <a href='https://ericphifer.com/contact' rel='noreferrer noopener'>Contact me to start your building journey!</a>
                             </p>
                         </div>
                         <div className='buttonContainer'>
@@ -692,11 +692,11 @@ export default function Cta() {
                             rel='noreferrer noopener'>
                                 Have Questions? Contact Me
                             </a>
-                            <a href='https://buy.stripe.com/00g165frXgAu1vG9AJ' 
+                            {/* <a href='https://buy.stripe.com/00g165frXgAu1vG9AJ' 
                             className='buttonesque' 
                             rel='noreferrer noopener'>
                                 Build this Site for Me
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
